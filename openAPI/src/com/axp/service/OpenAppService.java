@@ -1,0 +1,1 @@
+package com.axp.service;import java.util.List;import com.axp.domain.OpenApp;public interface OpenAppService extends IBaseService<OpenApp> {		List<String> findOpenAppUrl ();}

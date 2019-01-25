@@ -1,0 +1,1 @@
+package com.axp.service;import com.axp.domain.OpenPddIncrementGoods;public interface OpenPddIncrementGoodsService extends IBaseService<OpenPddIncrementGoods> {			}
