@@ -1,0 +1,1 @@
+package com.axp.service;import com.axp.domain.ReGoodsOfMemberMall;public interface IReGoodsOfMemberMallService extends IBaseService<ReGoodsOfMemberMall> {}

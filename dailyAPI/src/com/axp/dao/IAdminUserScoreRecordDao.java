@@ -1,0 +1,1 @@
+package com.axp.dao;import com.axp.domain.AdminUserScoreRecord;public interface IAdminUserScoreRecordDao extends IBaseDao<AdminUserScoreRecord> {}

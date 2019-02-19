@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人资料-昵称</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" href="css/PS-personal-data.css" rel="stylesheet">
+<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="head_center">
+	<div class="back">
+    	<a href="PS-personal-data.html"><span></span></a>
+    </div>
+  <h4>个人资料</h4>
+</div>
+<div class="nickname"><input type="text" placeholder="" value="某某某"><span>×</span></div>
+<div class="out"><input type="button" value="完成"></div>
+</body>
+</html>
+<script type="text/javascript">
+	$('.nickname span').click(function(e) {
+        $(this).siblings('input').val('');
+    });
+</script>

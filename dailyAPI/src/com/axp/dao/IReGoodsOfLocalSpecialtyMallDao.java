@@ -1,0 +1,1 @@
+package com.axp.dao;import com.axp.domain.ReGoodsOfLocalSpecialtyMall;public interface IReGoodsOfLocalSpecialtyMallDao extends IBaseDao<ReGoodsOfLocalSpecialtyMall> {}

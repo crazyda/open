@@ -1,0 +1,1 @@
+package com.axp.dao;import com.axp.domain.ReGoodsSnapshot;public interface IReGoodsSnapshotDao extends IBaseDao<ReGoodsSnapshot> {}

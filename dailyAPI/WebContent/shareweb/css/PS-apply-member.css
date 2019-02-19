@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+
+div,a,span,img,h1,h2,h3,h4,p,input,textrea,button,body,ul,li,ol,dl,dt,dd,select,i{ margin:0; padding:0; list-style:none; border:0; font-style:normal;}
+body{ background:#ececec; font-size:14px; min-width:320px; max-width:640px; margin:0 auto; line-height:1.5; color:#666; padding-top:50px;}
+a{ text-decoration:none; color:#666;}
+a:hover{ text-decoration:none; color:#666;}
+/*------引用字体--------*/
+@font-face{font-style:normal; font-family:'PingFang Regular';src:url(../../font/PingFang%20Regular.ttf) format('truetype');}
+html,body,input{font-family:"PingFang Regular";}
+
+/*------导航栏--------------------*/
+.head_creative{ background:#ff2d47; height:50px; width:100%; position:fixed; top:0; left:0; z-index:99;}
+.head_creative h4{ width:100%; text-align:center; line-height:50px; color:#fff; font-size:20px; position:absolute; top:0; left:0; font-weight:normal; z-index:-1;}
+.head_creative .back{ float:left; width:10%;}
+.head_creative .back a{ display:block; padding:10px;}
+.head_creative .back a span{ width:15px; height:20px; background:url(../images/left-icon.png) no-repeat left center; margin-top:5px; display:block; background-size:11px; margin-left:5px;}
+
+.head_creative .share{ float:right; width:13%;}
+.head_creative .share a{ display:block; padding:10px; padding-right:0;}
+.head_creative .share a span{ width:26px; height:32px; background:url(../images/icon_fenxiang.png) no-repeat center center; display:block; background-size:22px;}
+/*----------------申请会员内容--------------------*/
+.level_head{ font-size:1.2rem; line-height:3.0rem; padding-left:1.5rem;}
+.level_head span{ background:url(../images/vipdengji.png) no-repeat right 0.4rem; background-size:1.0rem; padding-right:1.2rem;}
+.level{ background:#fff; border-bottom:1px solid #d0d0d0; border-top:1px solid #d0d0d0; padding:0 1.0rem;}
+.level p{ font-size:1.2rem; line-height:3.0rem; color:#ff2d48;}
+.level p span{ font-size:1.0rem; color:#aaaaaa; margin-left:0.5rem;}
+.level p span b{ color:#f09626; font-weight:normal;}
+.level p i{ float:right; padding-top:3px;}
+.level p i img{ width:20px;}
+
+.data_head{ font-size:1.2rem; line-height:3.0rem; padding-left:1.5rem;}
+.data_head span{ background:url(../images/ziliao.png) no-repeat right 0.4rem; background-size:1.0rem; padding-right:1.2rem;}
+.data{ background:#fff; border-bottom:1px solid #d0d0d0; border-top:1px solid #d0d0d0; padding-left:1.5rem;}
+.data div{ width:100%; overflow:hidden;border-bottom:1px solid #d0d0d0; font-size:1.0rem; line-height:3.0rem;}
+.data div p{ float:left; width:30%; color:#9a9a9a;}
+.data div p i{ color:#ff2d48; font-weight:bold;}
+.data div span{ float:left; width:70%;}
+
+.pay{ width:100%; margin-top:10%;}
+.pay input{ width:55%; color:#fff; font-size:1.1rem; line-height:2.8rem; background:#ff2d48; margin:0 auto; display:block; border-radius:5px;}
+
+
+
+
+@media (min-width:375px) and (max-width:413px){ 
+	.head_creative .share{ width:14%;}
+
+	.level_head{ font-size:1.1rem; line-height:2.8rem; }
+	.data_head{ font-size:1.1rem; line-height:2.8rem;}
+	.level p{ font-size:1.2rem; line-height:2.8rem;}
+	.level p i img{ width:18px;}
+	.data div{font-size:1.0rem; line-height:2.8rem;}
+	.pay input{ font-size:1.1rem; line-height:2.8rem;}
+}
+
+@media screen and (max-width:360px){ 
+	.head_creative h4{ font-size:18px;}
+	.head_creative .back a span{ width:13px; height:18px; margin-top:7px; background-size:10px;}
+	.head_creative .share{ width:15%;}
+	.head_creative .share a span{ width:22px; height:34px; background-size:18px;}
+
+	.level_head{ font-size:1.0rem; line-height:2.6rem; }
+	.data_head{ font-size:1.0rem; line-height:2.6rem;}
+	.level p{ font-size:1.1rem; line-height:2.6rem;}
+	.level p i img{ width:18px;}
+	.data div{font-size:0.9rem; line-height:2.6rem;}
+	.pay input{ font-size:1.0rem; line-height:2.6rem;}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

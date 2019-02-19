@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>购物车</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="http://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<link type="text/css" href="css/SC-shop-cart.css" rel="stylesheet">
+<script src="js/jquery-1.7.2.min.js" type="text/jscript"></script>
+</head>
+
+<body>
+<div class="head_shop">
+	<div class="back" onclick="location.href='../前端/index.html'">
+    	<i class="fa fa-angle-left"></i>
+    </div>
+    <h4>购物车</h4>
+    <a href="#" id="edit">编辑</a>
+</div>
+<!----------订单order-------------------->
+<div class="order_all">
+    <div class="order">
+        <div class="order_shop">
+            <p class="check">
+                <input type="checkbox" id="shop01" class="shop01_chk">
+                <label for="shop01"></label>
+            </p>
+            <p class="shop_name">小米天河专卖店 > </p>
+        </div>
+        <div class="shop01_pdt shop_pdt">
+            <p class="check_pdt">
+                <input type="checkbox" id="pdt01-01" class="pdt01_chk">
+                <label for="pdt01-01"></label>
+            </p>
+            <div class="pdt_con">
+                <div class="pdt_con_inner">
+                    <div class="pdt_pic">
+                        <img src="images/good01.png" width="80">
+                        <div class="num_wrap">
+                            <span class="minus minus_disabled" id="minus00"></span>
+                            <input class="num_text" id="buyNum00" type="text" value="0">
+                            <span class="plus" id="plus00"></span>
+                        </div>
+                    </div>
+                    <div class="pdt_word">
+                        <div class="left">
+                            <p class="name">小米4全新智能手机风暴来袭全场只要98折</p>
+                            <p class="num">商品数量：<span>3</span></p>
+                            <p class="format"></p>
+                            <p class="price">￥1999.0</p>
+                        </div>
+                        <p class="enter"><i class="fa fa-angle-right"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shop01_pdt shop_pdt">
+            <p class="check_pdt">
+                <input type="checkbox" id="pdt01-02" class="pdt01_chk">
+                <label for="pdt01-02"></label>
+            </p>
+            <div class="pdt_con">
+                <div class="pdt_con_inner">
+                    <div class="pdt_pic">
+                        <img src="images/good01.png" width="80">
+                        <div class="num_wrap">
+                            <span class="minus minus_disabled" id="minus00"></span>
+                            <input class="num_text" id="buyNum00" type="text" value="0">
+                            <span class="plus" id="plus00"></span>
+                        </div>
+                    </div>
+                    <div class="pdt_word">
+                        <div class="left">
+                            <p class="name">小米4全新智能手机风暴来袭全场只要98折</p>
+                            <p class="num">商品数量：<span>3</span></p>
+                            <p class="format"></p>
+                            <p class="price">￥1999.0</p>
+                        </div>
+                        <p class="enter"><i class="fa fa-angle-right"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="order">
+        <div class="order_shop">
+            <p class="check">
+                <input type="checkbox" id="shop02" class="shop01_chk">
+                <label for="shop02"></label>
+            </p>
+            <p class="shop_name">古驰广州专卖店 > </p>
+        </div>
+        <div class="shop01_pdt">
+            <p class="check_pdt">
+                <input type="checkbox" id="pdt02-01" class="pdt01_chk">
+                <label for="pdt02-01"></label>
+            </p>
+            <div class="pdt_con">
+                <div class="pdt_con_inner">
+                    <div class="pdt_pic">
+                        <img src="images/good02.png" width="80">
+                        <div class="num_wrap">
+                            <span class="minus minus_disabled" id="minus01"></span>
+                            <input class="num_text" id="buyNum01" type="text" value="0">
+                            <span class="plus" id="plus01"></span>
+                        </div>
+                    </div>
+                    <div class="pdt_word">
+                        <div class="left">
+                            <p class="name">小米4全新智能手机风暴来袭全场只要98折</p>
+                            <p class="num">商品数量：<span>3</span></p>
+                            <p class="format">大小：XXL 颜色分类：灰色</p>
+                            <p class="price">￥1999.0 <span>￥250.0</span></p>
+                        </div>
+                        <p class="enter"><i class="fa fa-angle-right"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="order">
+        <div class="order_shop">
+            <p class="check">
+                <input type="checkbox" id="shop03" class="shop01_chk">
+                <label for="shop03"></label>
+            </p>
+            <p class="shop_name">古驰广州专卖店 > </p>
+        </div>
+        <div class="shop01_pdt">
+            <p class="check_pdt">
+                <input type="checkbox" id="pdt03-01" class="pdt01_chk">
+                <label for="pdt03-01"></label>
+            </p>
+            <div class="pdt_con">
+                <div class="pdt_con_inner">
+                    <div class="pdt_pic">
+                        <img src="images/good02.png" width="80">
+                        <div class="num_wrap">
+                            <span class="minus minus_disabled" id="minus02"></span>
+                            <input class="num_text" id="buyNum02" type="text" value="0">
+                            <span class="plus" id="plus02"></span>
+                        </div>
+                    </div>
+                    <div class="pdt_word">
+                        <div class="left">
+                            <p class="name">小米4全新智能手机风暴来袭全场只要98折</p>
+                            <p class="num">商品数量：<span>3</span></p>
+                            <p class="format"></p>
+                            <p class="price">￥1999.0 <span>￥250.0</span></p>
+                        </div>
+                        <p class="enter"><i class="fa fa-angle-right"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------底栏合计/去结算------------->
+<div class="menu">
+	<div class="select_all">
+        <p class="check">
+            <input type="checkbox" id="all-select" class="shop01_chk">
+            <label for="all-select"></label>
+        </p>
+        <span>全选</span>
+    </div>
+    <div class="default">
+        <p class="total">合计：<span>￥350.0</span></p>
+        <p class="bill"><span onClick="location.href='SC-fill-order.html'">去结算 <i>(3)</i></span></p> 
+    </div>
+    <div class="edit">
+    	<p class="share"><span>分享给朋友</span></p>
+    	<p class="delete"><span>删除</span></p>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+	//商品数量选择------------------
+	function number(a,b,c){ 
+		var add=$(a);//添加数量
+		var reduce=$(b);//减少数量
+		var num_ori="";//数量的初始值
+		var num_txt=$(c);//接受数量的文本框
+		
+		//添加数量事件------------------
+		add.click(function(e) {
+			num_ori=$(c).val();
+			num_ori++;
+			num_txt.val(num_ori);
+		});
+		
+		//减少数量事件-------------------
+		reduce.click(function(e) {
+			num_ori=$(c).val();
+			//只有当文本框内的值大于0的时候才执行减去事件
+			if( num_ori>0 ){ 
+				//并且当文本框的值为1的时候，减去后文本框直接清空值，不显示0 
+				if( num_ori==1 ){ 
+					num_ori--;
+					num_txt.val("");
+				}else{ 
+					//否则就执行减减
+					num_ori--;
+					num_txt.val(num_ori);
+				}
+			}
+		});
+	}
+	number('#plus00','#minus00','#buyNum00');
+	number('#plus01','#minus01','#buyNum01');
+	number('#plus02','#minus02','#buyNum02');
+	
+	//自适应布局---------------
+	var _;(_ = function(){document.querySelector('html').style.fontSize = 0.0625*window.innerWidth+"px";})();window.onresize = _;
+	//------编辑---------
+	$('#edit').click(function(e) {
+        $('.menu .default').toggle();
+		$('.menu .edit').toggle();
+    });
+	//--------全选--------
+	$('#all-select').click(function(e) {
+        if(this.checked){ 
+			$("input[type=checkbox]").attr("checked", "checked");
+		}else{ 
+			$("input[type=checkbox]").removeAttr("checked");
+		}
+    });
+	//------单选商店时全选商店对应的商品--------
+	function action(a){
+/*		$(a).click(function(e) {
+		if(this.checked){ 
+				$(this).parents('.order').find('.pdt01_chk').attr("checked", "checked");
+			}else{ 
+				$(this).parents('.order').find('.pdt01_chk').removeAttr("checked");
+			}
+        });
+*/	
+		$(a).click(function(e) {
+			var b=$(this).parents('.order').find('.pdt01_chk');
+            if($(this).is(':checked')){ 
+				$(b).attr("checked", "checked");
+			}else{ 
+				$(b).removeAttr("checked");
+			}
+        });	
+	}
+	action('#shop01');
+	action('#shop02');
+	action('#shop03');
+	//--------全选商品勾选商店------------
+	function actall(){ 
+		$('.pdt01_chk').change(function(e) {
+			var numpdt=$(this).parents('.order').find('.pdt01_chk').length;
+			var selecednum=$(this).parents('.order').find(".shop01_pdt input[type='checkbox']:checked").length;
+			if( numpdt == selecednum){ 
+				$(this).parents('.order').find('.shop01_chk').attr("checked", "checked");
+			}else{ 
+				$(this).parents('.order').find('.shop01_chk').removeAttr("checked");
+			}
+        });
+	}
+	actall();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+

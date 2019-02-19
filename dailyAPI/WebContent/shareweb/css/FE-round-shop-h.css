@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+
+div,a,span,img,h1,h2,h3,h4,p,input,textrea,button,body,ul,li,ol,dl,dt,dd,select,i{ margin:0; padding:0; list-style:none; border:0; font-style:normal;}
+body{ background:#ececec; font-size:14px; min-width:320px; max-width:640px; margin:0 auto; line-height:1.5; color:#666; padding:50px 0;}
+a{ text-decoration:none; color:#666;}
+a:hover{ text-decoration:none; color:#666;}
+/*------引用字体--------*/
+@font-face{font-style:normal; font-family:'PingFang Regular';src:url(../../font/PingFang%20Regular.ttf) format('truetype');}
+html,body{font-family:"PingFang Regular";}
+
+/*------导航栏--------------------*/
+.head_round{ background:#ff2d47; height:50px; width:100%; position:fixed; top:0; left:0; z-index:99;}
+.head_round h4{ width:100%; text-align:center; line-height:50px; color:#fff; font-size:20px; position:absolute; top:0; left:0; font-weight:normal; z-index:-1; padding:0 25%; font-size:16px;}
+.head_round h4 span{ line-height:32px; border:1px solid #fff; float:left; width:50%; text-align:center; margin-top:9px;}
+.head_round h4 span.left{ border-right:0; border-radius:4px 0 0 4px;}
+.head_round h4 span.right{ border-radius:0 4px 4px 0;}
+.head_round h4 span.cur{ color:#fc2444; background:#fff;}
+
+.head_round .back{ float:left; width:10%;}
+.head_round .back a{ display:block; padding:10px;}
+.head_round .back a span{ width:15px; height:20px; background:url(../images/left-icon.png) no-repeat left center; margin-top:5px; display:block; background-size:11px; margin-left:5px;}
+
+.head_round .search{ float:right; width:12%;}
+.head_round .search a{ display:block; padding:10px; padding-right:0;}
+.head_round .search a span{ width:20px; height:30px; background:url(../images/search-f.png) no-repeat center center; display:block; background-size:18px; margin-top:2px;}
+.head_round .map{ float:right; width:10%;}
+.head_round .map a{ display:block; padding:10px; padding-right:0;}
+.head_round .map a span{ width:24px; height:32px; background:url(../images/icon-map.png) no-repeat center center; display:block; background-size:20px; margin-top:0;}
+
+/*------分类tab--------------------*/
+.tab{ width:100%;}
+.tab h4{ width:100%; overflow:hidden;}
+.tab h4 span{ width:33.33%; float:left; text-align:center; border:1px solid #ccc; line-height:40px; border-right:0; background:#fff;}
+.tab h4 span:nth-child(1){ border-left:0;}
+.tab h4 span.current{ border-bottom:2px solid #39bbfc;}
+.tab h4 span img{ margin:0 5px 5px 0;}
+.tab ul{ overflow:hidden;}
+.tab ul li{ display:none;}
+.tab ul li.current{ display:block;}
+
+/*---------------------展示形式--------------------*/
+.show_btn span{ font-size:18px; line-height:45px; padding-left:0.5em;}
+.show_btn span i{ margin:0 5px;}
+.show_btn span i img{ margin-bottom:4px;}
+/*---------------------展示形式横向展示--------------------*/
+.show_h .shop01{ background:#fff; width:100%; border-bottom:1px solid #c6c6c6; margin-bottom:1.5em;}
+.show_h .shop01 .shop-detail{ overflow:hidden; width:100%; padding:10px 1.0em; border-bottom:1px solid #cecece; border-top:1px solid #cecece;}
+.show_h .shop-detail .shop-name{ float:left; overflow:hidden; width:70%;}
+.show_h .shop-name dt{ float:left; width:20%; margin-right:1em;}
+.show_h .shop-name dd{ float:left; font-size:14px; line-height:1.8em; color:#909090;}
+.show_h .shop-name dd b{ font-size:16px; color:#202020;}
+
+.show_h .shop-detail .shop-in{ float:right; width:30%; text-align:right;}
+.show_h .shop-in p{ line-height:1.6em;}
+.show_h .shop-in p:nth-child(1){ font-size:15px;}
+.show_h .shop-in p:nth-child(1) i img{ margin-bottom:0.2em;}
+.show_h .shop-in p:nth-child(2){ font-size:15px;}
+.show_h .shop-in p:nth-child(2) a{ color:#f19b44; border:1px solid #f19b44; padding:0.1em 0.5em; margin-left:1em;}
+
+.show_h .shop01 .shop_con{ padding-left:1.0em;}
+.show_h .shop01 .section01{overflow:hidden; width:100%; padding:10px 0; border-bottom:1px solid #d1d1d1; background:#fff;}
+.show_h .section01 p{ float:left; width:50%; font-size:16px; line-height:2.5em;}
+.show_h .section01 p span{ color:#fff; background:#fd41f5; font-size:14px; padding:1px 3px; border-radius:2px; margin-right:5px;}
+.show_h .section01 p:nth-child(5) img{ margin-bottom:5px;}
+
+.show_h .section02{ width:100%;}
+.show_h .section02 dl{ width:100%; overflow:hidden; border-bottom:1px solid #cecece; padding:1.0em 0; padding-right:1.5em;}
+.show_h .section02 dl dt{ width:20%; float:left;}
+.show_h .section02 dl dd{ width:80%; float:left; padding-left:1.0em;}
+.show_h .section02 dl dd h4{ color:#202020;}
+.show_h .section02 dl dd p{ font-size:16px; color:#202020; line-height:36px;}
+.show_h .section02 dl dd p span{ color:#fc2444;}
+.show_h .section02 dl dd div span{ font-size:16px; float:right;}
+.show_h .section02 .more{ font-size:16px; text-align:center; line-height:48px; color:#999;}
+
+/*---------------问题-----------------------*/
+.show_s .shop01{ background:#fff; padding:1em; margin-bottom:0.5em;}
+.show_s .shop01 .shop-detail{ overflow:hidden; width:100%;}
+.show_s .shop-detail .shop-name{ float:left; overflow:hidden; width:70%;}
+.show_s .shop-name dt{ float:left; width:20%; margin-right:1em;}
+.show_s .shop-name dd{ float:left; font-size:14px; line-height:1.8em; color:#909090;}
+.show_s .shop-name dd b{ font-size:16px; color:#202020;}
+.show_s .shop-name dd i{ color:#fff; background:#fd41f5; padding:1px 3px; border-radius:2px;}
+.show_s .shop-name dd i:nth-child(3){ background:#1cbca6;}
+.show_s .shop-name dd i:nth-child(4){ background:#f98422;}
+
+.show_s .shop-detail .shop-in{ float:right; width:30%; text-align:right;}
+.show_s .shop-in p{ line-height:1.6em;}
+.show_s .shop-in p:nth-child(1){ font-size:15px;}
+.show_s .shop-in p:nth-child(1) i img{ margin-bottom:0.2em;}
+.show_s .shop-in p:nth-child(2){ font-size:15px;}
+.show_s .shop-in p:nth-child(2) a{ color:#f19b44; border:1px solid #f19b44; padding:0.1em 0.5em; margin-left:1em;}
+
+.show_s .shop-goods{ width:100%; background:#fff; margin-top:1em; overflow:hidden;}
+.show_s .shop-goods ul{ width:100%; overflow:hidden;}
+.show_s .shop-goods ul li{ float:left; width:32.5%; margin-right:1.25%; text-align:center; display:block !important;}
+.show_s .shop-goods ul li:nth-child(3){ margin-right:0;}
+.show_s .shop-goods ul li p{ font-size:15px; line-height:20px; margin-top:0.5em; font-weight:500;}
+.show_s .shop-goods ul li p span{ color:#fc2444;}
+
+
+
+
+/*----------------主菜单menu--------------------------*/
+.menu{ position:fixed; left:0; bottom:0; background:#fff; width:100%; height:60px; border-top:1px solid #d4d4d4;  z-index:99; padding-top:0.5em;}
+.menu ul{ width:100%;}
+.menu ul li{ float:left; width:25%; text-align:center; height:100%;}
+.menu ul .current a{ color:#ff2d47;}
+
+
+
+
+@media (min-width:375px) and (max-width:413px){ 
+	.menu{ height:55px; padding-top:0.5em;}
+	.menu ul li{ font-size:13px;}
+	.show_h .shop-detail .shop-name{ width:65%;}
+	.show_h .shop-detail .shop-in{ width:35%;}
+	.show_h .shop-name dt{ width:23%; margin-right:0.6em;}
+
+	.tab h4{ font-size:17px;}
+	.show_h .section01 p{ font-size:15px; line-height:2.2em;}
+	.show_h .section01 p span{ font-size:13px; padding:1px 3px;}
+	.show_h .section02 dl dd h4{ font-size:16px;}
+	.show_h .section02 dl dd p{ line-height:30px;}
+
+
+}
+
+@media screen and (max-width:360px){ 
+	.menu{ height:50px; padding-top:0.6em;}
+	.menu ul li{ font-size:12px;}
+	.show_h .shop-detail .shop-name{ width:65%;}
+	.show_h .shop-name dd b{ font-size:15px;}
+	.show_h .shop-name dd span{ font-size:12px;}
+	.show_h .shop-detail .shop-in{ width:35%;}
+	.show_h .shop-in p:nth-child(1){ font-size:13px;}
+	.show_h .shop-in p:nth-child(2) a{ padding:0.1em 0.3em; margin-left:0.5em; font-size:12px;}
+	.show_h .shop-name dt{ width:25%; margin-right:0.5em;}
+
+	.tab h4{ font-size:16px;}
+	.show_h .section01 p{ font-size:14px; line-height:2.0em;}
+	.show_h .section01 p span{ font-size:13px; padding:1px 3px;}
+	.show_h .section02 dl dd h4{ font-size:15px;}
+	.show_h .section02 dl dd p{ line-height:30px; font-size:14px;}
+	.show_h .section02 dl dt{ width:25%;}
+	.show_h .section02 dl dd{ width:75%;}
+	.show_h .section02 dl dd div span{ font-size:14px;}
+	.show_h .section02 dl dd div i img{ width:18px;}
+	.show_h .section02 .more{ font-size:15px; line-height:46px;}
+	.show_btn span{ font-size:17px; line-height:40px;}
+	
+	.head_round h4 span{ font-size:15px; line-height:30px; margin-top:10px;}
+	.head_round .back a span{ width:12px; height:18px; margin-top:7px; display:block; background-size:10px;}
+	.head_round .search a span{ width:18px; height:28px; background-size:16px;}
+	.head_round .map a span{ width:22px; height:30px; background-size:18px;}
+
+
+
+}
+
+
+
+
+
+
+

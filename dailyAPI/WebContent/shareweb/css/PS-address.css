@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+
+div,a,span,img,h1,h2,h3,h4,p,input,textrea,button,body,ul,li,ol,dl,dt,dd,select,i{ margin:0; padding:0; list-style:none; border:0; font-style:normal;}
+body{ background:#ececec; font-size:14px; min-width:320px; max-width:640px; margin:0 auto; line-height:1.5; color:#666; padding:50px 0 0 0;}
+a{ text-decoration:none; color:#666;}
+a:hover{ text-decoration:none; color:#666;}
+@font-face{font-style:normal; font-family:'PingFang Regular';src:url(../../font/PingFang%20Regular.ttf) format('truetype');}
+html,body,input{font-family:"PingFang Regular";}
+
+/*------导航栏--------------------*/
+.head_center{ background:#ff2d47; height:50px; width:100%; position:fixed; top:0; left:0; z-index:99;}
+.head_center h4{ width:100%; text-align:center; line-height:50px; color:#fff; font-size:20px; position:absolute; top:0; left:0; font-weight:normal; z-index:-1;}
+
+.head_center .back{ float:left; width:10%;}
+.head_center .back a{ display:block; padding:10px;}
+.head_center .back a span{ width:15px; height:20px; background:url(../images/left-icon.png) no-repeat left center; margin-top:5px; display:block; background-size:11px; margin-left:5px;}
+
+/*------地址栏--------------------*/
+.address{ border-bottom:1px solid #cecece; border-top:1px solid #cecece; background:#fff; margin-top:1.0rem; padding-left:1.0rem;}
+.address .top{ border-bottom:1px solid #cecece; padding:0.5rem 0;}
+.address .top h4{ font-size:1.0rem; line-height:2.2rem; font-weight:normal; color:#333;}
+.address .top p{ font-size:1.0rem; line-height:2.2rem; color:#999;}
+
+.address .btm{ width:100%; overflow:hidden; padding:0.6rem 0;}
+.btm .chek{ min-height:24px; position:relative; display:inline-block; float:left; width:6%; margin-top:2px;}
+input[type="checkbox"] + label:before {background:url(../images/kuang.png) no-repeat; background-size:16px; content:" "; height:22px; left:0; position:absolute; width:22px;}
+input[type="checkbox"] {box-sizing:border-box; left:4px; margin:0; padding:0; position:absolute; top:3px;display:none;}
+input[type="checkbox"]:not(:checked) + label:before {background:url(../images/kuang.png) no-repeat;background-size:16px;}
+input[type="checkbox"]:checked + label:before {background:url(../images/kuang_click.png) no-repeat; background-size:16px;}
+.btm span{ float:left; color:#999;}
+.btm .right{ float:right;}
+.btm .right a{ margin-right:1.0rem;}
+
+/*------添加地址页面--------------------*/
+.add .add_np{ background:#fff; border-bottom:1px solid #cecece; border-top:1px solid #cecece; margin-top:1.0rem; padding-left:1.0rem;}
+.add p{ font-size:1.1rem; line-height:2.8rem; color:#333; padding-left:5.5rem; position:relative;}
+.add p.name{ padding-left:6.5rem;}
+.add p span{ position:absolute; left:0; top:0;}
+.add p input{ font-size:1.1rem; line-height:2.8rem; border: 0 none; width: 100%;-webkit-appearance: none; vertical-align: top; outline:none;}
+.add .name{ border-bottom:1px solid #cecece;}
+
+.add .area_all{ background:#fff; border-bottom:1px solid #cecece; border-top:1px solid #cecece; margin-top:1.0rem; padding-left:1.0rem;}
+.area_all .area01{ border-bottom:1px solid #cecece;}
+.add .area01 .position{ position:absolute; right:0; top:0; left:auto;}
+.add .area01 .position i{ margin-right:1.0rem; height:2.8rem; display:inline-block; overflow:hidden;}
+.position .locate img{ margin-top:0.6rem;}
+
+body{ position:relative; padding-bottom:25%;}
+.add form .complet{ padding:10% 5%; position:fixed; bottom:0; left:0; width:100%; box-sizing:border-box;}
+.add form .complet input{ width:100%; font-size:1.1rem; line-height:3.0rem; color:#fff; background:#fd3f58; border-radius:3px;}
+
+
+
+/*------新建收货地址--------------------*/
+body{ position:relative; padding-bottom:25%;}
+.new{ padding:10% 5%; position:fixed; bottom:0; left:0; width:100%; box-sizing:border-box;}
+.new input{ color:#fff; font-size:1.1rem; line-height:3.0rem; background:#ff2d48; width:100%; border-radius:3px;}
+
+
+
+
+
+
+
+
+
+@media (min-width:375px) and (max-width:413px){ 
+	.address .top h4{ font-size:1.0rem; line-height:2.0rem;}
+	.address .top p{ font-size:1.0rem; line-height:2.0rem;}
+	.address .btm{ padding-top:0.5rem; padding-bottom:0.2rem;}
+	.btm .chek{ margin-top:4px;}
+	input[type="checkbox"] + label:before {background-size:15px;}
+	input[type="checkbox"]:not(:checked) + label:before {background-size:15px;}
+	input[type="checkbox"]:checked + label:before { background-size:15px;}
+	.btm .right a img{ width:17px; margin-top:3px;}
+	
+	.add p.area02 input{ font-size:1.0rem;}
+	.add .area01 .position i img{ width:16px;}
+	.add .area01 .position .locate img{ width:15px; margin-top:0.8rem;}
+
+	.add form .complet{ padding:80% 5% 0 5%;}
+	.add form .complet input{ width:100%; font-size:1.1rem; line-height:3.0rem;}
+
+	.new{ margin-top:100%;}
+	.new input{ font-size:1.1rem; line-height:2.8rem;}
+}
+
+@media screen and (max-width:360px){ 
+	.head_center h4{ font-size:18px;}
+	.head_center .back a span{ width:12px; height:18px; margin-top:7px; background-size:9px;}
+
+	.address .top h4{ font-size:0.9rem; line-height:1.8rem;}
+	.address .top p{ font-size:0.9rem; line-height:1.8rem;}
+	.address .btm{ padding-top:0.5rem; padding-bottom:0.2rem;}
+	.btm .chek{ margin-top:4px;}
+	input[type="checkbox"] + label:before {background-size:14px;}
+	input[type="checkbox"]:not(:checked) + label:before {background-size:14px;}
+	input[type="checkbox"]:checked + label:before { background-size:14px;}
+	.btm .right a img{ width:16px; margin-top:3px;}
+	
+	.add p{ font-size:1.0rem; line-height:2.6rem; padding-left:5.0rem;}
+	.add p input{ font-size:1.0rem; line-height:2.6rem;}
+	.add p.area02 input{ font-size:0.9rem;}
+	.add p.name{ padding-left:6.0rem;}
+	.add .area01 .position i img{ width:15px;}
+	.add .area01 .position .locate img{ width:14px; margin-top:0.7rem;}
+ 
+	.add form .complet{ padding:70% 5% 0 5%;}
+	.add form .complet input{ width:100%; font-size:1.0rem; line-height:2.8rem;}
+
+	.new{ margin-top:90%;}
+	.new input{ font-size:1.0rem; line-height:2.6rem;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

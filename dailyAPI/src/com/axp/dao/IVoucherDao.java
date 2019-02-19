@@ -1,0 +1,1 @@
+package com.axp.dao;import com.axp.domain.Voucher;public interface IVoucherDao extends IBaseDao<Voucher> {}

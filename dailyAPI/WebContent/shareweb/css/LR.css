@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* CSS Document */
+
+div,a,span,img,h1,h2,h3,h4,p,input,textrea,button,body,ul,li,ol,dl,dt,dd,select,i{ margin:0; padding:0; list-style:none; border:0; font-style:normal;}
+body{ background:#ececec; font-size:14px; min-width:320px; max-width:640px; margin:0 auto; color:#666;}
+a{ text-decoration:none; color:#666;}
+a:hover{ text-decoration:none; color:#666;}
+/*------引用字体--------*/
+@font-face{font-style:normal; font-family:'PingFang Regular';src:url(../../font/PingFang%20Regular.ttf) format('truetype');}
+html,body,input{font-family:"PingFang Regular";}
+
+#screen{ padding-top:50px; padding-bottom:1.5rem;}
+/*------------免费注册（选择注册方式页面）--------------------------*/
+.logo{ width:100%; font-weight:normal; font-size:1.2rem; text-align:center; padding:25% 0; line-height:2rem;}
+.free_rester{ text-align:center; color:#a5a5a5; padding-bottom:20%;}
+.free_rester .rester{ width:100%; padding:0 6%; box-sizing:border-box;}
+.rester input{ width:100%; background:#ff2d47; color:#fff; text-align:center; font-size:1.2rem; line-height:3rem; border-radius:5px;}
+.login_btn{ text-align:center; margin:2rem 0 0.5rem 0;}
+.login_btn a{ color:#ff2d47; font-size:1rem;}
+
+
+.way .title{ width:100%; position:relative;}
+.way .title .left{ border-bottom:1px solid #555; width:25%; position:absolute; top:50%; left:5%;}
+.way .title .right{ border-bottom:1px solid #555; width:25%; position:absolute; top:50%; right:5%;}
+.way .title h4{ text-align:center; color:#555; font-weight:normal; font-size:1.1rem;}
+.way ul{ width:100%; overflow:hidden; padding:0 5%; box-sizing:border-box; margin:2rem 0;}
+.way ul li{ float:left; width:33.33%; text-align:center;}
+.way p a{ float:right; font-size:1.0rem; margin-right:1rem; color:#555;}
+
+/*------------登陆（登录页）--------------------------*/
+.back{ position:fixed; top:4%; left:0; width:100%;}
+.back a{ float:left; padding-left:3%;}
+
+.login_form{ width:100%; padding:0 6%; box-sizing:border-box;}
+.login_form .login{ width:100%; border:1px solid #d4d4d4; border-radius:5px; background:#fff; padding:0.5rem 1.0rem; box-sizing:border-box;}
+.login p{ width:100%;}
+.login input{ width:100%; font-size:1.1rem; line-height:2.0rem; color:#9a9a9a;}
+.login .account{ border-bottom:1px solid #d4d4d4; padding-bottom:0.5rem;}
+.account input{ background:url(../images/dl_zhanghao.png) no-repeat 0.5rem center; background-size:1.0rem; padding-left:2.0rem; box-sizing:border-box; outline:none;}
+.login .password{ padding-top:0.5rem;}
+.password input{ background:url(../images/dl_mima.png) no-repeat 0.5rem center; background-size:1.0rem; padding-left:2.0rem; box-sizing:border-box; outline:none;}
+
+.login_button input{ width:100%; background:#ff2d47; color:#fff; text-align:center; font-size:1.2rem; line-height:3rem; border-radius:5px; margin-top:3.0rem;}
+.forget_con{ width:100%; overflow:hidden; padding:0 2.0rem; box-sizing:border-box; margin-top:1.5rem;}
+.forget_con a{ font-size:1.0rem;}
+.forget_con a i img{ margin-bottom:-2px;}
+
+/*------每天积分服务协议页面/邀请码/验证码页面--------------------*/
+.head_agree{ background:#ff2d47; height:50px; width:100%; position:fixed; top:0; left:0; z-index:99;}
+.head_agree h4{ width:100%; text-align:center; line-height:50px; color:#fff; font-size:1.2rem; position:absolute; top:0; left:0; font-weight:normal; z-index:-1;}
+.head_agree .cancel{ float:left; width:10%;}
+.head_agree .cancel a{ display:block; padding:10px;}
+.head_agree .cancel a span{ width:18px; height:18px; background:url(../images/cancel.png) no-repeat left center; margin-top:7px; display:block; background-size:16px; margin-left:5px;}
+
+#screen .back{ position:static; margin:1.0rem 0; overflow:hidden;}
+
+.article{width:93%; margin:0 auto; background:#fff; border:1px solid #cccccc; padding:0.8rem; box-sizing:border-box;}
+.article h4{ font-size:1.2rem; line-height:4.0rem; text-align:center; color:#000; margin-bottom:1.0rem;}
+.article p{ font-size:0.92rem; letter-spacing:0.05rem; line-height:1.8rem;}
+.article p b{ color:#000;}
+.article p .red{ color:#ff2d48;}
+.article .space{ text-indent:2em;}
+.article h5{ font-size:0.92rem; line-height:2.0rem; font-weight:normal;}
+.article .slit{ margin-bottom:2.0rem;}
+/*--------------------找回密码页面-------------------------*/
+.head_forget{ background:#ff2d47; height:50px; width:100%; position:fixed; top:0; left:0; z-index:99;}
+.head_forget h4{ width:100%; text-align:center; line-height:50px; color:#fff; font-size:1.2rem; position:absolute; top:0; left:0; font-weight:normal; z-index:-1;}
+.head_forget .head_back{ float:left; width:10%;}
+.head_forget .head_back a{ display:block; padding:10px;}
+.head_forget .head_back a span{ width:15px; height:22px; background:url(../images/back.png) no-repeat left center; margin-top:4px; display:block; background-size:11px; margin-left:5px;}
+
+form.return{ padding:6%;}
+.return .phone input{ width:100%; font-size:1.1rem; line-height:2.8rem; background:#fff url(../images/phone.png) no-repeat 0.8rem center; background-size:1.0rem; border:1px solid #d4d4d4; color:#555; padding-left:2.5rem; box-sizing:border-box;}
+.return .codes{ width:100%; overflow:hidden; margin:1.0rem 0;}
+.codes .enter{ float:left; width:61%; font-size:1.0rem; line-height:2.8rem; border:1px solid #d4d4d4; background:#fff url(../images/codes.png) no-repeat 0.8rem center; background-size:1.2rem; padding-left:2.5rem; box-sizing:border-box;}
+.codes .btn{ float:right; width:36%; background:#10a6e1; color:#fff; font-size:1.0rem; line-height:2.8rem; border-radius:3px;}
+.return .another{ width:100%; overflow:hidden;}
+.another a{ float:left; color:#10a6e1; font-size:1.0rem;}
+.another input{ width:36%; float:right; background:#b4b4b4; color:#fff; font-size:1.0rem; line-height:2.8rem; border-radius:3px;}
+
+
+body{ position:relative; padding-bottom:25%;}
+.next{ padding:10% 5%; position:fixed; bottom:0; left:0; width:100%; box-sizing:border-box;}
+.next input{ width:100%; background:#fd3f58; color:#fff; font-size:1.2rem; line-height:3.0rem; border-radius:3px;}
+/*--------------------修改密码页面-------------------------*/
+.head_change a{ position:absolute; top:0; left:5%; color:#fff; font-size:1.0rem; line-height:50px;}
+.change .password01 input{ width:100%; font-size:1.0rem; line-height:2.8rem; background:#fff url(../images/dl_mima.png) no-repeat 0.8rem center; background-size:1.2rem; border:1px solid #d4d4d4; color:#555; padding-left:2.5rem; box-sizing:border-box; margin-bottom:1.0rem;}
+.change .next{ margin-top:110%;}
+
+/*--------------------注册页面-------------------------*/
+.note{ text-align:center; padding:3.0rem 0;}
+.note h4{ font-size:1.2rem; font-weight:normal; line-height:2.5rem; color:#2c2c2c;}
+.note p{ font-size:1.0rem; color:#727272;}
+.register{ padding:0 6%;}
+.register .phone_num{ width:100%; overflow:hidden; margin-bottom:1.0rem;}
+.phone_num select{ width:25%; background:#e6e6e6; font-size:1.2rem;height:2.8rem; float:left; padding:0 0.5rem; border:1px solid #d4d4d4; box-sizing:border-box; text-align:center;}
+.phone_num input{ width:75%; background:#fff; font-size:1.0rem; line-height:2.8rem; float:left;border:1px solid #d4d4d4; border-left:0; box-sizing:border-box; padding-left:0.5rem; height:2.8rem;}
+
+.register .codes{ width:100%; overflow:hidden; margin-bottom:1.0rem;}
+.register .codes .left{ float:left; width:61%;}
+.register .codes .left input{ width:100%; background:#FFFFFF url(../images/codes.png) no-repeat 0.8rem center; background-size:1.2rem; padding-left:2.5rem; box-sizing:border-box; font-size:1.0rem; line-height:2.8rem; border:1px solid #d4d4d4; height:2.8rem;}
+.register .codes .right{ float:right; width:36%;}
+.register .codes .right span{ font-size:1.1rem; line-height:2.8rem; background:#fff; border:1px solid #d4d4d4; float:left; width:65%; text-align:center; box-sizing:border-box; height:2.8rem;}
+.register .codes .right a{ background:#e6e6e6 url(../images/refresh.png) no-repeat center center; background-size:1.5rem; border:1px solid #d4d4d4; float:left; width:35%; text-align:center; height:2.8rem; box-sizing:border-box; border-left:0;}
+.register .password{ margin-bottom:1.0rem;}
+.register .password input{ background:#fff url(../images/mima.png) no-repeat 0.8rem center; background-size:1.1rem; padding-left:2.5rem; font-size:1.0rem; line-height:2.8rem; width:100%; border:1px solid #d4d4d4;}
+.register .invita{ margin-bottom:1.0rem;}
+.register .invita input{ background:#fff url(../images/invitation.png) no-repeat 1.0rem center; background-size:0.5rem; padding-left:2.5rem; font-size:1.0rem; line-height:2.8rem; width:100%; border:1px solid #d4d4d4; box-sizing:border-box;}
+.register .agree{ font-size:1.0rem; color:#555; margin:30% 0 2.0rem 0;}
+.register .agree a{ color:#36c2fd;}
+
+.register_btn input{ width:100%; background:#fd3f58; color:#fff; font-size:1.2rem; line-height:3.0rem; border-radius:3px;}
+/*--------------------注册成功页面-------------------------*/
+.success{ text-align:center; width:100%; background:#fff; padding-top:10%;}
+.success h3{ font-size:2.0rem; color:#1a1a1a; font-weight:normal; line-height:4.0rem;}
+.success p{ font-size:1.2rem; color:#555;}
+.success p b{ font-size:2.0rem; color:#fe4059; font-weight:normal;}
+.success a{ color:#48b4e6; font-size:1.2rem; line-height:4.0rem;}
+
+.question{ padding:1.5rem; font-size:1.0rem; line-height:2.0rem;}
+.question a{ color:#48b4e6;}
+
+body{ position:relative; padding-bottom:25%;}
+.gomall{ padding:10% 5%; position:fixed; bottom:0; left:0; width:100%; box-sizing:border-box;}
+.gomall input{ width:100%; background:#fd3f58; color:#fff; font-size:1.2rem; line-height:3.0rem; border-radius:3px;}
+
+
+@media (min-width:375px) and (max-width:413px){ 
+	.logo{ font-size:1.1rem; line-height:2rem; padding:24% 0;}
+	.rester input{font-size:1.1rem; line-height:2.8rem;}
+	.way .title h4{ font-size:1.0rem;}
+	
+	.note{ padding:1.8rem 0;}
+	.phone_num select{ font-size:1.1rem; height:2.7rem;}
+	.register input{ line-height:2.7rem !important; font-size:1.0rem; height:2.7rem;}
+	.register input.check{ line-height:2.7rem !important; font-size:1.0rem; height:1.0rem;}
+	.register input.zhuce{ line-height:2.8rem !important; font-size:1.1rem;}
+	.register .codes .left input{ font-size:1.0rem; line-height:2.7rem; height:2.7rem;}
+	.register .codes .right span{height:2.7rem; font-size:1.0rem; line-height:2.7rem;}
+	.register .codes .right a{ height:2.7rem;}
+	.register .agree{ margin:25% 0 2.0rem 0;}
+	
+	.success h3{ font-size:1.7rem; line-height:3.4rem;}
+	.success p{ font-size:1.1rem;}
+	.success p b{ font-size:1.7rem;}
+	.success a{font-size:1.1rem; line-height:3.4rem;}
+	.question{ padding:1.2rem; font-size:1.0rem; line-height:2.0rem;}
+	.gomall input{ font-size:1.1rem; line-height:2.8rem;}
+
+	
+	.login input{ font-size:1.0rem; line-height:1.8rem; background-size:0.9rem;}
+	.login_button input{ font-size:1.1rem; line-height:2.8rem;}
+	.forget_con a{ font-size:1.0rem;}
+
+	.article{ padding-bottom:3.0rem !important;}
+	.article h4{ font-size:1.2rem; line-height:3.5rem;}
+	.article p{ font-size:0.92rem; letter-spacing:0; line-height:1.5rem;}
+	
+	.next input{ font-size:1.1rem; line-height:2.8rem;}
+	
+	.head_forget .head_back a span{ width:14px; height:20px; margin-top:6px; background-size:11px;}
+
+}
+
+@media screen and (max-width:360px){ 
+	.logo{ font-size:1.0rem; line-height:2rem; padding:22% 0;}
+	.rester input{font-size:1.0rem; line-height:2.6rem;}
+	.way .title h4{ font-size:0.95rem;}
+	.login_btn a{ font-size:0.95rem;}
+	.free_rester{ padding-bottom:15%;}
+	.way p a{ font-size:0.95rem; margin-right:1rem;}
+	
+	.head_agree h4{ font-size:1.1rem;}
+	.head_agree .cancel a span{ width:16px; height:16px; background-size:15px;}
+
+	.note{ padding:1.5rem 0;}
+	.note h4{ font-size:1.1rem; line-height:2.2rem;}
+	.note p{ font-size:0.9rem;}
+	.phone_num select{ font-size:1.0rem; height:2.6rem;}
+	.register input{ line-height:2.6rem !important; height:2.6rem; font-size:0.9rem !important;}
+	.register .codes .right span{height:2.6rem; font-size:1.0rem; line-height:2.6rem;}
+	.register .codes .right a{ height:2.4rem;}
+	.register .agree{ margin:25% 0 2.0rem 0;}
+	.register .codes .right a{ background-size:1.2rem; height:2.6rem;}
+	.register .codes .left input{ background-size:1.0rem; line-height:2.6rem; height:2.6rem;}
+	.register .password input{ background-size:1.0rem;}
+	.register .agree{ font-size:0.9rem; margin:15% 0 1.5rem 0;}
+	.agree input{ height:0.9rem;}
+	
+	.success h3{ font-size:1.5rem; line-height:3.0rem;}
+	.success p{ font-size:1.0rem;}
+	.success p b{ font-size:1.5rem;}
+	.success a{font-size:1.0rem; line-height:3.0rem;}
+	.question{ padding:1.2rem; font-size:0.92rem; line-height:1.8rem;}
+	.gomall input{ font-size:1.0rem; line-height:2.6rem;}
+
+	.login input{ font-size:1.0rem; line-height:1.8rem; background-size:0.9rem;}
+	.login_button input{ font-size:1.0rem; line-height:2.6rem;}
+	.forget_con a{ font-size:0.9rem;}
+	
+	.article h4{ font-size:1.1rem; line-height:2.5rem;}
+	.article p{ font-size:0.9rem; letter-spacing:0; line-height:1.4rem;}
+	
+	.head_forget h4{ font-size:1.1rem;}
+	.head_change a{ font-size:0.9rem;}
+	.change .password01 input{ font-size:0.9rem; line-height:2.4rem; background-size:1.0rem;}
+	.next input{ font-size:1.0rem; line-height:2.6rem;}
+	
+	.head_forget .head_back a span{ width:12px; height:20px; margin-top:6px; background-size:9px;}
+	.return .phone input{ font-size:1.0rem; line-height:2.6rem; background-size:0.9rem;}
+	.codes .enter{ font-size:0.9rem; line-height:2.6rem; background-size:1.1rem;}
+	.codes .btn{ font-size:0.9rem; line-height:2.6rem;}
+	.another a{ font-size:0.9rem;}
+	.another input{ font-size:0.9rem; line-height:2.6rem;}
+
+}
+
+
+
+
+
+
+
+
+
+

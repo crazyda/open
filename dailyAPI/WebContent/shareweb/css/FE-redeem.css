@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+div,a,span,img,h1,h2,h3,h4,p,input,textrea,button,body,ul,li,ol,dl,dt,dd,select,i{ margin:0; padding:0; list-style:none; border:0; font-style:normal;}
+body{ background:#ececec; font-size:14px; min-width:320px; max-width:640px; margin:0 auto; line-height:1.5; color:#666; padding-top:50px;}
+a{ text-decoration:none; color:#666;}
+a:hover{ text-decoration:none; color:#666;}
+/*------引用字体--------*/
+@font-face{font-style:normal; font-family:'PingFang Regular';src:url(../../font/PingFang%20Regular.ttf) format('truetype');}
+html,body{font-family:"PingFang Regular";}
+
+/*------导航栏--------------------*/
+.head_redeem{ background:#ff2d47; height:50px; width:100%; position:fixed; top:0; left:0; z-index:99;}
+.head_redeem h4{ width:100%; text-align:center; line-height:50px; color:#fff; font-size:20px; position:absolute; top:0; left:0; font-weight:normal; z-index:-1;}
+.head_redeem .back{ float:left; width:10%;}
+.head_redeem .back a{ display:block; padding:10px;}
+.head_redeem .back a span{ width:15px; height:20px; background:url(../images/left-icon.png) no-repeat left center; margin-top:5px; display:block; background-size:11px; margin-left:5px;}
+
+.head_redeem .rili{ float:right; width:12%;}
+.head_redeem .rili a{ display:block; padding:10px; padding-right:0;}
+.head_redeem .rili a span{ width:24px; height:36px; background:url(../images/icon_redeem.png) no-repeat center center; display:block; background-size:20px;}
+/*------sort产品分类--------------------*/
+.sort{ width:100%; background:#fff; margin-bottom:0.5em;}
+.sort ul{ overflow:hidden; padding-bottom:1.2em;}
+.sort ul li{ float:left; width:20%; text-align:center; margin-top:1.2em;}
+.sort ul li a span{ font-size:14px; line-height:28px;}
+
+.sort_s{ background:#fff;}
+.sort_s h4{ height:3em; font-size:15px; font-weight:500;}
+.sort_s h4 span{ line-height:3em; width:13%; text-align:center; display:inline-block;}
+.sort_s h4 span i{ padding-bottom:0.2em;}
+.sort_s h4 .current i{ border-bottom:2px solid #fc2444;}
+.sort_s ul li{ display:none;}
+.sort_s ul .current{ display:block;}
+
+.chosen{ width:100%; margin-top:0.5em;}
+.chosen_all{ overflow:hidden;}
+.chosen_all div{ width:24.25%; float:left; margin-right:1%; position:relative;}
+.chosen_all div:nth-child(4){ margin-right:0;}
+.chosen_all div span{ position:absolute; bottom:0; left:0; background:rgba(0,0,0,0.3); color:#fff; text-align:center; line-height:2.0em; width:100%;}
+
+
+.goods_all{ width:100%; overflow:hidden; background:#fff;}
+.goods_all .all{ width:50%; float:left; padding:0.2em;}
+.goods_all .all .img{ position:relative;}
+.goods_all .all .img span{ position:absolute; top:0; right:0; color:#fff; font-size:16px; line-height:1.5em; padding:0 0.8em; text-align:center;}
+.goods_all .all .img span.color01{ background:rgba(255,45,71,0.8);}
+.goods_all .all .img span.color02{ background:rgba(255,102,0,0.8);}
+.goods_all .all .img span.color03{ background:rgba(0,153,68,0.8);}
+.goods_all .all .img span.color04{ background:rgba(55,193,255,0.8);}
+
+
+.goods_all .all .name{ font-size:1.1em; line-height: 1.2em; height: 2.7em; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; width:100%; padding:0.3em 0.5em 0.5em 0.5em;}
+.goods_all .all .price{ width:100%; padding:0.3em 0.3em 0.5em 0.3em; overflow:hidden;}
+.goods_all .all .price h5{ color:#fc2444; font-size:16px; font-weight:bold; margin:0;}
+.goods_all .all .price p{ float:left; color:#fc1828; font-weight:bold; font-size:15px;}
+.goods_all .all .price p b{ color:#666; text-decoration:line-through; font-weight:normal;}
+.goods_all .all .price span{ float:right;}
+
+
+@media (min-width:375px) and (max-width:413px){ 
+	.goods_all .all .price h5{ font-size:15px;}
+	.sort_s h4{ font-size:14px;}
+}
+@media screen and (max-width:360px){ 
+	.head_redeem h4{ font-size:18px;}
+	.head_redeem .rili a span{ width:17px; height:25px; background-size:17px; margin-top:4px;}
+	.head_redeem .back a span{ width:12px; height:17px; margin-top:7px; display:block; background-size:9px;}
+	.sort ul li a span{ font-size:12px; line-height:24px;}
+	.sort_s h4{ font-size:13px;}
+	.goods_all .all .name{ font-size:13px;}
+	.goods_all .all .price h5{ font-size:14px;}
+	.goods_all .all .price p{ font-size:13px;}
+	.goods_all .all .price span{ font-size:13px;}
+	.goods_all .all .img span{ font-size:14px; line-height:24px;}
+}
+
+
+
+
+
+
+
+
+
+
+

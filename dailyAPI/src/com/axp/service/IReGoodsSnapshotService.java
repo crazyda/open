@@ -1,0 +1,1 @@
+package com.axp.service;import com.axp.domain.ReGoodsSnapshot;public interface IReGoodsSnapshotService extends IBaseService<ReGoodsSnapshot> {}

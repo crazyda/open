@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+div,a,span,img,h1,h2,h3,h4,p,input,textrea,button,body,ul,li,ol,dl,dt,dd,select,i{ margin:0; padding:0; list-style:none; border:0; font-style:normal;}
+body{ background:#ececec; font-size:14px; min-width:320px; max-width:640px; margin:0 auto; line-height:1.5; color:#666; padding-top:50px;}
+a{ text-decoration:none; color:#666;}
+a:hover{ text-decoration:none; color:#666;}
+/*------引用字体--------*/
+@font-face{font-style:normal; font-family:'PingFang Regular';src:url(../../font/PingFang%20Regular.ttf) format('truetype');}
+html,body{font-family:"PingFang Regular";}
+
+/*------导航栏--------------------*/
+.head_creative{ background:#ff2d47; height:50px; width:100%; position:fixed; top:0; left:0; z-index:99;}
+.head_creative h4{ width:100%; text-align:center; line-height:50px; color:#fff; font-size:20px; position:absolute; top:0; left:0; font-weight:normal; z-index:-1;}
+.head_creative .back{ float:left; width:10%;}
+.head_creative .back a{ display:block; padding:10px;}
+.head_creative .back a span{ width:15px; height:20px; background:url(../images/left-icon.png) no-repeat left center; margin-top:5px; display:block; background-size:11px; margin-left:5px;}
+
+.head_creative .share{ float:right; width:12%;}
+.head_creative .share a{ display:block; padding:10px; padding-right:0;}
+.head_creative .share a span{ width:24px; height:36px; background:url(../images/icon_fenxiang.png) no-repeat center center; display:block; background-size:20px;}
+
+.all{ padding:0 15px 2.0em 15px; background:#fff;}
+.creat01 h4{ font-size:18px; line-height:3.0em; color:#2e2e2e;}
+.creat01 h4 span{ background:#f66353; color:#fff; padding:3px 10px; border-radius:50%; margin-right:5px;}
+.creat01 p{ font-size:16px; line-height:2.0em; color:#707070;}
+.creat01 p span{ color:#999; float:right; font-size:15px;}
+.creat01 .price{ width:100%; overflow:hidden; border-left:5px solid #d3d3d3; margin-top:1.0em; padding-left:0.5em; margin-bottom:1.5em;}
+.creat01 .price p{ float:left; line-height:22px; color:#999;}
+.creat01 .price p i{ color:#fc2444; font-weight:500;}
+.creat01 .price span{ float:right; color:#fc2444; border:1px solid #fc2444; padding:5px 15px; border-radius:20px; font-size:16px; margin-top:5px;}
+
+
+
+
+
+@media (min-width:375px) and (max-width:413px){ 
+	.creat01 h4{ font-size:17px; line-height:2.8em;}
+	.creat01 p{ font-size:15px; line-height:1.8em;}
+	.creat01 .price span{ padding:5px 15px; font-size:15px; margin-top:5px;}
+	.head_creative .share{ width:14%;}
+
+
+}
+
+@media screen and (max-width:360px){ 
+	.head_creative h4{ font-size:18px;}
+	.head_creative .back a span{ width:13px; height:18px; margin-top:7px; background-size:10px;}
+	.head_creative .share{ width:15%;}
+	.head_creative .share a span{ width:22px; height:34px; background-size:18px;}
+
+	.creat01 h4{ font-size:16px; line-height:2.6em;}
+	.creat01 p{ font-size:14px; line-height:1.6em;}
+	.creat01 .price span{ padding:5px 15px; font-size:14px; margin-top:8px;}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

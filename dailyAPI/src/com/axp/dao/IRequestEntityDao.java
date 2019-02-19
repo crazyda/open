@@ -1,0 +1,1 @@
+package com.axp.dao;import java.util.List;import com.axp.domain.RequestEntity;public interface IRequestEntityDao extends IBaseDao<RequestEntity> {	/**	 * 根据请求的名称找寻请求的实体类；	 * @param requestName	 * @return	 */	List<RequestEntity> getRequestEntityByRequestName(String requestName);}

@@ -1,0 +1,1 @@
+package com.axp.service.impl;import org.springframework.stereotype.Service;import com.axp.domain.AdminUserScoreRecord;import com.axp.service.IAdminUserScoreRecordService;@Servicepublic class AdminUserScoreRecordServiceImpl extends BaseServiceImpl<AdminUserScoreRecord> implements IAdminUserScoreRecordService {}

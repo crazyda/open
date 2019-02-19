@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  font-family: "PingFang SC";
+}
+ul li {
+  list-style: none;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+a {
+  text-decoration: none;
+}
+.line {
+  height: .2rem;
+  background: #eee;
+}
+body {
+  background: #eee;
+}
+.bill .jfBox {
+  width: 6.9rem;
+  height: 3.6rem;
+  background: #fff;
+  margin: .3rem auto;
+  border-radius: .04rem;
+}
+.bill .jfBox .jfBox-top {
+  display: flex;
+}
+.bill .jfBox .jfBox-top .jfBox-topLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  box-sizing: border-box;
+  margin: .2rem 0;
+  border-right: .02rem solid #eee;
+}
+.bill .jfBox .jfBox-top .jfBox-topRight {
+  width: 50%;
+  height: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bill .jfBox .jfBox-top > div p:nth-child(1) {
+  font-size: .24rem;
+  color: #333;
+}
+.bill .jfBox .jfBox-top > div p:nth-child(2) {
+  font-size: .32rem;
+  color: #3bc6ab;
+  font-weight: 900;
+  display: inline-block;
+  padding-top: .12rem;
+}
+.bill .jfBox .jfBox-bottom {
+  width: 6.5rem;
+  height: 2rem;
+  margin: .1rem auto;
+  background: #eee;
+  display: flex;
+}
+.bill .jfBox .jfBox-bottom .jfBox-bottomLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: .4rem 0;
+  border-right: .02rem solid #fff;
+}
+.bill .jfBox .jfBox-bottom .jfBox-bottomLeft .leftTop {
+  vertical-align: middle;
+}
+.bill .jfBox .jfBox-bottom .jfBox-bottomLeft .leftTop span {
+  vertical-align: middle;
+  font-size: .24rem;
+  color: #333;
+}
+.bill .jfBox .jfBox-bottom .jfBox-bottomLeft .leftTop img {
+  width: .23rem;
+  height: .23rem;
+  vertical-align: middle;
+}
+.bill .jfBox .jfBox-bottom .jfBox-bottomLeft .leftBottom {
+  font-size: .28rem;
+  color: #ff2b2b;
+  font-weight: 900;
+  display: inline-block;
+  padding-top: .12rem;
+}
+.bill .jfBox .jfBox-bottom .jfBox-bottomRight {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bill .jfBox .jfBox-bottom .jfBox-bottomRight p:nth-child(1) {
+  font-size: .24rem;
+  color: #333;
+}
+.bill .jfBox .jfBox-bottom .jfBox-bottomRight p:nth-child(2) {
+  font-size: .28rem;
+  color: #ff2b2b;
+  font-weight: 900;
+  display: inline-block;
+  padding-top: .12rem;
+}
+.bill .srBox {
+  width: 6.9rem;
+ 
+  background: #fff;
+  margin: .3rem auto;
+  border-radius: .04rem;
+}
+.bill .srBox .srBoxData {
+  display: flex;
+  box-sizing: border-box;
+  margin: 0 .2rem;
+  border-bottom: .01rem solid #eee;
+}
+.bill .srBox .srBoxData > div {
+  width: 33.3333%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: .24rem 0;
+  border-right: .01rem solid #eee;
+}
+.bill .srBox .srBoxData > div p {
+  font-size: .28rem;
+  color: #333;
+}
+.bill .srBox .srBoxData > div span {
+  font-size: .28rem;
+  color: #ff2b2b;
+  font-weight: 900;
+  display: inline-block;
+  padding-top: .06rem;
+}
+.bill .srBox .srBoxData > div:nth-child(3) {
+  border: none !important;
+}
+.bill .srBox .srBoxDetail {
+  box-sizing: border-box;
+  padding: 0 .2rem;
+}
+.bill .srBox .srBoxDetail div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: .7rem;
+  font-size: .24rem;
+  border-bottom: .01rem solid #eee;
+}
+.bill .srBox .srBoxDetail div p {
+  color: #333;
+}
+.bill .srBox .srBoxDetail div span {
+  color: #ff2b2b;
+}
+.bill .billBtn span {
+  display: block;
+  width: 6.9rem;
+  height: .8rem;
+  background: #3bc6ab;
+  margin: 2rem auto 0;
+  text-align: center;
+  line-height: .8rem;
+  border-radius: .08rem;
+  font-size: .32rem;
+  color: #fff;
+}
+
+.gzhImg{
+	display:block;
+	margin:0 auto;
+}
+
+.srTit{
+	height:.5rem;
+	line-height:.5rem;
+	text-align: center;
+	font-size:.24rem;
+	box-sizing:border-box;
+	padding:0 .3rem;
+}
+.srTit p{
+	background:#fff;
+	color:#333;
+	font-size: 0.28rem;
+}
+
+
+

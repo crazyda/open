@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//WebContent/WEB-INF/views/TVshow/dataList.jsp=UTF-8
+encoding//WebContent/WEB-INF/views/agreement=UTF-8
+encoding//WebContent/WEB-INF/views/agreement/mtjfAgreem.jsp=UTF-8
+encoding//WebContent/WEB-INF/views/agreement/mtjfShopAgreem.jsp=UTF-8
+encoding//WebContent/WEB-INF/views/money/index.jsp=UTF-8
+encoding//WebContent/WEB-INF/views/money/webWithdrawals.jsp=UTF-8
+encoding//WebContent/WEB-INF/views/shareWeb/download/download.jsp=UTF-8
+encoding//WebContent/WEB-INF/views/shareWeb/download/download_seller.jsp=UTF-8
+encoding//resource/log4j.properties=UTF-8
+encoding/<project>=UTF-8

@@ -1,0 +1,1 @@
+package com.axp.dao;import com.axp.domain.ReGoodsOfScoreMall;public interface IReGoodsOfScoreMallDao extends IBaseDao<ReGoodsOfScoreMall> {	String getSellerIdsOfHomePage(Integer goodsSize);	}

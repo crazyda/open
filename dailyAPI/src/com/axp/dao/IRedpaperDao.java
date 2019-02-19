@@ -1,0 +1,1 @@
+package com.axp.dao;import java.sql.Timestamp;import java.util.List;import com.axp.domain.NewRedPaperAddendum;import com.axp.domain.Redpaper;public interface IRedpaperDao extends IBaseDao<Redpaper> {	List<Redpaper> getList();		public List<NewRedPaperAddendum> findByUserIdAndEndTime(String userId,String settingId, Timestamp endTime);}

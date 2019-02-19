@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+
+div,a,span,img,h1,h2,h3,h4,p,input,textrea,button,body,ul,li,ol,dl,dt,dd,select,i{ margin:0; padding:0; list-style:none; border:0; font-style:normal;}
+body{ background:#ececec; font-size:14px; min-width:320px; max-width:640px; margin:0 auto; line-height:1.5; color:#555; padding:50px 0; padding-bottom:80px;}
+a{ text-decoration:none; color:#555;}
+a:hover{ text-decoration:none; color:#555;}
+@font-face{font-style:normal; font-family:'PingFang Regular';src:url(../../font/PingFang%20Regular.ttf) format('truetype');}
+html,body,input,textarea{font-family:"PingFang Regular";}
+
+/*------导航栏--------------------*/
+.head_order{ background:#ff2d47; height:50px; width:100%; position:fixed; top:0; left:0; z-index:99;}
+.head_order h4{ width:100%; text-align:center; line-height:50px; color:#fff; font-size:20px; position:absolute; top:0; left:0; font-weight:normal; z-index:-1;}
+.head_order .back{ float:left; width:10%;}
+.head_order .back a{ display:block; padding:10px;}
+.head_order .back a span{ width:15px; height:20px; background:url(../images/left-icon.png) no-repeat left center; margin-top:5px; display:block; background-size:11px; margin-left:5px;}
+/*---------------订单订单号信息-------------------*/
+.order_num{ background:#fff; border-bottom:1px solid #ccc; margin-bottom:0.5rem;}
+.order_num .number{ font-size:16px; line-height:48px; border-bottom:1px solid #ccc; padding:0 10px;}
+.order_num .number a{ float:right; color:#ff2d47;}
+.order_num .name_ad{ width:100%; overflow:hidden; padding:0 10px; box-sizing:border-box; height:80px;}
+.order_num .name_ad dt{ float:left; padding:5px 0; width:100%;}
+.order_num .name_ad dt p{ font-size:16px; line-height:35px; padding-left:20px;}
+.order_num .name_ad dt p.address{ padding-left:20px; background:url(../images/icon_address.png) no-repeat left center; background-size:15px; width:100%; overflow:hidden; white-space:nowrap;}
+
+.order{ background:#fff; border-top:1px solid #ccc; margin-bottom:0.5rem;}
+.order .shop_name{ font-size:16px; line-height:48px; font-weight:normal; border-bottom:1px solid #ccc; padding:0 10px; box-sizing:border-box;}
+.order .shop_name a{ float:right; color:#009944;}
+.order .shop_name span{float:right; color:#858585;}
+.order .good_photo{padding:10px; box-sizing:border-box; border-bottom:1px solid #ccc; width:100%; overflow:hidden;}
+.order .good_photo .photo{ float:left; width:26%;}
+.order .good_photo .photo img{ display:block;}
+.order .good_photo dl{ float:left; width:70%;}
+.order .good_photo dl dt{ float:left; width:95%;}
+.order .good_photo dl dt p{ line-height:22px; height:22px;}
+.order .good_photo dl dt p.name{ font-size:16px; width:80%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.order .good_photo dl dt p.price{ color:#ff2d47; font-weight:bold;}
+.order .good_photo dl dt p.price span{ text-decoration:line-through; color:#858585; font-weight:normal; margin-left:10px;}
+.order .good_photo dl dd{ float:right; line-height:90px; font-size:30px; color:#858585; width:5%;}
+.order .cost{ border-bottom:1px solid #ccc; padding:5px 12px; box-sizing:border-box;}
+.order .cost p{ font-size:16px; line-height:32px;}
+.order .cost p span{ float:right;}
+.order .time_cost{ padding:0 10px; box-sizing:border-box;}
+.order .time_cost dl{ width:100%; overflow:hidden; line-height:48px;}
+.order .time_cost dt{ float:left; color:#858585;}
+.order .time_cost dd{ float:right; font-size:16px;}
+.order .time_cost dd span{ color:#ff2d47; font-weight:bold;}
+
+
+/*---------menu底栏-----------*/
+.menu{ background:#fff; border-top:1px solid #ccc; height:50px; position:fixed; bottom:0; left:0; width:100%;}
+.menu input{ border:1px solid #ccc; font-size:15px; line-height:32px; background:#fff; margin-top:9px; border-radius:4px; float:right; margin-right:3%; padding:0 15px;}
+.menu input.contact{ background:#fff url(../images/icon_phone-b.png) no-repeat 15px center; background-size:16px; padding-left:35px;}
+
+/*------评价晒单----------*/
+.com_ph{ border-bottom:1px solid #ccc;}
+.com_ph textarea{ display:block; width:100%; height:8.0rem; background:#fff; border:0; border-top:1px solid #ccc; font-size:1.0rem; outline:none; padding:0.5rem; box-sizing:border-box; resize:none;}
+.com_ph input{display:block; width:100%; background:#fff; border:0; border-top:1px solid #ccc; font-size:1.0rem; outline:none; padding:0 0.5rem; box-sizing:border-box; resize:none; line-height:48px;}
+
+
+#box{ width:100%; height:4.0rem; background:#fff; padding:0 3%; box-sizing:border-box; position:relative;}
+
+body{ position:relative; padding-bottom:25%;}
+.sub{ padding:10% 5%; position:fixed; bottom:0; left:0; width:100%; box-sizing:border-box;}
+.sub input{ width:100%; background:#ff2d48; color:#fff; font-size:1.1rem; line-height:3.0rem; text-align:center; border-radius:3px;}
+/*------退单申请----------*/
+form p.cb_r{ margin:0.5rem 0; border-bottom:1px solid #ccc; border-top:1px solid #ccc; background:#fff; font-size:1.0rem; line-height:48px; padding-left:0.5rem;}
+form p.cb_r input{ font-size:1.0rem; line-height:48px; outline:none; width:65%;}
+form p.note{ margin-bottom:0.5rem; font-size:0.8rem; color:#858585; padding-left:0.5rem;}
+/*退单方式*/
+.back_method{ margin-top:0.5rem;}
+.back_method ul{ background:#fff; border-bottom:1px solid #ccc;}
+.back_method ul li{ border-top:1px solid #ccc; padding:0 12px; background:url(../images/quan.png) no-repeat 96% center; background-size:18px;}
+.back_method ul li.selected{background:url(../images/quan_click.png) no-repeat 96% center; background-size:18px;}
+.back_method ul li p{ font-size:16px; line-height:42px;}
+.back_method ul li p img{ display:inline-block; float:left; margin-top:14px; margin-right:5px;}
+.back_method ul li p span{ font-size:12px; color:#858585; line-height:42px;}
+
+/*--------退单详情----------*/
+.order .detail{ padding-left:0.5rem;}
+.order .detail div{ border-bottom:1px solid #ccc; padding-bottom:0.5rem;}
+.order .detail div h4{ font-size:16px; font-weight:normal; color:#1a1a1a; line-height:32px;}
+.order .detail div p{ font-size:13px; padding-left:1.0rem; line-height:24px;}
+.order .detail div p span{ color:#858585;}
+.order .detail div.check p,.order .detail div.where p{ color:#858585;}
+.order .detail div.where{ border-bottom:0;}
+
+/*-------------我的订单-------------------*/
+.my_order .tab_head{ padding:12px; box-sizing:border-box;}
+.my_order .tab h3{width:100%; overflow:hidden; border:1px solid #ccc; border-radius:4px; background:#fff;}
+.my_order .tab h3 span{ width:20%; text-align:center; float:left; font-size:15px; line-height:38px; font-weight:normal; border-right:1px solid #ccc; box-sizing:border-box;}
+.my_order .tab h3 span:last-child{ border-right:0;}
+.my_order .tab h3 span.current{ color:#fff; background:#555;}
+.my_order .tab ul li{ display:none;}
+.my_order .tab ul li.current{ display:block;}
+.my_order .tab ul li .order .operate{ border-top:1px solid #ccc; width:100%; overflow:hidden; padding:5px 0; box-sizing:border-box;}
+.my_order .tab ul li .order .operate a{ float:right; border:1px solid #ccc; border-radius:4px; margin-right:10px; font-size:15px; line-height:30px; padding:0 14px;}
+.my_order .tab ul li .order .operate a.link{ background:url(../images/icon_phone-b.png) no-repeat 10px center; background-size:15px; padding-left:30px;}
+.my_order .tab ul li .order .operate a.pay{ border-color:#f39826; color:#f39826;}
+
+
+
+
+
+
+
+
+
+@media (min-width:375px) and (max-width:413px){ 
+	.order .good_photo .photo{ width:28%;}
+	.order .good_photo dl{ width:72%;}
+}
+
+@media screen and (max-width:360px){ 
+	.head_order .back a span{ width:12px; height:17px; margin-top:7px; display:block; background-size:10px;}
+	.head_order h4{font-size:18px;}
+	
+	.order_num .number{ font-size:15px; line-height:42px;}
+	.order_num .name_ad{ height:70px;}
+	.order_num .name_ad dt p{ font-size:15px; line-height:30px;}
+	.order_num .name_ad dt p.address{ background-size:14px;}
+	.order_num .name_ad dd{ font-size:25px; line-height:70px;}
+	.order .shop_name{ font-size:15px; line-height:42px;}
+	.order .good_photo .photo{ width:32%;}
+	.order .good_photo dl{ width:68%;}
+	.order .good_photo dl dd{ font-size:25px;}
+	.order .cost p{ font-size:15px; line-height:30px;}
+	.order .time_cost dl{ line-height:42px;}
+	.order .time_cost dd{ font-size:15px;}
+	.order .good_photo dl dt p{ font-size:13px;}
+	.pay_method ul li p{ font-size:15px; line-height:40px;}
+	.pay_method ul li p img{ margin-top:12px;}
+	.menu input{ padding:0 10px;}
+	.com_ph textarea{ height:5.0rem;}
+}
+
+
+
+
+
+
+
+

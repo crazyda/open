@@ -1,0 +1,1 @@
+package com.axp.dao;import java.util.Map;import com.axp.domain.ChangeNote;import com.axp.domain.Users;public interface IChangeNoteDao extends IBaseDao<ChangeNote> {			/**	 * 换货会一级列表(我的换货)	 */	Map<String, Object> myChangeList(Users users);	}

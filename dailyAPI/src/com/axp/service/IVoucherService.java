@@ -1,0 +1,1 @@
+package com.axp.service;import com.axp.domain.Voucher;public interface IVoucherService extends IBaseService<Voucher> {}

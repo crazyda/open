@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>锁屏开关</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+div,a,span,img,h1,h2,h3,h4,p,input,textrea,button,body,ul,li,ol,dl,dt,dd,select,i{ margin:0; padding:0; list-style:none; border:0; font-style:normal;}
+body{ background:#ececec; font-size:14px; min-width:320px; max-width:640px; margin:0 auto; line-height:1.5; color:#666; padding:50px 0 0 0;}
+a{ text-decoration:none; color:#666;}
+a:hover{ text-decoration:none; color:#666;}
+@font-face{font-style:normal; font-family:'PingFang Regular';src:url(../../font/PingFang%20Regular.ttf) format('truetype');}
+html,body,input{font-family:"PingFang Regular";}
+
+/*------导航栏--------------------*/
+.head_center{ background:#ff2d47; height:50px; width:100%; position:fixed; top:0; left:0; z-index:99;}
+.head_center h4{ width:100%; text-align:center; line-height:50px; color:#fff; font-size:20px; position:absolute; top:0; left:0; font-weight:normal; z-index:-1;}
+
+.head_center .back{ float:left; width:10%;}
+.head_center .back a{ display:block; padding:10px;}
+.head_center .back a span{ width:15px; height:20px; background:url(images/left-icon.png) no-repeat left center; margin-top:5px; display:block; background-size:11px; margin-left:5px;}
+
+/*------设置内容--------------------*/
+.set_list{ background:#fff; border-bottom:1px solid #d0d0d0; border-top:1px solid #d0d0d0; margin-top:10px;}
+.set_list p{ font-size:1.1rem; line-height:3.0rem; padding:0 1.0rem;}
+.note{ font-size:12px; color:#999999; padding-left:10px; line-height:32px;}
+
+
+.checkbox {
+  min-height: 24px;
+  margin-top: 6px;
+  position: relative;
+  float:right;
+   margin-top:13px;
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked) {
+  box-sizing: border-box;
+  left: 4px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 3px;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label {
+  background-color: #e0e0e0;
+  border-radius: 24px;
+  cursor: pointer;
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  text-indent: -9999px;
+  -webkit-transition: background-color 0.3s;
+          transition: background-color 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 48px;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+  background-color: #fff;
+  border-radius: 20px;
+  content: " ";
+  height: 20px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
+  -webkit-transition: -webkit-transform 0.3s;
+       -o-transition:      -o-transform 0.3s;
+          transition:         transform 0.3s;
+  width: 20px;
+}
+
+input[type="checkbox"]:checked + label {
+  background-color: #8c8;
+}
+
+input[type="checkbox"]:checked + label:after {
+  -webkit-transform: translateX(24px);
+      -ms-transform: translateX(24px);
+       -o-transform: translateX(24px);
+          transform: translateX(24px);
+}
+
+
+
+@media (min-width:375px) and (max-width:413px){ 
+	.set_list p{ font-size:1.1rem; line-height:2.9rem;}
+	.checkbox{ margin-top:12px;}
+	.note{ font-size:12px; line-height:16px; margin-top:10px; padding-left:20px;}
+
+}
+
+@media screen and (max-width:360px){ 
+	.head_center h4{ font-size:18px;}
+	.head_center .back a span{ width:12px; height:18px; margin-top:7px; background-size:9px;}
+
+	.set_list p{ font-size:1.0rem; line-height:2.8rem;}
+	.checkbox{ margin-top:10px;}
+	.note{ font-size:10px; line-height:16px; margin-top:10px; padding-left:20px;}
+
+}
+
+</style>
+</head>
+
+<body>
+<div class="head_center">
+	<div class="back">
+    	<a href="FE-personal.html"><span></span></a>
+    </div>
+  <h4>锁屏开关</h4>
+</div>
+<div class="set_list">
+    <p>关闭锁屏
+        <span class="checkbox">
+            <input class="css-checkbox" id="c11" name="c1" type="checkbox">
+            <label for="c11">Check</label>
+        </span>
+    </p>
+</div>
+<p class="note">关闭锁屏以后您将享受不到滑屏送积分和红包的福利哦！！！</p>
+</body>
+</html>

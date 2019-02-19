@@ -1,0 +1,1 @@
+package com.axp.service;import java.util.List;import java.util.Map;import javax.servlet.http.HttpServletRequest;import com.axp.domain.ReGoodsOfSellerMall;public interface IReGoodsOfSellerMallService extends IBaseService<ReGoodsOfSellerMall> {		Map<String,Object> getHotSellerGoods(HttpServletRequest request);		}

@@ -1,0 +1,1 @@
+package com.axp.dao.impl;import org.springframework.stereotype.Repository;import com.axp.dao.IReGoodsSnapshotDao;import com.axp.domain.ReGoodsSnapshot;@Repository public class ReGoodsSnapshotDaoImpl extends BaseDaoImpl<ReGoodsSnapshot> implements IReGoodsSnapshotDao {}

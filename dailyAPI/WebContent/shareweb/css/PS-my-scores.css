@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+div,a,span,img,h1,h2,h3,h4,p,input,textrea,button,body,ul,li,ol,dl,dt,dd,select,i{ margin:0; padding:0; list-style:none; border:0; font-style:normal;}
+body{ background:#ececec; font-size:14px; min-width:320px; max-width:640px; margin:0 auto; line-height:1.5; color:#666; padding:50px 0 0 0;}
+a{ text-decoration:none; color:#666;}
+a:hover{ text-decoration:none; color:#666;}
+/*------引用字体--------*/
+@font-face{font-style:normal; font-family:'PingFang Regular';src:url(../../font/PingFang%20Regular.ttf) format('truetype');}
+html,body,input{font-family:"PingFang Regular";}
+
+/*------导航栏--------------------*/
+.head_center{ background:#ff2d47; height:50px; width:100%; position:fixed; top:0; left:0; z-index:99; box-shadow:0 0 8px #000;}
+.head_center h4{ width:100%; text-align:center; line-height:50px; color:#fff; font-size:20px; position:absolute; top:0; left:0; font-weight:normal; z-index:-1;}
+
+.head_center .back{ float:left; width:10%;}
+.head_center .back a{ display:block; padding:10px;}
+.head_center .back a span{ width:15px; height:20px; background:url(../images/left-icon.png) no-repeat left center; margin-top:5px; display:block; background-size:11px; margin-left:5px;}
+
+/*------积分余额overage--------------------*/
+.overage{ background:#ff2d47; color:#fff; padding-bottom:2.0rem;}
+.overage p{ font-size:1.0rem; line-height:3.0rem; padding:0 1.0rem;}
+.overage p a{ color:#fff; float:right;}
+.overage .num{ text-align:center;}
+.overage .num h4{ font-size:2.0rem; font-weight:normal;}
+.overage .num p{ font-size:0.9rem; line-height:1.5rem;}
+
+/*------积分分类--------------------*/
+.over_list{ background:#fff; border-bottom:1px solid #ccc; border-top:1px solid #ccc; margin-top:1.0rem; padding-left:1.0rem;}
+.over_list dl{ width:100%; overflow:hidden; border-bottom:1px solid #ccc; padding:0.5rem 0;}
+.over_list dl dt{ width:70%; float:left;}
+.over_list dl dt h4{ font-size:1.1rem; line-height:2.0rem; font-weight:normal; color:#333;}
+.over_list dl dt p{ font-size:1.0rem; line-height:2.0rem; color:#999;}
+.over_list dl dt p span{ margin-left:1.0rem;}
+.over_list dl dd{ width:30%; float:left; text-align:right; padding-right:1.0rem; box-sizing:border-box; padding-top:2.0rem;}
+.over_list dl dd span.add{ font-size:1.6rem; color:#ff2d48; line-height:2.0rem;}
+.over_list dl dd span.less{ color:#029944; font-size:1.6rem; line-height:2.0rem;}
+
+
+
+
+
+
+@media (min-width:375px) and (max-width:413px){ 
+	.head_center .edit{ font-size:0.9rem;}
+	
+	.overage{ padding-bottom:1.6rem;}
+	.overage p{ line-height:2.2rem;}
+	
+	.over_list dl dt h4{ font-size:1.1rem; line-height:1.8rem;}
+	.over_list dl dt p{ font-size:1.0rem; line-height:1.8rem;}
+	.over_list dl dd{ padding-top:1.6rem;}
+	.over_list dl dd span.add{ font-size:1.5rem; line-height:1.5rem;}
+	.over_list dl dd span.less{ font-size:1.5rem; line-height:1.5rem;}
+}
+
+@media screen and (max-width:360px){ 
+	.head_center h4{ font-size:17px;}
+	.head_center .edit{ font-size:0.8rem;}
+	.head_center .back a span{ width:12px; height:18px; margin-top:7px; background-size:9px;}
+	
+	.overage{ padding-bottom:1.5rem;}
+	.overage p{ font-size:0.9rem; line-height:2.5rem;}
+	.overage .num h4{ font-size:1.6rem; font-weight:normal;}
+	.overage .num p{ font-size:0.8rem; line-height:1.2rem;}
+
+	.over_list dl dt h4{ font-size:1.0rem; line-height:1.5rem;}
+	.over_list dl dt p{ font-size:0.9rem; line-height:1.5rem;}
+	.over_list dl dd{ padding-top:1.5rem;}
+	.over_list dl dd span.add{ font-size:1.4rem; line-height:1.5rem;}
+	.over_list dl dd span.less{ font-size:1.4rem; line-height:1.5rem;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

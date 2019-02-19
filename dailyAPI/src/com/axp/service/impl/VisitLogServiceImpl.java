@@ -1,0 +1,1 @@
+package com.axp.service.impl;import org.springframework.stereotype.Service;import com.axp.domain.VisitLog;import com.axp.service.IVisitLogService;@Servicepublic class VisitLogServiceImpl extends BaseServiceImpl<VisitLog> implements IVisitLogService {		}

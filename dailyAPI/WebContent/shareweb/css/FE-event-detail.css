@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+
+div,a,span,img,h1,h2,h3,h4,p,input,textrea,button,body,ul,li,ol,dl,dt,dd,select,i{ margin:0; padding:0; list-style:none; border:0; font-style:normal;}
+body{ background:#ececec; font-size:14px; min-width:320px; max-width:640px; margin:0 auto; line-height:1.5; color:#666; padding-top:50px;}
+a{ text-decoration:none; color:#666;}
+a:hover{ text-decoration:none; color:#666;}
+/*------引用字体--------*/
+@font-face{font-style:normal; font-family:'PingFang Regular';src:url(../../font/PingFang%20Regular.ttf) format('truetype');}
+html,body{font-family:"PingFang Regular";}
+
+/*------导航栏--------------------*/
+.head_event{ background:#ff2d47; height:50px; width:100%; position:fixed; top:0; left:0; z-index:99;}
+.head_event h4{ width:100%; text-align:center; line-height:50px; color:#fff; font-size:20px; position:absolute; top:0; left:0; font-weight:normal; z-index:-1;}
+.head_event .back{ float:left; width:10%;}
+.head_event .back a{ display:block; padding:10px;}
+.head_event .back a span{ width:15px; height:20px; background:url(../images/left-icon.png) no-repeat left center; margin-top:5px; display:block; background-size:11px; margin-left:5px;}
+
+.head_event .share{ float:right; width:12%;}
+.head_event .share a{ display:block; padding:10px; padding-right:0;}
+.head_event .share a span{ width:24px; height:36px; background:url(../images/icon_fenxiang.png) no-repeat center center; display:block; background-size:20px;}
+
+.text{ background:#fff; padding:10px; margin-bottom:0.5em;}
+.text p{ text-indent:2em; font-size:16px; line-height:1.8em;}
+.text .note{ overflow:hidden; width:100%; text-indent:0; color:#ff7f0e; margin-top:0.5em;}
+.text .note .left{ float:left;}
+.text .note .right{ float:right;}
+.text .note img{ margin:0 5px 5px 0;}
+/*------参与商家------------------------------*/
+.business .title{ width:100%; background:#fff; position:relative;}
+.business .title .left{ border-bottom:1px solid #fd6d1f; width:25%; position:absolute; top:50%; left:5%;}
+.business .title .right{ border-bottom:1px solid #fd6d1f; width:25%; position:absolute; top:50%; right:5%;}
+.business .title h4{ text-align:center; line-height:2.4em;}
+.business .title h4 i{ margin-right:5px;}
+
+.bsns-con{ background:#fff; padding:0.5em;}
+.bsns-con ul{ overflow:hidden; width:100%;}
+.bsns-con ul li{ float:left; width:25%; text-align:center; margin-bottom:1.0em;}
+.bsns-con ul li span{ font-size:15px; line-height:2.5em;}
+
+@media (min-width:375px) and (max-width:413px){ 
+	.text p{ font-size:15px; line-height:1.6em;}
+	.business .title h4{ font-size:16px;}
+	.bsns-con ul li span{ font-size:14px;}
+
+
+}
+
+@media screen and (max-width:360px){ 
+	.text p{ font-size:14px; line-height:1.6em;}
+	.business .title h4{ font-size:14px;}
+	.bsns-con ul li span{ font-size:12px;}
+	.head_event .share a span{ width:16px; height:25px; background-size:16px; margin-top:4px;}
+	.head_event .back a span{ width:12px; height:17px; margin-top:7px; display:block; background-size:10px;}
+	.head_event h4{font-size:18px;}
+
+}
+
+
+
+
+
+

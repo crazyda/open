@@ -1,0 +1,1 @@
+package com.axp.dao;import java.util.List;import com.axp.domain.ReGoodsOfLockMall;import com.axp.domain.ReGoodsOfScoreMall;import com.axp.domain.ReGoodsorderItem;public interface IReGoodsOfLockMallDao extends IBaseDao<ReGoodsOfLockMall> {		}

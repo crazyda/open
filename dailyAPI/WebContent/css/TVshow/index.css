@@ -1,0 +1,198 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  background: #404a59;
+  font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.indexBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.indexBox .dataTop {
+  position: fixed;
+  top: 2%;
+  z-index: 4;
+  width: 100%;
+  height: 7em;
+}
+.indexBox .dataTop .dataTit {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 6%;
+  font-size: 2rem;
+  color: #30e9ff;
+  font-weight: 900;
+}
+.indexBox .dataTop .logo {
+  padding: 1em 2em;
+  width: 12%;
+}
+.indexBox .dataTop .logo img {
+  width: 100%;
+  height: 100%;
+}
+.indexBox .dataTop .sumData {
+  display: flex;
+  position: absolute;
+  width: 78%;
+  top: 3.3em;
+  left: 20%;
+  font-size: 1.4em;
+}
+.indexBox .dataTop .sumData .dataItem {
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  align-items: flex-end;
+  color: #f5fb8f;
+}
+.indexBox .dataTop .sumData .dataItem i {
+  font-style: normal;
+  font-size: 1.2em;
+}
+.indexBox #map {
+  width: 100%;
+  height: 100%;
+}
+.indexBox .rightTop,
+.indexBox .rightCenter {
+  width: 18%;
+  height: 26%;
+  /* box-sizing: border-box; */
+  border-radius: 10px;
+  position: absolute;
+  top: 18%;
+  right: 2em;
+  background: rgba(16, 13, 39, 0.61);
+}
+.indexBox #qqsb,
+.indexBox #ddsb,
+.indexBox #cjl {
+  width: 100%;
+  height: 100%;
+}
+.indexBox .rightCenter {
+  top: 45%;
+}
+.indexBox .rightCenter #ddsb {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.indexBox .rightBottom {
+  width: 18%;
+  height: 22%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: absolute;
+  top: 72%;
+  right: 2em;
+  background: rgba(16, 13, 39, 0.61);
+}
+.indexBox .leftBox1 {
+  position: absolute;
+  top: 14%;
+  left: 2em;
+  width: 18%;
+  background: rgba(16, 13, 39, 0.61);
+  box-sizing: border-box;
+  padding: 1em 0;
+}
+.indexBox .leftBox1 .leftBoxTit {
+  color: #cff3ff;
+  height: 8%;
+  line-height: 1.6em;
+  box-sizing: border-box;
+  padding: 0 .4em;
+  font-size: 1.2em;
+  background: #6c93b4;
+}
+.indexBox .leftBox1 .leftData .dataTit {
+  color: #85a0b5;
+  box-sizing: border-box;
+  padding: .04em 1em;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1em;
+}
+.indexBox .leftBox1 .leftData .dataItem {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 .8em;
+  line-height: 1.84em;
+  justify-content: space-between;
+  align-items: center;
+  color: #a4f6f4;
+}
+.indexBox .leftBox1 .leftData .dataItem .itemLeft {
+  width: 62%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.indexBox .leftBox2 {
+  position: absolute;
+  top: 56%;
+  left: 2em;
+  width: 18%;
+  background: rgba(16, 13, 39, 0.61);
+  box-sizing: border-box;
+  padding: 1em 0;
+}
+.indexBox .leftBox2 .leftBoxTit {
+  color: #cff3ff;
+  height: 8%;
+  line-height: 1.6em;
+  box-sizing: border-box;
+  padding: 0 .4em;
+  font-size: 1.2em;
+  background: #6c93b4;
+}
+.indexBox .leftBox2 .leftData .dataTit {
+  color: #85a0b5;
+  box-sizing: border-box;
+  padding: .04em 1em;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1em;
+}
+.indexBox .leftBox2 .leftData .dataItem {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 .8em;
+  line-height: 1.84em;
+  justify-content: space-between;
+  align-items: center;
+  color: #a4f6f4;
+}
+.indexBox .leftBox2 .leftData .dataItem .itemLeft {
+  width: 62%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+li {
+  list-style-type: none;
+}
+.t_num i {
+  /* position: fixed; */
+  /* top: 0; */
+  z-index: 999;
+  width: 17px;
+  height: 25px;
+  display: inline-block;
+  background: url(9.png) no-repeat;
+  background-position: 0 0;
+}
+.amount {
+  font-size: 0;
+}

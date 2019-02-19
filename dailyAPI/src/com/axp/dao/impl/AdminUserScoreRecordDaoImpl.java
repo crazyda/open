@@ -1,0 +1,1 @@
+package com.axp.dao.impl;import org.springframework.stereotype.Repository;import com.axp.dao.IAdminUserScoreRecordDao;import com.axp.domain.AdminUserScoreRecord;@Repository public class AdminUserScoreRecordDaoImpl extends BaseDaoImpl<AdminUserScoreRecord> implements IAdminUserScoreRecordDao {}

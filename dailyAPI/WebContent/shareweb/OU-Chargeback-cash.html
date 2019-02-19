@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>申请退单-现金</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="http://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="diyUpload/css/webuploader.css">
+<link rel="stylesheet" type="text/css" href="diyUpload/css/diyUpload.css">
+
+<link type="text/css" href="css/OU-OrderDetails.css" rel="stylesheet">
+<script src="js/jquery-1.7.2.min.js" type="text/jscript"></script>
+<script type="text/javascript" src="diyUpload/js/webuploader.html5only.min.js"></script>
+<script type="text/javascript" src="diyUpload/js/diyUpload.js"></script>
+</head>
+
+<body>
+<div class="head_order">
+	<div class="back">
+    	<a href=""><span></span></a>
+    </div>
+    <h4>申请退单</h4>
+</div>
+<form>
+	<p class="cb_r">退单积分：<input type="text" placeholder="50元"></p>
+    <p class="note">低价的红包将会原路返回到您的红包收益里</p>
+    <div class="com_ph">
+        <textarea placeholder="退单原因："></textarea>
+        <div id="box">
+            <div class="webuploader-container" id="test">
+                <div class="webuploader-pick">晒照片</div>
+                <div style="position:absolute; top:0; right:0; width:20%; height:42px; overflow:hidden;" id="rt_rt_1ancecf2869s1inb1fis1242183u1">
+                    <input accept="image/*" multiple class="webuploader-element-invisible" name="file" type="file"><label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255) none repeat scroll 0% 0%;"></label>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $('#test').diyUpload({
+            success:function( data ) {
+                console.info( data );
+            },
+            error:function( err ) {
+                console.info( err );	
+            },
+            fileNumLimit:4,
+        
+        });
+        </script>
+    </div>
+    <div class="back_method">
+        <ul>
+            <li class="original"><p><img src="images/original.png" width="20"> &nbsp;&nbsp;原路返回 <span>(商家确认后24小时内退回)</span></p></li>
+            <li class="wallet"><p><img src="images/wallet.png" width="20"> &nbsp;&nbsp;我的钱包 <span>(商家确认后24小时内退回)</span></p></li>
+            <li class="alipay"><p><img src="images/Alipay.png" width="20"> &nbsp;&nbsp;支付宝支付 <span>(商家确认后15天内退回)</span></p></li>
+        </ul>
+    </div>
+	<script type="text/javascript">
+        $('.back_method ul li').click(function(e) {
+            $(this).addClass('selected').siblings().removeClass('selected');
+        });
+    </script>
+    <div class="sub"><input type="button" value="提交"></div>
+</form>
+</body>
+</html>

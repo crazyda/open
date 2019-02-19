@@ -1,0 +1,1 @@
+package com.axp.service;import java.util.Map;import com.axp.domain.Captcha;public interface ICaptchaService extends IBaseService<Captcha> {	Map<String, Object> sendCaptcha(String phone);	/**	 * @param phone	 * @param captcha	 */	Map<String,Object> checkCaptcha(String phone, String captcha);}

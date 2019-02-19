@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  font-family: "PingFang SC";
+}
+ul li {
+  list-style: none;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0 .2rem;
+}
+h2 {
+  margin-top: .2rem;
+  font-size: .3rem;
+  color: #333;
+}
+h3 {
+  padding: .06rem;
+  font-size: .28rem;
+  color: #333;
+}
+h4 {
+  padding: .06rem;
+  font-size: .26rem;
+  color: #333;
+}
+p {
+  font-size: .22rem;
+  line-height: .4rem;
+  padding: 0.32rem 0;
+  color: #666;
+}

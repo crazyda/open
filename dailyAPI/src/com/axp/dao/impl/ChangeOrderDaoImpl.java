@@ -1,0 +1,1 @@
+package com.axp.dao.impl;import org.springframework.stereotype.Repository;import com.axp.dao.IChangeOrderDao;import com.axp.domain.ChangeOrder;@Repository public class ChangeOrderDaoImpl extends BaseDaoImpl<ChangeOrder> implements IChangeOrderDao {}

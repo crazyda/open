@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+div,a,span,img,h1,h2,h3,h4,p,input,textrea,button,body,ul,li,ol,dl,dt,dd,select,i{ margin:0; padding:0; list-style:none; border:0; font-style:normal;}
+body{ background:#ececec; font-size:14px; min-width:320px; max-width:640px; margin:0 auto; line-height:1.5; color:#666; padding-top:50px;}
+a{ text-decoration:none; color:#666;}
+a:hover{ text-decoration:none; color:#666;}
+/*------引用字体--------*/
+@font-face{font-style:normal; font-family:'PingFang Regular';src:url(../../font/PingFang%20Regular.ttf) format('truetype');}
+html,body{font-family:"PingFang Regular";}
+
+/*------导航栏--------------------*/
+.head_jiu{ background:#ff2d47; height:50px; width:100%; position:fixed; top:0; left:0; z-index:99;}
+.head_jiu h4{ width:100%; text-align:center; line-height:50px; color:#fff; font-size:20px; position:absolute; top:0; left:0; font-weight:normal; z-index:-1;}
+.head_jiu .back{ float:left; width:10%;}
+.head_jiu .back a{ display:block; padding:10px;}
+.head_jiu .back a span{ width:15px; height:20px; background:url(../images/left-icon.png) no-repeat left center; margin-top:5px; display:block; background-size:11px; margin-left:5px;}
+
+.head_jiu .search{ float:right; width:12%;}
+.head_jiu .search a{ display:block; padding:10px; padding-right:0;}
+.head_jiu .search a span{ width:20px; height:30px; background:url(../images/search-f.png) no-repeat center center; display:block; background-size:18px; margin-top:2px;}
+
+/*------免单专区--------------------*/
+.redeem{ margin-bottom:0.5em; background:#fff;}
+.redeem .redeem-head{ overflow:hidden; padding:0.5em 0; border-bottom:1px solid #e9e9e9;}
+.redeem-head h4{ float:left; line-height:2em; border-left:5px solid #ef8e31; padding-left:0.5em; font-size:18px;}
+.redeem-head span{ float:right; line-height:2.2em; padding-right:1em; font-size:16px;}
+
+.Choice{ width:100%;}
+.Choice .swiper-wrapper .swiper-slide{ margin-right:0.5em !important; text-align:center; padding-bottom:0.5em;}
+.Choice .swiper-wrapper .swiper-slide .color{ color:#fb1f40; margin-top:0.5em;}
+.Choice .swiper-wrapper .swiper-slide .score{ text-decoration:line-through;}
+
+/*------免单券领取区--------------------*/
+.ads{ margin:0.5em 0; padding:0.5em 0; background:#fff;}
+
+/*------分类tab--------------------*/
+.tab{ width:100%;}
+.tab h4{ width:100%; overflow:hidden; background:#fff;}
+.tab h4 span{ width:33.33%; float:left; text-align:center; border:1px solid #ccc; line-height:40px; border-right:0;}
+.tab h4 span:nth-child(1){ border-left:0;}
+.tab h4 span.current{ border-bottom:2px solid #39bbfc;}
+.tab h4 span img{ margin:0 5px 5px 0;}
+.tab ul li{ display:none; padding:5px;}
+.tab ul li.current{ display:block;}
+
+.tab ul li .all{ width:50%; float:left; padding:0.2em;}
+.tab ul li .all .img{ position:relative;}
+.tab ul li .all .name{ font-size:1.1em; line-height: 1.2em; height: 2.7em; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; width:100%; padding:0.3em 0.5em 0.5em 0.5em;}
+.tab ul li .all .price{ width:100%; padding:0.3em 0.3em 0.5em 0.3em; overflow:hidden;}
+.tab ul li .all .price p{ float:left; color:#fc1828; font-weight:bold; font-size:15px;}
+.tab ul li .all .price span{ float:right; background:#ef8e31; color:#fff; padding:1px 4px;}
+.tab ul li .all .price span.blue{ background:#1eb081;}
+
+@media (min-width:375px) and (max-width:413px){ 
+	.tab h4{ font-size:17px;}
+
+}
+@media screen and (max-width:360px){ 
+	.head_jiu .search a{ padding-left:5px;}
+	.head_jiu h4{font-size:18px;}
+	.head_jiu .back a span{ width:12px; height:17px; margin-top:7px; display:block; background-size:10px;}
+	.head_jiu .search a span{ width:16px; height:25px; background-size:16px; margin-top:4px;}
+	.redeem-head h4{ font-size:16px; line-height:1.8em;}
+	.redeem-head span{ font-size:14px; line-height:1.8em;}
+	.Choice .swiper-wrapper .swiper-slide p{ font-size:12px;}
+	.tab h4{ font-size:16px;}
+	.tab h4 span img{ width:16px;}
+	.tab ul li .all .name{ font-size:1.0em; line-height: 1.2em; height: 2.7em; width:100%; padding:0.3em 0.5em 0.5em 0.5em;}
+	.tab ul li .all .price p{ font-size:14px;}
+	.tab ul li .all .price span{ font-size:12px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

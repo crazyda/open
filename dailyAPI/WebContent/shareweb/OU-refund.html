@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>申请退款</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" href="css/OU-OrderDetails.css" rel="stylesheet">
+<script src="js/jquery-1.7.2.min.js" type="text/jscript"></script>
+</head>
+
+<body>
+<div class="head_order">
+	<div class="back">
+    	<a href=""><span></span></a>
+    </div>
+    <h4>申请退款</h4>
+</div>
+<form>
+	<p class="cb_r">退单金额：<input type="text" placeholder="50元"></p>
+    <p class="note">低价的红包将会原路返回到您的红包收益里</p>
+    <div class="com_ph">
+        <input type="text" placeholder="退单原因：">
+    </div>
+    <div class="back_method">
+        <ul>
+            <li class="original"><p><img src="images/original.png" width="20"> &nbsp;&nbsp;原路返回 <span>(商家确认后24小时内退回)</span></p></li>
+            <li class="wallet"><p><img src="images/wallet.png" width="20"> &nbsp;&nbsp;我的钱包 <span>(商家确认后24小时内退回)</span></p></li>
+            <li class="alipay"><p><img src="images/Alipay.png" width="20"> &nbsp;&nbsp;支付宝支付 <span>(商家确认后15天内退回)</span></p></li>
+        </ul>
+    </div>
+	<script type="text/javascript">
+        $('.back_method ul li').click(function(e) {
+            $(this).addClass('selected').siblings().removeClass('selected');
+        });
+    </script>
+    <div class="sub"><input type="button" value="提交"></div>
+</form>
+</body>
+</html>

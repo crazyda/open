@@ -1,0 +1,1 @@
+package com.axp.service;import com.axp.domain.VisitLog;public interface IVisitLogService extends IBaseService<VisitLog> {}

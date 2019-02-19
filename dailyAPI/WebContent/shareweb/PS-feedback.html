@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>意见反馈</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" href="css/PS-feedback.css" rel="stylesheet">
+<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="head_center">
+	<div class="back">
+    	<a href="PS-setup.html"><span></span></a>
+    </div>
+    <h4>意见反馈</h4>
+</div>
+<div class="feed_con">
+	<p>反馈内容：</p>
+    <textarea placeholder="我们真的很需要您的意见和建议~"></textarea>
+</div>
+<div class="add_piv">
+	<p>添加照片（提供问题截图）</p>
+    <div class="pic_all">
+    	<div class="pic_sd" id="pic_sd">
+        	<img src="" alt="">
+        </div>
+    	<div class="upload">
+            <input type="file" id="upload_picd">
+        </div>
+    </div>
+</div>
+<!----------------上传图片------------------------->
+<script type="text/javascript">    
+    function preview(file,a)  {  
+        //var prevDiv = document.getElementById('preview');  
+        var prevDiv = document.getElementById(a);  
+        //var pervDiv = file.previousSbiling;
+        if (file.files && file.files[0]){  
+            var reader = new FileReader();  
+            reader.onload = function(evt){  
+                prevDiv.innerHTML = '<img class="imgs" src="' + evt.target.result + '" />';  
+            }    
+            reader.readAsDataURL(file.files[0]);  
+        }else{  
+        prevDiv.innerHTML = '<div class="imgs" style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src=\'' + file.value + '\'"></div>';  
+        }  
+    }
+    function picFn(b,c){
+        $(b).change(function(event) {
+            preview(this,c);
+        });
+    } 
+    picFn('#upload_picd','pic_sd');
+</script>  
+
+<div class="sub"><input type="submit" value="提交"></div>
+</body>
+</html>

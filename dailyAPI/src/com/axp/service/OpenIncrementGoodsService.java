@@ -1,0 +1,1 @@
+package com.axp.service;import java.util.Map;import com.axp.domain.OpenIncrementGoods;public interface OpenIncrementGoodsService extends IBaseService<OpenIncrementGoods> {		/**	 * 增量同步所有商品	 * @return	 */	Map<String,Object> findIncrementList();}

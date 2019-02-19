@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+div,a,span,img,h1,h2,h3,h4,p,input,textrea,button,body,ul,li,ol,dl,dt,dd,select,i{ margin:0; padding:0; list-style:none; border:0; font-style:normal;}
+body{ background:#ececec; font-size:14px; min-width:320px; max-width:640px; margin:0 auto; line-height:1.5; color:#666; padding:50px 0 0 0;}
+a{ text-decoration:none; color:#666;}
+a:hover{ text-decoration:none; color:#666;}
+@font-face{font-style:normal; font-family:'PingFang Regular';src:url(../../font/PingFang%20Regular.ttf) format('truetype');}
+html,body,input{font-family:"PingFang Regular";}
+
+/*------导航栏--------------------*/
+.head_center{ background:#ff2d47; height:50px; width:100%; position:fixed; top:0; left:0; z-index:99;}
+.head_center h4{ width:100%; text-align:center; line-height:50px; color:#fff; font-size:20px; position:absolute; top:0; left:0; font-weight:normal; z-index:-1;}
+
+
+.head_center .back{ float:left; width:10%;}
+.head_center .back a{ display:block; padding:10px;}
+.head_center .back a span{ width:15px; height:20px; background:url(../images/left-icon.png) no-repeat left center; margin-top:5px; display:block; background-size:11px; margin-left:5px;}
+/*-----------二维码/粉丝数量/发送邀请----------------*/
+.qrcode{ padding:20% 0; text-align:center;}
+.qrcode p{ font-size:1.1rem; line-height:2.0rem;}
+.qrcode p span{ font-size:1.3rem; color:#ff2d47;}
+.fans_num{ background:#fff; border-bottom:1px solid #ccc; border-top:1px solid #ccc; padding:0 1.0rem;}
+.fans_num a{ font-size:1.1rem; line-height:3.0rem; color:#333; background:url(../images/enter.png) no-repeat right center; display:block; background-size:0.6rem;}
+.fans_num a span{ color:#ff2d47;}
+
+body{ position:relative; padding-bottom:25%;}
+.send{ padding:10% 5%; position:fixed; bottom:0; left:0; width:100%; box-sizing:border-box;}
+.send input{ width:100%; color:#fff; font-size:1.1rem; line-height:3.0rem; background:#ff2d47; border-radius:3px;}
+
+
+
+
+
+
+
+
+
+@media (min-width:375px) and (max-width:413px){ 
+	.qrcode p span{ font-size:1.3rem;}
+	.fans_num a{ font-size:1.1rem; line-height:2.8rem; background-size:0.6rem;}
+	.send{ margin-top:35%;}
+	.send input{ font-size:1.1rem; line-height:2.8rem;}
+
+}
+
+@media screen and (max-width:360px){ 
+	.head_center h4{ font-size:17px;}
+	.head_center .edit{ font-size:0.8rem;}
+	.head_center .back a span{ width:12px; height:18px; margin-top:7px; background-size:9px;}
+	
+	.qrcode p{ font-size:1.0rem;}
+	.qrcode p span{ font-size:1.2rem;}
+	.fans_num a{ font-size:1.0rem; line-height:2.6rem; background-size:0.5rem;}
+	.send{ margin-top:30%;}
+	.send input{ font-size:1.0rem; line-height:2.6rem;}
+
+
+}
+
+
+
+
+
+
+

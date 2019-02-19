@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+
+div,a,span,img,h1,h2,h3,h4,p,input,textrea,button,body,ul,li,ol,dl,dt,dd,select,i{ margin:0; padding:0; list-style:none; border:0; font-style:normal;}
+body{ background:#ececec; font-size:14px; min-width:320px; max-width:640px; margin:0 auto; line-height:1.5; color:#666; padding:50px 0 100px 0;}
+a{ text-decoration:none; color:#666;}
+a:hover{ text-decoration:none; color:#666;}
+/*------引用字体--------*/
+@font-face{font-style:normal; font-family:'PingFang Regular';src:url(../../font/PingFang%20Regular.ttf) format('truetype');}
+html,body{font-family:"PingFang Regular";}
+
+/*------导航栏--------------------*/
+.head_center{ background:#ff2d47; height:50px; width:100%; position:fixed; top:0; left:0; z-index:99; box-shadow:0 0 8px #000;}
+.head_center h4{ width:100%; text-align:center; line-height:50px; color:#fff; font-size:20px; position:absolute; top:0; left:0; font-weight:normal; z-index:-1;}
+
+.head_center .back{ float:left; width:10%;}
+.head_center .back a{ display:block; padding:10px;}
+.head_center .back a span{ width:15px; height:20px; background:url(../images/left-icon.png) no-repeat left center; margin-top:5px; display:block; background-size:11px; margin-left:5px;}
+
+.head_center .news{ float:right; width:13%;}
+.head_center .news a{ display:block; padding:10px; padding-right:0;}
+.head_center .news a span{ width:25px; height:30px; background:url(../images/icon_xiaoxi.png) no-repeat center center; display:block; background-size:22px; margin-top:2px;}
+.head_center .sao{ float:right; width:10%;}
+.head_center .sao a{ display:block; padding:10px; padding-right:0;}
+.head_center .sao a span{ width:24px; height:32px; background:url(../images/icon_shaoyishao.png) no-repeat center center; display:block; background-size:22px; margin-top:0;}
+
+/*-----------------头像会员资料-----------------------------------*/
+.member{ background:#ff2d47; overflow:hidden; padding:25px; padding-right:0; height:130px;}
+.member .head{ float:left; overflow:hidden; width:70%;}
+.head dt{ float:left; width:80px; height:80px; border-radius:50%; background:#ffffff; border:3px solid #fd8c9b; text-align:center; line-height:70px; margin-right:5%;}
+.head dd{ float:left; color:#fff;}
+.head dd h4{ font-size:18px; line-height:40px;}
+.head dd h4 i{ background:#a18d8f; font-size:16px !important; line-height:14px !important; padding:0 5px; border-radius:3px;}
+.head dd p{ font-size:16px; line-height:40px;}
+.head dd p img{ margin-bottom:2px;}
+
+.integral{ float:right; width:30%; color:#fff; margin-top:25px;}
+.integral p{ border:1px solid #fff; border-right:0; width:100%; font-size:15px; padding:3px 5px;}
+/*-----------------收益部分-----------------------------------*/
+.income{ width:100%; overflow:hidden; padding:1.5em 0;}
+.income div{ float:left; width:33.33%; text-align:center;}
+.income div p{ font-size:16px; line-height:24px; color:#5d5d5d;}
+.income div p b{ color:#202020; font-size:26px; font-weight:normal;}
+
+/*-----------------我的订单部分-----------------------------------*/
+.order{ width:100%; background:#fff; border-bottom:1px solid #c6c6c6; border-top:1px solid #c6c6c6;}
+.order_head{ width:100%; overflow:hidden; border-bottom:1px solid #c6c6c6; padding:0 1.0em;}
+.order_head h4{ float:left; line-height:50px; font-size:18px;}
+.order_head h4 img{ margin-bottom:3px;}
+.order_head a{ float:right; line-height:50px; font-size:16px; color:#9d9d9d;}
+
+.order_list ul{ width:100%; overflow:hidden; padding:1.0em 0 0.5em 0;}
+.order_list ul li{ width:25%; float:left; text-align:center; font-size:16px; color:#4d4d4d; line-height:32px; position:relative;}
+.order_list ul li span{ position:absolute; top:0; right:20px; width:8px; height:8px; background:#fc2444; border-radius:50%; display:none;}
+.order_list ul li.current span{ display:block;}
+/*-------------------我的积分-功能分类---------------------------------*/
+.function{width:100%;background:#fff; border-bottom:1px solid #c6c6c6; border-top:1px solid #c6c6c6; margin:1.0em 0;}
+.function ul{ overflow:hidden;}
+.function ul li{ float:left; width:25%; text-align:center; padding:1.0em; font-size:16px; color:#2d2d2d; line-height:32px; border-bottom:1px solid #c6c6c6; border-right:1px solid #e1e1e1;}
+/*---------------------我的邀请码-----------------------------*/
+.invitation{ width:100%; border-top:1px solid #c6c6c6;}
+.invitation_head{ width:100%; overflow:hidden; border-bottom:1px solid #c6c6c6; padding:0 1.0em; background:#fff;}
+.invitation_head h4{ float:left; line-height:50px; font-size:18px;}
+.invitation_head h4 img{ margin-bottom:3px;}
+.invitation_head h4 span{ color:#fc2444;}
+.invitation_head a{ float:right; line-height:50px; font-size:16px;}
+.invitation .note{ color:#666; line-height:24px; padding-left:1.0em;}
+.invitn_btn{ width:100%; overflow:hidden; padding:0 10%; margin-top:1.0em;}
+.invitn_btn span{ font-size:16px; color:#202020; line-height:32px; border:1px solid #909090; border-radius:3px; background:none; width:35%; margin:0 7%; display:inline-block; text-align:center;}
+
+
+/*----------------主菜单menu--------------------------*/
+.menu{ position:fixed; left:0; bottom:0; background:#fff; width:100%; height:60px; border-top:1px solid #d4d4d4;  z-index:99; padding-top:0.5em;}
+.menu ul{ width:100%;}
+.menu ul li{ float:left; width:25%; text-align:center; height:100%;}
+.menu ul .current a{ color:#ff2d47;}
+
+@media (min-width:375px) and (max-width:413px){ 
+	.member{ padding:25px 0 25px 20px;}
+	.member .head{ width:65%;}
+	.integral{ width:35%;}
+	.menu{ height:55px; padding-top:0.5em;}
+	.menu ul li{ font-size:13px;}
+	.income{ padding:1.2em 0;}
+	.income div p{ font-size:15px; line-height:22px;}
+	.income div p b{ font-size:24px;}
+	.order_head h4{ font-size:17px;}
+	.order_head a{ font-size:15px;}
+	.order_list ul li{ font-size:15px;}
+	.order_list ul li img{ height:24px;}
+	.function ul li{ font-size:15px; padding:0.8em;}
+	.invitation_head h4{ font-size:17px;}
+	.invitation_head a{ font-size:15px;}
+	
+}
+
+@media screen and (max-width:360px){ 
+	.head_center h4{ font-size:17px;}
+	.head_center .back a span{ width:12px; height:18px; margin-top:9px;}
+	.head_center .sao a span{ width:22px; height:30px; background-size:20px; margin-top:2px;}
+	.head_center .news a span{ width:22px; height:30px; background-size:20px; margin-top:3px;}
+	.head_center .news{ width:14%;}
+
+	.member{ padding:20px 0 20px 20px; height:110px;}
+	.member .head{ width:65%;}
+	.integral{ width:35%;}
+	.head dt{ width:70px; height:70px; line-height:60px; margin-right:3%;}
+	.head dt img{ width:50px;}
+	.head dd h4{ font-size:17px; line-height:34px;}
+	.head dd p{ font-size:15px; line-height:30px;}
+	.integral p{ font-size:14px; padding:2px 5px;}
+	.menu{ height:50px; padding-top:0.6em;}
+	.menu ul li{ font-size:12px;}
+	
+	.income{ padding:1.0em 0;}
+	.income div p{ font-size:14px; line-height:20px;}
+	.income div p b{ font-size:22px;}
+	.order_head h4{ font-size:16px;}
+	.order_head a{ font-size:14px;}
+	.order_list ul li{ font-size:14px;}
+	.order_list ul li img{ height:23px;}
+	.function ul li{ font-size:14px; padding:0.8em;}
+	.invitation_head h4{ font-size:16px;}
+	.invitation_head h4 img{ width:28px;}
+	.invitation_head a{ font-size:14px;}
+	.invitn_btn span{ font-size:15px; line-height:30px;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

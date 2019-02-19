@@ -1,0 +1,1 @@
+package com.axp.service.impl;import org.springframework.stereotype.Service;import com.axp.domain.ReGoodsOfScoreMall;import com.axp.service.IReGoodsOfScoreMallService;@Servicepublic class ReGoodsOfScoreMallServiceImpl extends BaseServiceImpl<ReGoodsOfScoreMall> implements IReGoodsOfScoreMallService {}

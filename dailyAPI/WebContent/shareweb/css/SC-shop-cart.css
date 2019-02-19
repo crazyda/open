@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+
+div,a,span,img,h1,h2,h3,h4,p,input,textrea,button,body,ul,li,ol,dl,dt,dd,select,i{ margin:0; padding:0; list-style:none; border:0; font-style:normal;}
+body{ background:#ececec; font-size:14px; min-width:320px; max-width:640px; margin:0 auto; line-height:1.5; color:#555; padding:50px 0; padding-bottom:80px;}
+a{ text-decoration:none; color:#555;}
+a:hover{ text-decoration:none; color:#555;}
+@font-face{font-style:normal; font-family:'PingFang Regular';src:url(../../font/PingFang%20Regular.ttf) format('truetype');}
+html,body{font-family:"PingFang Regular";}
+
+/*------导航栏--------------------*/
+.head_shop{ background:#ff2d47; height:50px; width:100%; position:fixed; top:0; left:0; z-index:99;}
+.head_shop h4{ width:100%; text-align:center; line-height:50px; color:#fff; font-size:20px; position:absolute; top:0; left:0; font-weight:normal; z-index:-1;}
+.head_shop .back{ float:left; width:10%; text-align:center;}
+.head_shop .back i{ color:#fff; font-size:30px; line-height:50px;}
+.head_shop a{ float:right; color:#fff; font-size:14px; line-height:50px; margin-right:12px;}
+
+/*-------------订单order-------------------*/
+.order{ margin-top:0.5rem; background:#fff; border-bottom:1px solid #ccc; border-top:1px solid #ccc;}
+.order .order_shop{ border-bottom:1px solid #ccc; width:100%; overflow:hidden;}
+.order .order_shop p.shop_name{ float:left; width:5.0rem; font-size:16px; line-height:48px; height:48px; color:#1a1a1a; font-weight:bold;}
+.order .order_shop p.check{ float:left; height:48px; width:1.5rem; text-align:center; position:relative;}
+.order .order_shop p.check .shop01_chk{ display:none;}
+.order .order_shop p.check .shop01_chk+label{ width:18px; height:18px; background:url(../images/quan.png) no-repeat center center; background-size:18px; display:block; margin:0 auto; margin-top:15px;}
+.order .order_shop p.check .shop01_chk:checked+label{ background:url(../images/quan_click.png) no-repeat center center; background-size:18px;}
+
+.shop01_pdt{ width:100%; height:130px; padding:10px 0; padding-right:10px; box-sizing:border-box; overflow:hidden;}
+.shop01_pdt p.check_pdt{ text-align:center; position:relative; width:1.5rem; height:110px; float:left;}
+.shop01_pdt p.check_pdt .pdt01_chk{ display:none;}
+.shop01_pdt p.check_pdt .pdt01_chk+label{ width:18px; height:18px; background:url(../images/quan.png) no-repeat center center; background-size:18px; display:block; margin:0 auto; margin-top:40px;}
+.shop01_pdt p.check_pdt .pdt01_chk:checked+label{ background:url(../images/quan_click.png) no-repeat center center; background-size:18px;}
+
+.shop01_pdt .pdt_con{ width:14.0rem; float:left;}
+.shop01_pdt .pdt_con .pdt_con_inner{ width:100%; overflow:hidden;}
+.shop01_pdt .pdt_con .pdt_con_inner .pdt_pic{ width:4.0rem; height:115px; float:left;}
+.shop01_pdt .pdt_con .pdt_con_inner .pdt_word{ width:10.0rem; float:left; overflow:hidden;}
+.shop01_pdt .pdt_con_inner .pdt_word .left{ width:90%; float:left;}
+.shop01_pdt .pdt_con_inner .pdt_word .left p{ font-size:13px; height:20px; line-height:20px;}
+.shop01_pdt .pdt_con_inner .pdt_word .left p.name{ font-size:15px; color:#1a1a1a; width:100%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; font-weight:bold;}
+.shop01_pdt .pdt_con_inner .pdt_word .left p.price{ font-size:15px; color:#ff2d47; font-weight:bold;}
+.shop01_pdt .pdt_con_inner .pdt_word .left p.price span{ color:#666; text-decoration:line-through; font-weight:normal; margin-left:1.0rem;}
+.shop01_pdt .pdt_con_inner .pdt_word .enter{ width:10%; float:right; height:110px; line-height:110px; font-size:30px; color:#858585; text-align:right;}
+
+
+/*------选择商品数量---------*/
+.num_wrap{ overflow:hidden; margin-top:5px;}
+.num_wrap span,.num_wrap input{ float:left; width:25px; height:20px; line-height:38px; text-align:center; border:1px solid #ccc; background:#fff; position:relative; box-sizing:border-box;}
+.num_wrap .minus{ border-radius:4px 0 0 4px;}
+.num_wrap .minus_disabled:after{ background:#938f8e;}
+.num_wrap .minus:after{ content:""; width:12px; height:2px; position:absolute; background:#858585; border-radius:2px;left:50%; top:50%; margin-left:-7px; margin-top:-1px;}
+.num_wrap .plus{ border-radius:0 4px 4px 0;}
+.num_wrap .plus:before{ content:""; width:2px; height:12px; position:absolute; background:#858585; border-radius:2px;left:50%; top:50%; margin-left:-2px; margin-top:-7px;}
+.num_wrap .plus:after{ content:""; width:12px; height:2px; position:absolute; background:#858585; border-radius:2px;left:50%; top:50%; margin-left:-7px; margin-top:-2px;}
+.num_wrap .num_text{ -webkit-appearance:none; border-radius:0; width:30px; height:20px; line-height:normal; border:1px solid #ccc; border-left:0; border-right:0; font-size:12px; background:#fff; text-align:center; box-sizing:border-box;}
+/*------选择商品数量end---------*/
+
+/*--------底栏menu合计/结算------------*/
+.menu{ position:fixed; bottom:0; left:0; width:100%; overflow:hidden; height:50px; background:#fff; border-top:1px solid #ccc;}
+.menu .select_all{ width:25%; float:left;}
+.menu .default{ width:75%; float:left; overflow:hidden;}
+.menu .default .total{ width:50%; float:left;}
+.menu .default .bill{ width:50%; float:left;}
+
+.menu .select_all p.check{ float:left; height:50px; width:1.5rem; text-align:center; position:relative;}
+.menu .select_all p.check .shop01_chk{ display:none;}
+.menu .select_all p.check .shop01_chk+label{ width:18px; height:18px; background:url(../images/quan.png) no-repeat center center; background-size:18px; display:block; margin:0 auto; margin-top:15px;}
+.menu .select_all p.check .shop01_chk:checked+label{ background:url(../images/quan_click.png) no-repeat center center; background-size:18px;}
+.menu .select_all span{ font-size:15px; line-height:50px; font-weight:bold;}
+
+.menu .default .total{ font-size:15px; line-height:50px; font-weight:bold;}
+.menu .default .total span{ color:#ff2d47;}
+
+.menu .default .bill{ text-align:center;}
+.menu .default .bill span{ width:90%; color:#fff; font-size:15px; line-height:40px; height:40px; background:#ff2d47; border-radius:4px; display:block; margin-top:5px;}
+
+.menu .edit{ width:75%; float:left; overflow:hidden; display:none;}
+.menu .edit .share{ width:50%; float:left;}
+.menu .edit .delete{ width:50%; float:left;}
+.menu .edit .share span{ width:90%; color:#fff; font-size:15px; line-height:40px; height:40px; background:#858585; border-radius:4px; display:block; margin-top:5px; text-align:center;}
+.menu .edit .delete span{ width:90%; color:#fff; font-size:15px; line-height:40px; height:40px; background:#ff2d47; border-radius:4px; display:block; margin-top:5px; text-align:center;}
+
+
+@media (min-width:375px) and (max-width:413px){ 
+	
+}
+
+@media screen and (max-width:360px){ 
+	.head_shop .back a span{ width:12px; height:17px; margin-top:7px; display:block; background-size:10px;}
+	.head_shop h4{font-size:18px;}
+}
+
+@media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {  }
+
+
+
+
+
+
+
+

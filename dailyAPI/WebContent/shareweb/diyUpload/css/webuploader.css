@@ -1,0 +1,32 @@
+.webuploader-container {
+	position: relative;
+	height:5.0rem;
+	width:100%;
+	display:block;
+}
+.webuploader-element-invisible {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px,1px,1px,1px);
+}
+.webuploader-pick {
+	position: absolute;
+	top:0;
+	right:0;
+	display: inline-block;
+	cursor: pointer;
+	padding: 18px 15px;
+	color: #999;
+	text-align: center;
+	border-radius: 3px;
+	overflow: hidden;
+	background:url(../../images/add_pic.png) no-repeat right center;
+	background-size:55px;
+	padding-right:60px;
+}
+
+.webuploader-pick-disable {
+	opacity: 0.6;
+	pointer-events:none;
+}
+

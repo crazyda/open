@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+
+div,a,span,img,h1,h2,h3,h4,p,input,textrea,button,body,ul,li,ol,dl,dt,dd,select,i{ margin:0; padding:0; list-style:none; border:0; font-style:normal;}
+body{ background:#ececec; font-size:14px; min-width:320px; max-width:640px; margin:0 auto; line-height:1.5; color:#666; padding:50px 0 0 0;}
+input,textarea{ font-family:"PingFang SC Medium","微软雅黑";}
+a{ text-decoration:none; color:#666;}
+a:hover{ text-decoration:none; color:#666;}
+/*------引用字体--------*/
+@font-face{font-style:normal; font-family:'PingFang Regular';src:url(../../font/PingFang%20Regular.ttf) format('truetype');}
+html,body，input,textarea{font-family:"PingFang Regular";}
+
+/*------导航栏--------------------*/
+.head_spike{ background:#ff2d47; height:50px; width:100%; position:fixed; top:0; left:0; z-index:99;}
+.head_spike h4{ width:100%; text-align:center; line-height:50px; color:#fff; font-size:20px; position:absolute; top:0; left:0; font-weight:normal; z-index:-1;}
+.head_spike h4 .remind{ position:absolute; right:1.0rem; top:0; color:#f2f2f2; font-size:0.9rem; line-height:55px; height:50px; overflow:hidden;}
+
+
+.head_spike .back{ float:left; width:10%;}
+.head_spike .back a{ display:block; padding:10px;}
+.head_spike .back a span{ width:15px; height:20px; background:url(../images/left-icon.png) no-repeat left center; margin-top:5px; display:block; background-size:11px; margin-left:5px;}
+
+/*------tab栏--------------------*/
+.tab{ background:#fff;}
+.tab h4{ width:100%; overflow:hidden; border-bottom:1px solid #ccc; font-weight:500;}
+.tab h4 span{ width:33.33%; float:left; text-align:center; color:#2e2e2e; font-size:1.0rem; line-height:2.0rem; border-right:1px solid #ccc; box-sizing:border-box;}
+.tab h4 span.current{ color:#fff; background:#f39826;}
+
+.tab ul li{ display:none;}
+.tab ul li.current{ display:block;}
+.daily-time{ border-bottom:1px solid #ccc; padding-left:1.0rem; font-size:1.0rem; line-height:3.0rem;}
+/*-------商品样式----------------*/
+.goods_list{ padding-left:0.6rem;}
+.goods_list dl{ border-bottom:1px solid #ccc; overflow:hidden; width:100%; padding:0.5rem 0;}
+.goods_list dl dt{ width:115px; float:left; position:relative; height:115px;}
+.goods_list dt span{ position:absolute; top:0; right:0; color:#fff; background:rgba(249,172,28,0.8); padding:0 1.0rem;}
+
+.goods_list dl dd{ width:70%; float:left; padding:0 0.5rem; box-sizing:border-box;}
+.goods_list .name{ width:100%; overflow:hidden; height:2.0rem;}
+.goods_list .name p{ width:70%; float:left; font-size:1.0rem; color:#2e2e2e; line-height:1.5rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.goods_list .name span{ width:30%; float:right; font-size:0.9rem; color:#ff2d48; line-height:1.5rem; text-align:right;}
+.goods_list .name i{ width:25%; float:right; font-size:0.8rem; color:#999; line-height:1.5rem; text-align:right; font-style:normal;}
+.goods_list .all{ padding-top:2.0rem; display:-webkit-box;}
+.goods_list .all .left{-webkit-box-flex:1;}
+.goods_list .all .left .price{ font-size:1.0rem; color:#ff2d48; font-weight:700;}
+.goods_list .all .left .price span{ color:#999; text-decoration:line-through; font-weight:normal;}
+.goods_list .all .left .schedule{ width:100%; overflow:hidden;}
+.goods_list .schedule p{ float:left; font-size:0.9rem;}
+.goods_list .schedule progress{ float:left;}
+
+.goods_list .all .right{ text-align:center; padding-left:1.0rem; padding-top:0.5rem;}
+.goods_list .all .right input{ width:70px; color:#fff; line-height:1.8rem; background:#ff2d48; font-size:0.8rem; border-radius:5px;}
+.goods_list .all .right input.disable{ background:#cccccc;}
+/*----------进度条----------*/
+.item-status{-webkit-box-align:center; color:#333; display:-webkit-box;}
+.item-status .status-bar{ position:relative; box-sizing:border-box; width:60%; height:0.4rem; border:1px solid #f39826; border-radius:5px; color:#333; font-weight:700; background:#fff; text-align:center; overflow:hidden;}
+.item-status .status-progress{ position:absolute; top:0; left:0; height:100%; border-radius:3px; background:#f39826;}
+.item-status .status-num{-webkit-box-flex:1; height:1.0rem; line-height:1.0rem; font-size:0.8rem; color:#666;}
+
+
+/*---------------秒杀提醒remind------------------*/
+.remind_all{ width:100%; height:100%; background:rgba(0,0,0,0.5); position:fixed; left:0; top:0; display:none;}
+.remind_all .remind_in{ width:80%; position:absolute; left:10%; top:30%; background:#fff; border-radius:1%;}
+.remind_all .remind_in h4{ font-weight:normal; font-size:1.1rem; line-height:3.0rem; padding-left:1.0rem;}
+.remind_all .remind_in form{ text-align:center; font-size:1.0rem; line-height:2.2rem;}
+.remind_all .remind_in ul{ width:100%; overflow:hidden; border-top:1px solid #ccc; margin-top:5%;}
+.remind_all .remind_in li{ width:50%; float:left; text-align:center; font-size:1.0rem; line-height:3.0rem; box-sizing:border-box; font-weight:bold;}
+#remind02 .remind_in p{ text-align:center; font-size:1.0rem; margin-bottom:1.0rem; padding:1.0rem 0;}
+#remind03 .remind_in p{ text-align:center; font-size:1.1rem; margin-bottom:1.0rem; padding:2.5rem 0;}
+
+
+
+@media (min-width:375px) and (max-width:413px){ 
+	.goods_list dl dd{ width:66%;}
+	.goods_list .name p{ font-size:0.9rem;}
+
+}
+
+@media screen and (max-width:360px){ 
+	.head_spike h4{ font-size:17px;}
+	.head_spike .back a span{ width:12px; height:18px; margin-top:7px; background-size:9px;}
+	.goods_list dl dd{ width:62%;}
+	.goods_list .name p{ font-size:0.8rem;}
+	.goods_list .name span{ font-size:0.8rem;}
+	.goods_list .all .left .price{ font-size:0.9rem;}
+	.item-status .status-num{ font-size:0.7rem;}
+	.item-status .status-bar{ width:55%;}
+	.goods_list .all .right{ padding-left:0.5rem; padding-top:0.5rem;}
+	.goods_list .all .right input{ width:55px; line-height:1.5rem; font-size:0.7rem; border-radius:3px;}
+	
+	.goods_list .name p{ width:65%;}
+	.goods_list .name i{ width:35%;}
+	
+}

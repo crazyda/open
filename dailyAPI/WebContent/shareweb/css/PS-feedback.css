@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+div,a,span,img,h1,h2,h3,h4,p,input,textrea,button,body,ul,li,ol,dl,dt,dd,select,i{ margin:0; padding:0; list-style:none; border:0; font-style:normal;}
+body{ background:#ececec; font-size:14px; min-width:320px; max-width:640px; margin:0 auto; line-height:1.5; color:#666; padding:50px 0 60px 0;}
+a{ text-decoration:none; color:#666;}
+a:hover{ text-decoration:none; color:#666;}
+@font-face{font-style:normal; font-family:'PingFang Regular';src:url(../../font/PingFang%20Regular.ttf) format('truetype');}
+html,body,input,textarea{font-family:"PingFang Regular";}
+
+/*------导航栏--------------------*/
+.head_center{ background:#ff2d47; height:50px; width:100%; position:fixed; top:0; left:0; z-index:99;}
+.head_center h4{ width:100%; text-align:center; line-height:50px; color:#fff; font-size:20px; position:absolute; top:0; left:0; font-weight:normal; z-index:-1;}
+
+.head_center .back{ float:left; width:10%;}
+.head_center .back a{ display:block; padding:10px;}
+.head_center .back a span{ width:15px; height:20px; background:url(../images/left-icon.png) no-repeat left center; margin-top:5px; display:block; background-size:11px; margin-left:5px;}
+/*---------反馈内容/添加照片----------------*/
+.feed_con{ margin-top:1.0rem;}
+.feed_con p{ padding-left:1.0rem; font-size:1.0rem; line-height:2.0rem; box-sizing:border-box; color:#333;}
+.feed_con textarea{ width:100%; border:0; height:7.0rem; resize:none; box-sizing:border-box; border-bottom:1px solid #ccc; border-top:1px solid #ccc; padding:0.5rem; font-size:0.9rem; outline:none;}
+
+.add_piv{ margin-top:1.0rem;}
+.add_piv p{ padding-left:1.0rem; font-size:1.0rem; line-height:2.0rem; box-sizing:border-box; color:#333;}
+.pic_all{border-bottom:1px solid #ccc; border-top:1px solid #ccc; background:#fff; padding:2.0rem 1.0rem; overflow:hidden;}
+.pic_sd{ width:4.0rem; height:4.0rem; float:left; display:block; overflow:hidden; margin-right:1.0rem;}
+.pic_sd img{ width:4.0rem; height:4.0rem;}
+
+.pic_all .upload{ float:left; width:4.0rem; height:0; padding-bottom:4.0rem; background:url(../images/upload.png) no-repeat center center; background-size:contain; position:relative;}
+.upload input{ position:absolute; left:0; top:0; width:100%; height:100%; z-index:10; opacity:0;}
+
+
+
+
+
+
+body{ position:relative; padding-bottom:25%;}
+.sub{ padding:10% 5%; position:fixed; bottom:0; left:0; width:100%; box-sizing:border-box;}
+.sub input{ font-size:1.1rem; line-height:3.0rem; color:#fff; text-align:center; width:100%; background:#ff2d47; border-radius:3px;}
+
+
+
+
+
+
+@media (min-width:375px) and (max-width:413px){ 
+	.sub{ margin-top:45%; }
+	.sub input{ font-size:1.1rem; line-height:2.8rem;}
+}
+
+@media screen and (max-width:360px){ 
+	.head_center h4{ font-size:17px;}
+	.head_center .back a span{ width:12px; height:18px; margin-top:7px; background-size:9px;}
+	
+	.feed_con{ margin-top:0.5rem;}
+	.feed_con p{ padding-left:1.0rem; font-size:0.9rem; line-height:1.5rem;}
+	.feed_con textarea{ height:6.0rem; font-size:0.8rem;}
+	.add_piv{ margin-top:0.5rem;}
+	.add_piv p{ font-size:0.9rem; line-height:1.5rem;}
+	.pic_all{padding:1.0rem;}
+	.pic_sd{ width:3.5rem; height:3.5rem;}
+	.pic_sd img{ width:3.5rem; height:3.5rem;}
+	
+	.pic_all .upload{ width:3.5rem; padding-bottom:3.5rem;}
+
+	.sub input{ font-size:1.0rem; line-height:2.6rem;}
+
+
+
+}
+
+
+
+
+

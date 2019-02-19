@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: #404a59;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.showData {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .dataTop {
+        position: fixed;
+        top: 2%;
+        z-index: 4;
+        width: 100%;
+        height: 7em;
+        .dataTit {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top: 6%;
+            font-size: 2rem !important;
+            color: #30e9ff;
+            font-weight: 900;
+        }
+
+        .logo {
+            padding: 1em 2em;
+            width: 12%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .sumData {
+            display: flex;
+            position: absolute;
+            width: 78%;
+            top: 3.3em;
+            left: 20%;
+            font-size: 1.4em;
+
+            .dataItem {
+                display: flex;
+                width: 33.3333%;
+                justify-content: center;
+                align-items: center;
+                color: #f5fb8f;
+
+                i {
+                    font-style: normal;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+    .hideBox{
+        width: 100%;
+        height: 15%;
+        background: #fff;
+        opacity: 0;
+    }
+    .databottom {
+        width: 100%;
+        height: 85%;
+        overflow: hidden;
+        .dataHead {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            height: 4%;
+            span {
+                display: inline-block;
+                flex: 1;
+                color: #30e9ff;
+                font-weight: 900;
+                font-size: 1.2em;
+            }
+        }
+        .dataCont{
+            height: 94%;
+            .dataContItem{
+                display: flex;
+                align-items: center;
+                text-align: center;
+                height: 6.666%;
+                span{
+                    flex: 1;
+                    color: #52dee2;
+                    overflow: hidden;
+                    text-overflow:ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp:2;
+                    -webkit-box-orient: vertical;
+                    img {
+                        width: 30%;
+                        height: 30%;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .dataContItem:nth-child(2n+1) {
+                background: #455576;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

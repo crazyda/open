@@ -1,0 +1,1 @@
+package com.axp.dao;import com.axp.domain.ReGoodsOfNineNineMall;public interface IReGoodsOfNineNineMallDao extends IBaseDao<ReGoodsOfNineNineMall> {}

@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的订单</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="http://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<link type="text/css" href="css/OU-OrderDetails.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+</head>
+
+<body>
+<div class="head_order">
+	<div class="back">
+    	<a href="index.html"><span></span></a>
+    </div>
+    <h4>我的订单</h4>
+</div>
+<div class="my_order">
+	<div class="tab">
+    	<div class="tab_head">
+            <h3>
+                <span class="current">待付款</span>
+                <span>待发货</span>
+                <span>待收货</span>
+                <span>待评价</span>
+                <span>已完成</span>
+            </h3>
+        </div>
+        <ul>
+        	<li class="current">
+                <div class="order">
+                    <h4 class="shop_name">天河翠花蛋糕店 <i class="fa fa-angle-right"></i> <a href="#" class="wait" style="color:#ff2d47">待付款 </a></h4>
+                    <div class="good_photo">
+                        <span class="photo"><img src="images/good01.png" width="90"></span>
+                        <dl>
+                            <dt>
+                                <p class="name">瑞可爷爷的蛋糕一个吐司蛋糕两个</p>
+                                <p class="num">商品数量：<span>1</span></p>
+                                <p class="format"></p>
+                                <p class="price">￥125.0</p>
+                            </dt>
+                            <dd><i class="fa fa-angle-right"></i></dd>
+                        </dl>
+                    </div>
+                    <div class="time_cost">
+                        <dl>
+                            <dt>订单日期：<span>2016-07-18</span></dt>
+                            <dd>合计：<span>￥150.0</span>(运费￥)</dd>
+                        </dl>
+                    </div>
+                    <div class="operate">
+                    	<a href="#" class="pay">去付款</a>                        
+                    	<a href="#" class="cancel">取消订单</a>
+                    	<a href="#" class="link">联系商家</a>
+                    </div>
+                </div>
+                <div class="order">
+                    <h4 class="shop_name">天河翠花蛋糕店 <i class="fa fa-angle-right"></i> <a href="#" class="wait" style="color:#ff2d47">待付款 </a></h4>
+                    <div class="good_photo">
+                        <span class="photo"><img src="images/good01.png" width="90"></span>
+                        <dl>
+                            <dt>
+                                <p class="name">瑞可爷爷的蛋糕一个吐司蛋糕两个</p>
+                                <p class="num">商品数量：<span>1</span></p>
+                                <p class="format"></p>
+                                <p class="price">￥125.0</p>
+                            </dt>
+                            <dd><i class="fa fa-angle-right"></i></dd>
+                        </dl>
+                    </div>
+                    <div class="time_cost">
+                        <dl>
+                            <dt>订单日期：<span>2016-07-18</span></dt>
+                            <dd>合计：<span>￥150.0</span>(运费￥)</dd>
+                        </dl>
+                    </div>
+                    <div class="operate">
+                    	<a href="#" class="pay">去付款</a>                        
+                    	<a href="#" class="cancel">取消订单</a>
+                    	<a href="#" class="link">联系商家</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="order">
+                    <h4 class="shop_name">天河翠花蛋糕店 <i class="fa fa-angle-right"></i> <a href="#" class="wait" style="color:#ff2d47">待发货 </a></h4>
+                    <div class="good_photo">
+                        <span class="photo"><img src="images/good01.png" width="90"></span>
+                        <dl>
+                            <dt>
+                                <p class="name">瑞可爷爷的蛋糕一个吐司蛋糕两个</p>
+                                <p class="num">商品数量：<span>1</span></p>
+                                <p class="format">兑换码：13456</p>
+                                <p class="price">12500积分 <span>原价：￥153.0</span></p>
+                            </dt>
+                            <dd><i class="fa fa-angle-right"></i></dd>
+                        </dl>
+                    </div>
+                    <div class="time_cost">
+                        <dl>
+                            <dt>订单日期：<span>2016-07-18</span></dt>
+                            <dd>合计：<span>12500积分</span>(运费￥10)</dd>
+                        </dl>
+                    </div>
+                    <div class="operate">
+                    	<a href="#" class="pay">去付款</a>                        
+                    	<a href="#" class="cancel">取消订单</a>
+                    	<a href="#" class="link">联系商家</a>
+                    </div>
+                </div>
+            </li>
+            <li>待收货</li>
+            <li>待评价</li>
+            <li>已完成</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+	$('.tab h3 span').click(function(e) {
+        $(this).addClass('current').siblings().removeClass('current');
+		$('.tab ul li').eq($(this).index()).show().siblings().hide();
+    });
+</script>

@@ -1,0 +1,1 @@
+package com.axp.dao;import com.axp.domain.VisitLog;public interface IVisitLogDao extends IBaseDao<VisitLog> {}

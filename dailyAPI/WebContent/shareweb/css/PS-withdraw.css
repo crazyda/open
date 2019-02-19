@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+
+div,a,span,img,h1,h2,h3,h4,p,input,textrea,button,body,ul,li,ol,dl,dt,dd,select,i{ margin:0; padding:0; list-style:none; border:0; font-style:normal;}
+body{ background:#ececec; font-size:14px; min-width:320px; max-width:640px; margin:0 auto; line-height:1.5; color:#666; padding:50px 0 60px 0;}
+a{ text-decoration:none; color:#666;}
+a:hover{ text-decoration:none; color:#666;}
+@font-face{font-style:normal; font-family:'PingFang Regular';src:url(../../font/PingFang%20Regular.ttf) format('truetype');}
+html,body,input{font-family:"PingFang Regular";}
+
+/*------导航栏--------------------*/
+.head_center{ background:#ff2d47; height:50px; width:100%; position:fixed; top:0; left:0; z-index:99;}
+.head_center h4{ width:100%; text-align:center; line-height:50px; color:#fff; font-size:20px; position:absolute; top:0; left:0; font-weight:normal; z-index:-1;}
+
+.head_center .back{ float:left; width:10%;}
+.head_center .back a{ display:block; padding:10px;}
+.head_center .back a span{ width:15px; height:20px; background:url(../images/left-icon.png) no-repeat left center; margin-top:5px; display:block; background-size:11px; margin-left:5px;}
+/*-----------tab栏---------------------*/
+.tab .tab_h{ width:100%; overflow:hidden; font-size:1.5rem; color:#ff2d48; font-weight:normal; line-height:1.2rem; margin-bottom:1.0rem;}
+.tab .tab_h span{ width:50%; float:left; text-align:center; padding:0.8rem 0; border-bottom:1px solid #ccc; background:#fff;}
+.tab .tab_h span i{ font-size:0.9rem; color:#666;}
+.tab .tab_h span.current{ border-bottom:2px solid #f39826}
+.tab ul li{ display:none;}
+.tab ul li.current{ display:block;}
+
+
+/*-------------已确认提现list---------------*/
+.ed_list{ background:#fff; border-bottom:1px solid #ccc; border-top:1px solid #ccc; margin-top:1.0rem; padding-left:1.0rem;}
+.ed_list dl{ width:100%; overflow:hidden; border-bottom:1px solid #ccc; padding:0.5rem 0;}
+.ed_list dl dt{ width:70%; float:left;}
+.ed_list dl dt h4{ font-size:1.1rem; line-height:2.0rem; font-weight:normal; color:#333;}
+.ed_list dl dt p{ font-size:1.0rem; line-height:2.0rem; color:#999;}
+.ed_list dl dt p span{ margin-left:1.0rem;}
+.ed_list dl dd{ width:30%; float:left; text-align:right; padding-right:1.0rem; box-sizing:border-box; padding-top:2.0rem;}
+.ed_list dl dd span.add{ font-size:1.6rem; color:#ff2d48; line-height:2.0rem;}
+.ed_list dl dd span.less{ color:#029944; font-size:1.6rem; line-height:2.0rem;}
+
+
+
+/*-------------我要提现----------------------*/
+.mention{ position:fixed; bottom:0; left:0; width:100%; border-top:1px solid #ccc; padding:0.5rem 5%; box-sizing:border-box; background:#fff;}
+.mention input{ width:100%; font-size:1.0rem; line-height:2.8rem; color:#fff; text-align:center; background:#ff2d48; border-radius:3px;}
+
+
+@media (min-width:375px) and (max-width:413px){ 
+	.head_center .edit{ font-size:0.9rem;}
+	
+	.tab .tab_h{ font-size:1.4rem; line-height:1.2rem;}
+	.tab .tab_h span{ padding:0.6rem 0;}
+	.tab .tab_h span i{ font-size:0.8rem;}
+
+	.ed_list dl dt h4{ font-size:1.1rem; line-height:1.8rem;}
+	.ed_list dl dt p{ font-size:1.0rem; line-height:1.8rem;}
+	.ed_list dl dd{ padding-top:1.6rem;}
+	.ed_list dl dd span.add{ font-size:1.5rem; line-height:1.5rem;}
+	.ed_list dl dd span.less{ font-size:1.5rem; line-height:1.5rem;}
+	
+	.mention input{ font-size:1.0rem; line-height:2.7rem;}
+
+}
+
+@media screen and (max-width:360px){ 
+	.head_center h4{ font-size:17px;}
+	.head_center .edit{ font-size:0.8rem;}
+	.head_center .back a span{ width:12px; height:18px; margin-top:7px; background-size:9px;}
+	
+	.tab .tab_h{ font-size:1.3rem; line-height:1.0rem;}
+	.tab .tab_h span{ padding:0.6rem 0;}
+	.tab .tab_h span i{ font-size:0.8rem;}
+	
+	.ed_list dl dt h4{ font-size:1.0rem; line-height:1.5rem;}
+	.ed_list dl dt p{ font-size:0.9rem; line-height:1.5rem;}
+	.ed_list dl dd{ padding-top:1.5rem;}
+	.ed_list dl dd span.add{ font-size:1.4rem; line-height:1.5rem;}
+	.ed_list dl dd span.less{ font-size:1.4rem; line-height:1.5rem;}
+	
+	.mention input{ font-size:0.9rem; line-height:2.6rem;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

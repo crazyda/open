@@ -1,0 +1,1 @@
+package com.axp.dao;import java.util.List;import com.axp.domain.MembersConfig;public interface IMembersConfigDao extends IBaseDao<MembersConfig> {	List<MembersConfig> getVipConfigList();	}

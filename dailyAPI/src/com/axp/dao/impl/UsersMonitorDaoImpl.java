@@ -1,0 +1,1 @@
+package com.axp.dao.impl;import org.springframework.stereotype.Repository;import com.axp.dao.IUsersMonitorDao;import com.axp.domain.UsersMonitor;@Repository public class UsersMonitorDaoImpl extends BaseDaoImpl<UsersMonitor> implements IUsersMonitorDao {}

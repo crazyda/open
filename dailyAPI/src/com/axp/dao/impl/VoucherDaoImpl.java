@@ -1,0 +1,1 @@
+package com.axp.dao.impl;import org.springframework.stereotype.Repository;import com.axp.dao.IVoucherDao;import com.axp.domain.Voucher;@Repository public class VoucherDaoImpl extends BaseDaoImpl<Voucher> implements IVoucherDao {}

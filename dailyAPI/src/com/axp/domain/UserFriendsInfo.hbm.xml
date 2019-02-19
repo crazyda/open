@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.axp.domain.UserFriendsInfo" table="user_friends_info"  >
+		<id name="id" type="java.lang.Integer">
+			<column name="id" />
+			<generator class="identity" />
+		</id>
+		<property name="isValid" type="java.lang.Boolean">
+            <column name="isValid" not-null="true"/>
+        </property>
+		<many-to-one name="user" class="com.axp.domain.Users"
+			fetch="select">
+			<column name="userId" />
+		</many-to-one>
+	 	<property name="info" type="java.lang.String">
+            <column name="info"/>
+        </property>
+		<property name="concernNum" type="java.lang.Integer">
+            <column name="concernNum"/>
+        </property>
+        <property name="praiseNum" type="java.lang.Integer">
+            <column name="praiseNum"/>
+        </property>
+        <property name="appreciate" type="java.lang.Integer">
+            <column name="appreciate"/>
+        </property>
+        <property name="createTime" type="java.sql.Timestamp">
+            <column name="createTime" length="19">
+                <comment>创建时间</comment>
+            </column>
+        </property>
+	</class>
+</hibernate-mapping>

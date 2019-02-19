@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.axp.domain.ReGoodsOfExtendActiviy" table="re_goodsofextend_activity">
+        <id name="id" type="java.lang.Integer">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        
+       	<property name="isValid" type="java.lang.Boolean" />
+       	<property name="createTime" type="timestamp" />
+       	    	
+       	<property name="tile"  type="java.lang.String" />
+       	<property name="content" type="java.lang.String" />
+       	<property name="template" type="java.lang.Integer" />
+       	<property name="templateImg" type="java.lang.String" />
+       	<property name="isRed" type="java.lang.Boolean" />
+       	<many-to-one name="adminuserRedpaper" class="com.axp.domain.AdminuserRedpaper" fetch="select">
+       		<column name="redId"></column>
+       	</many-to-one>	
+       	
+       	<property name="redNum" type="java.lang.Integer" />
+       	<property name="redPrice" type="java.lang.Double" />
+       	<many-to-one name="seller" class="com.axp.domain.Seller" fetch="select">
+       		<column name="seller_id"></column>
+       	</many-to-one>	
+       	
+    </class>
+</hibernate-mapping>

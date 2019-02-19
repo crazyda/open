@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+div,a,span,img,h1,h2,h3,h4,p,input,textrea,button,body,ul,li,ol,dl,dt,dd,select,i{ margin:0; padding:0; list-style:none; border:0; font-style:normal;}
+body{ background:#ececec; font-size:14px; min-width:320px; max-width:640px; margin:0 auto; line-height:1.5; color:#666; padding-top:50px;}
+a{ text-decoration:none; color:#666;}
+a:hover{ text-decoration:none; color:#666;}
+/*------引用字体--------*/
+@font-face{font-style:normal; font-family:'PingFang Regular';src:url(../../font/PingFang%20Regular.ttf) format('truetype');}
+html,body,input{font-family:"PingFang Regular";}
+
+/*------导航栏--------------------*/
+.head_creative{ background:#ff2d47; height:50px; width:100%; position:fixed; top:0; left:0; z-index:99;}
+.head_creative h4{ width:100%; text-align:center; line-height:50px; color:#fff; font-size:20px; position:absolute; top:0; left:0; font-weight:normal; z-index:-1;}
+.head_creative .back{ float:left; width:10%;}
+.head_creative .back a{ display:block; padding:10px;}
+.head_creative .back a span{ width:15px; height:20px; background:url(../images/left-icon.png) no-repeat left center; margin-top:5px; display:block; background-size:11px; margin-left:5px;}
+
+.head_creative .sao{ float:right; width:12%;}
+.head_creative .sao a{ display:block; padding:10px; padding-right:0;}
+.head_creative .sao a span{ width:26px; height:36px; background:url(../images/icon_shaoyishao.png) no-repeat center center; display:block; background-size:22px;}
+
+/*--------------输入邀请码---------------------*/
+form{ width:100%; padding:5%; box-sizing:border-box; text-align:center; position:relative;}
+form .white{ width:100%; background:#fff url(../images/icon_White.png) no-repeat 0.8rem center; background-size:1.3rem; border:1px solid #cfcfcf; font-size:1.0rem; line-height:2.8rem; padding-left:2.5rem; box-sizing:border-box;}
+form .sub{ width:90%; background:#cfcfcf; font-size:1.1rem; line-height:3.0rem; color:#fff; text-align:center; border-radius:3px; position:fixed; bottom:5%; left:5%;}
+form .sub.hover{ background:#ff2d48;}
+
+.user{ font-size:0.9rem; line-height:4.0rem; background:url(../images/bangding.png) no-repeat left center; background-size:1.2rem; display:inline-block; padding-left:2.0rem;}
+.null{font-size:0.9rem; line-height:4.0rem; background:url(../images/wuxiao.png) no-repeat left center; background-size:1.2rem; display:inline-block; padding-left:2.0rem;}
+
+
+
+
+
+
+@media (min-width:375px) and (max-width:413px){ 
+	.head_creative .sao{ width:14%;}
+
+	form .white{  background-size:1.3rem; font-size:1.0rem; line-height:2.8rem; padding-left:2.5rem;}
+	form .sub{ background:#cfcfcf; font-size:1.1rem; line-height:2.8rem; margin-top:120%;}
+	.user{ line-height:3.8rem;}
+	.null{ line-height:3.8rem;}
+}
+
+@media screen and (max-width:360px){ 
+	.head_creative h4{ font-size:18px;}
+	.head_creative .back a span{ width:13px; height:18px; margin-top:7px; background-size:10px;}
+	.head_creative .sao{ width:14%;}
+	.head_creative .sao a span{ width:20px; height:34px; background-size:20px;}
+
+	form .white{ background-size:1.2rem; font-size:0.9rem; line-height:2.6rem; padding-left:2.5rem;}
+	form .sub{ background:#cfcfcf; font-size:1.0rem; line-height:2.6rem; margin-top:110%;}
+	.user{ line-height:3.5rem;}
+	.null{ line-height:3.5rem;}
+
+}
+
+
+
+
+
+
+
+

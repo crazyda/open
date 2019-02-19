@@ -1,0 +1,1 @@
+package com.axp.service.impl;import java.util.List;import org.springframework.stereotype.Service;import com.axp.domain.ReGoodsStandard;import com.axp.service.IReGoodsStandardService;@Servicepublic class ReGoodsStandardServiceImpl extends BaseServiceImpl<ReGoodsStandard> implements IReGoodsStandardService {}

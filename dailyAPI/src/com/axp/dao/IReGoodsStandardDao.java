@@ -1,0 +1,1 @@
+package com.axp.dao;import com.axp.domain.ReGoodsStandard;public interface IReGoodsStandardDao extends IBaseDao<ReGoodsStandard> {}

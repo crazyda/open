@@ -1,0 +1,1 @@
+package com.axp.service.impl;import org.springframework.stereotype.Service;import com.axp.domain.ReGoodsSnapshot;import com.axp.service.IReGoodsSnapshotService;@Servicepublic class ReGoodsSnapshotServiceImpl extends BaseServiceImpl<ReGoodsSnapshot> implements IReGoodsSnapshotService {}

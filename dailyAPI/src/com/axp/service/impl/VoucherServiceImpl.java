@@ -1,0 +1,1 @@
+package com.axp.service.impl;import org.springframework.stereotype.Service;import com.axp.domain.Voucher;import com.axp.service.IVoucherService;@Servicepublic class VoucherServiceImpl extends BaseServiceImpl<Voucher> implements IVoucherService {}

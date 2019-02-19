@@ -1,0 +1,89 @@
+/* 清除默认样式 */
+body,
+span,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+section,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  background: #ffffff;
+  font-family: "微软雅黑";
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+a:active {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* header */
+.header {
+  width: 100%;
+  height: 1.17333333rem;
+  background: #f96a48;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+.header ul li {
+  float: left;
+  font-size: 0.45333333rem;
+  line-height: 1.17333333rem;
+  color: #ffffff;
+}
+.header .back {
+  width: 0.24rem;
+  height: 0.42666667rem;
+  margin-top: 0.37333333rem;
+  margin-left: 0.32rem;
+}
+.header .back img {
+  display: -webkit-box;
+}
+.header ul li:nth-of-type(2) {
+  margin-left: 3.6rem;
+}
+/* how */
+.how {
+  width: 4rem;
+  height: 0.50666667rem;
+  margin-top: 1.17333333rem;
+}
+.how a {
+  font-size: 0.42666667rem;
+  color: #5079ea;
+  border-bottom: 1px solid #5079ea;
+  margin-left: 0.53333333rem;
+}
+.how:nth-of-type(2) {
+  margin-top: 0.66666667rem;
+}

@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+
+div,a,span,img,h1,h2,h3,h4,p,input,textrea,button,body,ul,li,ol,dl,dt,dd,select,i{ margin:0; padding:0; list-style:none; border:0; font-style:normal;}
+body{ background:#ececec; font-size:14px; min-width:320px; max-width:640px; margin:0 auto; line-height:1.5; color:#666; padding-top:50px;}
+a{ text-decoration:none; color:#666;}
+a:hover{ text-decoration:none; color:#666;}
+/*------引用字体--------*/
+@font-face{font-style:normal; font-family:'PingFang Regular';src:url(../../font/PingFang%20Regular.ttf) format('truetype');}
+html,body{font-family:"PingFang Regular";}
+
+/*------导航搜索栏--------------------*/
+.head_shop{ background:#ff2d47; height:50px; width:100%; position:fixed; top:0; left:0; z-index:99;}
+.head_shop h4{ width:100%; text-align:center; line-height:50px; color:#fff; font-size:20px; position:absolute; top:0; left:0; z-index:-1;}
+.head_shop h4 input{ width:55%; height:36px; margin-top:7px; border-radius:5px; font-size:16px; line-height:38px; background:#fff url(../images/search.png) no-repeat 5px center; background-size:16px; padding-left:25px; color:#909090;}
+.head_shop .back{ float:left; width:10%;}
+.head_shop .back a{ display:block; padding:10px;}
+.head_shop .back a span{ width:15px; height:20px; background:url(../images/left-icon.png) no-repeat left center; margin-top:5px; display:block; background-size:11px; margin-left:5px;}
+.head_shop .more{ float:right; width:20%; display:block; color:#fff; font-size:16px; line-height:50px;}
+
+/* banner */
+.banner .swiper-slide{height: 190px;overflow: hidden;}
+
+
+/*------店铺详情地址优惠版块--------------------*/
+.shop_all{ width:100%; background:#fff;}
+.shop_all .section01{ overflow:hidden; width:100%; padding:10px; border-bottom:1px solid #d1d1d1;}
+.section01 .shop-name{ float:left; overflow:hidden; width:70%;}
+.shop-name dt{ float:left; width:20%; margin-right:1em;}
+.shop-name dd{ float:left; font-size:14px; line-height:1.8em; color:#909090;}
+.shop-name dd b{ font-size:16px; color:#202020;}
+
+.section01 .shop-in{ float:right; width:25%; text-align:right;}
+.shop-in p{ line-height:1.6em; text-align:center;}
+.shop-in p:nth-child(1){ font-size:15px;}
+.shop-in p:nth-child(1) i img{ margin-bottom:0.2em;}
+.shop-in p:nth-child(2){ font-size:15px;}
+.shop-in p:nth-child(2) i img{ margin-bottom:0.3em;}
+
+.shop_all .section02{ overflow:hidden; width:100%; padding:10px; border-bottom:1px solid #d1d1d1;}
+.section02 .address{ width:80%; float:left; font-size:18px; line-height:1.8em;}
+.section02 .phone{ float:right; width:20%; border-left:1px solid #d1d1d1; text-align:center; line-height:1.8em;}
+.shop_all .section03{ overflow:hidden; width:100%; padding:10px; border-bottom:1px solid #d1d1d1;}
+.section03 a{ width:100%; font-size:18px; line-height:1.8em; color:#ff2d47;}
+.section03 a i{ float:right; color:#909090; margin-right:10px;}
+.shop_all .section04{overflow:hidden; width:100%; padding:10px; border-bottom:1px solid #d1d1d1; background:#f8f8f8;}
+.section04 p{ float:left; width:50%; font-size:16px; line-height:2.5em;}
+.section04 p span{ color:#fff; background:#fd41f5; font-size:14px; padding:1px 3px; border-radius:2px; margin-right:5px;}
+.section04 p:nth-child(5) img{ margin-bottom:5px;}
+/*------积分马上换integra--------------------*/
+.integral .title{ width:100%; background:#fff; position:relative;}
+.integral .title .left{ border-bottom:1px solid #fd6d1f; width:25%; position:absolute; top:50%; left:5%;}
+.integral .title .right{ border-bottom:1px solid #fd6d1f; width:25%; position:absolute; top:50%; right:5%;}
+.integral .title h4{ text-align:center; line-height:2.4em;}
+.integral .title h4 i{ margin-right:5px;}
+
+.integral .swiper-container{ width:100%; background:#fff;}
+.integral .swiper-wrapper .swiper-slide{ margin-right:0.5em !important; text-align:center; padding-bottom:0.5em;}
+.integral .swiper-wrapper .swiper-slide .color{ color:#fb1f40; margin-top:0.5em;}
+.integral .swiper-wrapper .swiper-slide .score{ text-decoration:line-through;}
+
+/*------商品广告--------------------*/
+.ads{ margin:0.5em 0; background:#fff;height: 130px;overflow: hidden;}
+
+.shop_all{ width:100%; overflow:hidden; background:#fff;}
+.shop_all .all{ width:50%; float:left; padding:0.2em;}
+/* 给商品图片增加尺寸控制比例 */
+.shop_all .all .img{ position:relative;height: 190px;overflow: hidden;}
+
+.shop_all .all .img span{ position:absolute; top:0; right:0; color:#fff; font-size:16px; line-height:1.5em; padding:0 0.8em; text-align:center;}
+.shop_all .all .img span.color01{ background:rgba(255,45,71,0.8);}
+.shop_all .all .img span.color02{ background:rgba(255,102,0,0.8);}
+.shop_all .all .img span.color03{ background:rgba(0,153,68,0.8);}
+.shop_all .all .img span.color04{ background:rgba(55,193,255,0.8);}
+
+
+.shop_all .all .name{ font-size:1.1em; line-height: 1.2em; height: 2.7em; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; width:100%; padding:0.3em 0.5em 0.5em 0.5em;}
+.shop_all .all .price{ width:100%; padding:0.3em 0.3em 0.5em 0.3em; overflow:hidden;}
+.shop_all .all .price h5{ color:#fc2444; font-size:16px; font-weight:bold; margin:0;}
+.shop_all .all .price p{ float:left; color:#fc1828; font-weight:bold; font-size:15px;}
+.shop_all .all .price p b{ color:#666; text-decoration:line-through; font-weight:normal;}
+.shop_all .all .price span{ float:right;}
+
+
+
+@media (min-width:375px) and (max-width:413px){ 
+	.head_shop .more{ font-size:15px;}
+	.head_shop h4 input{font-size:15px; line-height:40px;}
+	.section02 .address{ font-size:16px;}
+	.section02 .phone img{ width:22px;}
+	.section03 a{ font-size:16px;}
+	.section04 p{ font-size:15px;}
+	.section04 p span{ font-size:13px;}
+	.section04 p:nth-child(5) img{ width:18px; margin-bottom:5px;}
+	/* 新增不同显示屏下的尺寸 */
+	.banner .swiper-slide{height: 180px;}
+	.shop_all .all .img{height: 180px;}
+	.ads{height: 120px;}
+
+}
+@media screen and (max-width:360px){ 
+	.head_shop .more{ font-size:14px;}
+	.head_shop h4 input{font-size:14px; line-height:34px; height:34px;}
+	.shop-name dd b{ font-size:15px;}
+	.shop-name dd{ font-size:14px; line-height:1.5em;}
+	.shop-in p:nth-child(2){ font-size:14px;}
+	.section02 .address{ font-size:15px;}
+	.section02 .phone img{ width:20px;}
+	.section03 a{ font-size:15px;}
+	.section04 p{ font-size:13px;}
+	.section04 p span{ font-size:12px;}
+	.section04 p:nth-child(5) img{ width:18px; margin-bottom:5px;}
+	.integral .title h4{ font-size:16px;}
+	.integral .title h4 img{ width:16px; margin-bottom:5px;}
+	.swiper-slide p{ font-size:13px;}
+	.shop_all .all .img span{ font-size:14px;}
+	.shop_all .all .name{ font-size:13px;}
+	/* 新增不同显示屏下的尺寸 */
+	.banner .swiper-slide{height: 170px;}
+	.shop_all .all .img{height: 170px;}
+	.ads{height: 110px;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,177 @@
+@import "./base.less";
+
+body{
+    background: #eee;
+}
+.bill{
+    
+    .jfBox{
+        width: 6.9rem;
+        height: 3.6rem;
+        background: #fff;
+        margin:.3rem auto;
+      border-radius: .04rem;
+        .jfBox-top{
+            display: flex;
+            .jfBox-topLeft{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+                box-sizing: border-box;
+                margin: .2rem 0;
+                border-right: .02rem solid #eee;
+            }
+            .jfBox-topRight{
+                width: 50%;
+                height: 1.3rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            &>div{
+                p:nth-child(1){
+                    font-size: .24rem;
+                    color: #333;
+                   
+                }
+                p:nth-child(2){
+                    font-size: .32rem;
+                    color: #3bc6ab;
+                    font-weight: 900;
+                    display: inline-block;
+                    padding-top: .12rem;
+                }
+            }
+        }
+        .jfBox-bottom{
+            width: 6.5rem;
+            height: 2rem;
+            margin: .1rem auto;
+            background: #eee;
+            display: flex;
+            .jfBox-bottomLeft{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: .4rem 0;
+                border-right: .02rem solid #fff;
+
+                .leftTop{
+                    vertical-align: middle;
+                    span{
+                        vertical-align: middle;
+                        font-size: .24rem;
+                        color: #333;
+                    }
+                    img{
+                        width: .23rem;
+                        height: .23rem;
+                        vertical-align: middle;
+                    }
+                }
+                .leftBottom{
+                    font-size: .28rem;
+                    color: #ff2b2b;
+                    font-weight: 900;
+                    display: inline-block;
+                    padding-top: .12rem;
+                }
+            }
+            .jfBox-bottomRight{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+                p:nth-child(1){
+                    font-size: .24rem;
+                    color: #333;
+                }
+                p:nth-child(2){
+                    font-size: .28rem;
+                    color: #ff2b2b;
+                    font-weight: 900;
+                    display: inline-block;
+                    padding-top: .12rem;
+                }
+            }
+        }
+    }
+    .srBox{
+       width: 6.9rem;
+       height: 5rem;
+       background: #fff;
+       margin: .3rem auto;
+       border-radius: .04rem;
+       .srBoxData{
+           display: flex;
+           box-sizing: border-box;
+           margin: 0 .2rem;
+           border-bottom: .01rem solid #eee;
+           &>div{
+            width: 33.3333%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: .24rem 0;
+            border-right: .01rem solid #eee;
+            p{
+                font-size: .28rem;
+                color: #333;
+            }
+            span{
+                font-size: .28rem;
+                color: #ff2b2b;
+                font-weight: 900;
+                display: inline-block;
+                padding-top: .06rem;
+            }
+           }
+           &>div:nth-child(3){
+               border: none !important;
+           }
+       }
+       .srBoxDetail{
+           box-sizing: border-box;
+           padding: 0 .2rem;
+           div{
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               height: .7rem;
+               font-size: .24rem;
+           border-bottom: .01rem solid #eee;
+
+               p{
+                color: #333;
+               }
+               span{
+                color: #ff2b2b;
+               }
+           }
+       }
+    }
+
+    .billBtn{
+        span{
+            display: block;
+            width: 6.9rem;
+            height: .8rem;
+            background: #3bc6ab;
+            margin:2rem auto 0;
+            text-align: center;
+            line-height: .8rem;
+            border-radius: .08rem;
+            font-size: .32rem;
+            color: #fff;
+        }
+    }
+}
+

@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的提现</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" href="css/PS-withdraw.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+</head>
+
+<body>
+<div class="head_center">
+	<div class="back">
+    	<a href="FE-personal.html"><span></span></a>
+    </div>
+    <h4>我的提现</h4>
+</div>
+<!--------已确认/未确认提现的tab-------------->
+<div class="tab">
+	<h4 class="tab_h">
+    	<span class="current" style="border-right:1px solid #ccc; box-sizing:border-box;">910<br><i>已确认提现/元</i></span>
+    	<span>880<br><i>未确认提现/元</i></span>
+    </h4>
+    <ul>
+    	<li class="current">
+            <div class="ed_list">
+                <dl>
+                    <dt>
+                        <h4>会员购物返现</h4>
+                        <p>2016-05-04 <span>14:12:36</span></p>
+                    </dt>
+                    <dd><span class="add">+120</span></dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <h4>会员退单返现</h4>
+                        <p>2016-05-04 <span>14:12:36</span></p>
+                    </dt>
+                    <dd><span class="add">+24</span></dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <h4>邀请会员获得收益</h4>
+                        <p>2016-05-04 <span>14:12:36</span></p>
+                    </dt>
+                    <dd><span class="add">+300</span></dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <h4>会员购物返现</h4>
+                        <p>2016-05-04 <span>14:12:36</span></p>
+                    </dt>
+                    <dd><span class="add">+120</span></dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <h4>会员退单返现</h4>
+                        <p>2016-05-04 <span>14:12:36</span></p>
+                    </dt>
+                    <dd><span class="add">+24</span></dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <h4>邀请会员获得收益</h4>
+                        <p>2016-05-04 <span>14:12:36</span></p>
+                    </dt>
+                    <dd><span class="add">+300</span></dd>
+                </dl>
+                <dl style="border-bottom:0">
+                    <dt>
+                        <h4>邀请会员获得收益</h4>
+                        <p>2016-05-04 <span>14:12:36</span></p>
+                    </dt>
+                    <dd><span class="add">+3000</span></dd>
+                </dl>
+            </div>
+        </li>
+        <li>111111</li>
+    </ul>
+</div>
+<!------------tab------------------>
+<script type="text/javascript">
+	$('.tab h4 span').click(function(e) {
+		var num=$(this).index();
+        $(this).addClass('current').siblings().removeClass('current');
+		$('.tab ul li').eq(num).addClass('current').siblings().removeClass('current');
+    });
+</script>
+
+<!----------我要提现------------------>
+<div class="mention">
+	<input type="button" value="我要提现">
+</div>
+</body>
+</html>

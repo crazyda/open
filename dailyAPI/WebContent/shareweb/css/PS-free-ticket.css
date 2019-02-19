@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+div,a,span,img,h1,h2,h3,h4,p,input,textrea,button,body,ul,li,ol,dl,dt,dd,select,i{ margin:0; padding:0; list-style:none; border:0; font-style:normal;}
+body{ background:#ececec; font-size:14px; min-width:320px; max-width:640px; margin:0 auto; line-height:1.5; color:#666; padding:50px 0 0 0;}
+a{ text-decoration:none; color:#666;}
+a:hover{ text-decoration:none; color:#666;}
+/*------引用字体--------*/
+@font-face{font-style:normal; font-family:'PingFang Regular';src:url(../../font/PingFang%20Regular.ttf) format('truetype');}
+html,body,input{font-family:"PingFang Regular";}
+
+/*------导航栏--------------------*/
+.head_center{ background:#ff2d47; height:50px; width:100%; position:fixed; top:0; left:0; z-index:99;}
+.head_center h4{ width:100%; text-align:center; line-height:50px; color:#fff; font-size:20px; position:absolute; top:0; left:0; font-weight:normal; z-index:-1;}
+
+.head_center .back{ float:left; width:10%;}
+.head_center .back a{ display:block; padding:10px;}
+.head_center .back a span{ width:15px; height:20px; background:url(../images/left-icon.png) no-repeat left center; margin-top:5px; display:block; background-size:11px; margin-left:5px;}
+
+/*------免单券-免单券(相同部分样式)--------------------*/
+.default{ border-bottom:1px solid #d2dcde; background:#fff url(../images/ticket-bg.png) repeat-x top left; padding:1.5rem; padding-bottom:0; background-size:110%; margin-top:1.0rem;}
+.default .ticket{ width:100%; border-bottom:1px solid #c3c3c3;}
+.default .ticket dl{ width:100%; overflow:hidden; padding:0.5rem 0;}
+.default .ticket dl dt{ float:left; width:20%; text-align:center; height:5.0rem;}
+.default .ticket dl dd{ float:left;}
+.default .ticket dl dd.note{ width:72%; padding:0 0.5rem; box-sizing:border-box;}
+.default .ticket dl dd.note h4{ font-size:1.1rem; color:#555; font-weight:normal; line-height:2.0rem; height:3.5rem;}
+.default .ticket dl dd.note p{ font-size:0.8rem;}
+.default .ticket dl dd.enter{ width:8%; text-align:right;}
+.default .ticket dl dd.enter img{ margin-top:1.5rem;}
+.default .time p{ text-align:right; font-size:0.7rem; color:#555; line-height:2.0rem;}
+.default .time p span{ font-size:0.75rem; color:#ec5348; margin-left:0.5rem;}
+/*----------------免单券-未使用的免单券--------------------*/
+.unused{ background:#fff url(../images/ticket-bg02.png) repeat-x top left; background-size:110%;}
+.unused .ticket dl dd.note h4{ color:#202020;}
+.unused .ticket dl dd.note h4 span{ color:#f8a900;}
+
+/*-----------------没有免单券页面---------------------------------*/
+.no-tick{ text-align:center; margin-top:45%;}
+.no-tick h4{ font-size:1.4rem; line-height:2.0rem; color:#202020; font-weight:normal; margin-top:1.0rem;}
+.no-tick p{ font-size:1.2rem; line-height:2.0rem; color:#999;}
+.no-tick input{ width:45%; font-size:1.2rem; line-height:3.5rem; border:1px solid #999999; border-radius:5px; background:#ececec; margin-top:2.0rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:375px) and (max-width:413px){ 
+	.default .ticket dl dt{ height:4.5rem;}
+	.default .ticket dl dd.note h4{ font-size:1.1rem; height:3.0rem;}
+	.default .ticket dl dd.note p{ font-size:0.8rem;}
+	.no-tick h4{ font-size:1.3rem; line-height:2.0rem;}
+	.no-tick p{ font-size:1.1rem;}
+	.no-tick input{ font-size:1.1rem; line-height:3.0rem;}
+
+}
+
+@media screen and (max-width:360px){ 
+	.head_center h4{ font-size:18px;}
+	.head_center .back a span{ width:12px; height:18px; margin-top:7px; background-size:9px;}
+	.default .ticket dl dt{ height:4.2rem;}
+	.default .ticket dl dd.note h4{ font-size:1.0rem; height:2.0rem; line-height:1.5rem;}
+	.default .ticket dl dd.note p{ font-size:0.7rem;}
+	.default .ticket dl{ padding:0.5rem 0;}
+	.no-tick h4{ font-size:1.2rem; line-height:2.0rem;}
+	.no-tick p{ font-size:1.0rem;}
+	.no-tick input{ font-size:1.1rem; line-height:2.8rem;}
+
+}
+
+
+
+
+
+
