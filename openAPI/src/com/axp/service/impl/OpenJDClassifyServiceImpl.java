@@ -21,6 +21,7 @@ import com.axp.service.OpenJDClassifyService;
 import com.axp.util.DateUtil;
 import com.axp.util.MD5Util;
 import com.axp.util.QueryModel;
+import com.axp.util.StringUtil;
 import com.axp.util.UrlUtil;
 
 @Service
@@ -35,8 +36,8 @@ public class OpenJDClassifyServiceImpl extends BaseServiceImpl<OpenJDClassify> i
 	public static  String v = "2.0";//京东版本
 	public static String app_key = "5D0A058C5A4D0FD677A5010B01B34554";
 	public static String app_secret = "4b15ca55a6f04b62928f3075d8f7336e";
-	public static String access_token = "8eee2fd5-4a91-4b04-ba04-0068f5d3f72d";
-	public static String http = "http://img14.360buyimg.com/n1/";
+	
+	public static String http = "http://img14.360buyimg.com/n1/";//94b833dc076b43a5a045ddffdb147ec3iodm
 	
 	
 	@Override
@@ -66,13 +67,13 @@ public class OpenJDClassifyServiceImpl extends BaseServiceImpl<OpenJDClassify> i
 		map.put("v", v);
 		map.put("timestamp",timestamp+"");
 		map.put("app_key", app_key);
-		map.put("access_token", access_token);
+		map.put("access_token", StringUtil.access_token);
 		map.put("parent_id", parentId);//父级 类目级别
 		map.put("grade", grade);
 		String sign = MD5Util.getSign(map,app_secret);
 		
 		String url = "https://api.jd.com/routerjson";
-		String param = "v=2.0&method="+method+"&app_key="+app_key+"&access_token="+access_token+"&360buy_param_json={\"parent_id\":\""+parentId+"\",\"grade\":\""+grade+"\"}&timestamp="+timestamp+"&sign="+sign;
+		String param = "v=2.0&method="+method+"&app_key="+app_key+"&access_token="+StringUtil.access_token+"&360buy_param_json={\"parent_id\":\""+parentId+"\",\"grade\":\""+grade+"\"}&timestamp="+timestamp+"&sign="+sign;
 		List<Map<String, Object>> classifyList = UrlUtil.sendPostForList(url, param,"jingdong_union_search_goods_category_query_responce");
 		
 		List <String> parentIds = new ArrayList<String>(); // 一级对应下来的二级类目 将作为下级类目查询的父级

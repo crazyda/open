@@ -3,11 +3,13 @@ package com.test;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import com.axp.util.CalcUtil;
+
 
 public class timeTest {
 
 	public static void main(String[] args) {
-		new Timer().schedule(new TimeTask1(), 4000);
+		System.out.println(CalcUtil.mul(10000, 0.01, 2));
 
 	}
 

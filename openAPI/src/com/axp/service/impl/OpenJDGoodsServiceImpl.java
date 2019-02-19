@@ -82,7 +82,6 @@ public class OpenJDGoodsServiceImpl extends BaseServiceImpl<OpenJDGoods> impleme
 	public static  String v = "2.0";//京东版本
 	public static String app_key = "5D0A058C5A4D0FD677A5010B01B34554";
 	public static String app_secret = "4b15ca55a6f04b62928f3075d8f7336e";
-	public static String access_token = "8eee2fd5-4a91-4b04-ba04-0068f5d3f72d";
 	public static String http = "http://img14.360buyimg.com/n1/"; //图片前缀
 	
 	
@@ -119,7 +118,7 @@ public class OpenJDGoodsServiceImpl extends BaseServiceImpl<OpenJDGoods> impleme
 				map.put("v", v);
 				map.put("timestamp",timestamp+"");
 				map.put("app_key", app_key);
-				map.put("access_token", access_token);
+				map.put("access_token", StringUtil.access_token);
 				map.put("pageIndex", String.valueOf(i));
 				map.put("pageSize", String.valueOf(pageSize));
 				map.put("cat1Id", String.valueOf(catId));
@@ -128,7 +127,7 @@ public class OpenJDGoodsServiceImpl extends BaseServiceImpl<OpenJDGoods> impleme
 				
 				String url = "https://api.jd.com/routerjson";
 				String param = "v=2.0&method=jingdong.union.search.goods.param.query&app_key="+app_key+"&access_token="
-						+access_token+"&360buy_param_json={\"cat1Id\":\""+String.valueOf(catId)+"\",\"owner\":\"\",\"pageIndex\":\""
+						+StringUtil.access_token+"&360buy_param_json={\"cat1Id\":\""+String.valueOf(catId)+"\",\"owner\":\"\",\"pageIndex\":\""
 						+String.valueOf(i)+"\",\"pageSize\":\""+String.valueOf(pageSize)+"\",\"sortName\":\"\",\"sort\":\"\",\"skuIds\":\"\","
 						+"\"pingouPriceStart\":\"\",\"pingouPriceEnd\":\"\",\"wlCommissionShareStart\":\"\","
 						+"\"wlCommissionShareEnd\":\"\"}&timestamp="+timestamp+"&sign="+sign;
@@ -282,7 +281,7 @@ public class OpenJDGoodsServiceImpl extends BaseServiceImpl<OpenJDGoods> impleme
 		map.put("method", method);
 		map.put("v", v);
 		map.put("app_key", app_key);
-		map.put("access_token", access_token);
+		map.put("access_token", StringUtil.access_token);
 		map.put("timestamp",timestamp+"");
 		map.put("materialIds", skuIds);
 		map.put("proCont", proCont);
@@ -291,7 +290,7 @@ public class OpenJDGoodsServiceImpl extends BaseServiceImpl<OpenJDGoods> impleme
 		map.put("pid", pid);
 		String sign = MD5Util.getSign(map,app_secret);
 		String param = "v="+v+"&method="+method+"&app_key="+app_key+"&access_token="
-				+access_token+"&360buy_param_json={\"materialIds\":\""+skuIds+"\",\"proCont\":\""+proCont+"\",\"subUnionId\":\""+subUnionId+"\",\"positionId\":\""+positionId+"\",\"pid\":\""+pid+"\"}&timestamp="+timestamp+"&sign="+sign;
+				+StringUtil.access_token+"&360buy_param_json={\"materialIds\":\""+skuIds+"\",\"proCont\":\""+proCont+"\",\"subUnionId\":\""+subUnionId+"\",\"positionId\":\""+positionId+"\",\"pid\":\""+pid+"\"}&timestamp="+timestamp+"&sign="+sign;
 		
 		List<Map<String,Object>> goodsList = UrlUtil.jdsendPostForList(url, param,"jingdong_service_promotion_wxsq_getCodeBySubUnionId_responce","getcodebysubunionid_result");
 		
@@ -322,12 +321,12 @@ public class OpenJDGoodsServiceImpl extends BaseServiceImpl<OpenJDGoods> impleme
 		map.put("method", method);
 		map.put("v", v);
 		map.put("app_key", app_key);
-		map.put("access_token", access_token);
+		map.put("access_token", StringUtil.access_token);
 		map.put("timestamp",timestamp+"");
 		map.put("couponUrl", couponUrl);
 		String sign = MD5Util.getSign(map,app_secret);
 		String param = "v="+v+"&method="+method+"&app_key="+app_key+"&access_token="
-				+access_token+"&360buy_param_json={\"couponUrl\":\""+couponUrl+"\"}&timestamp="+timestamp+"&sign="+sign;
+				+StringUtil.access_token+"&360buy_param_json={\"couponUrl\":\""+couponUrl+"\"}&timestamp="+timestamp+"&sign="+sign;
 		
 		List<Map<String,Object>> goodsList = UrlUtil.jdsendPostForList(url, param,"jingdong_service_promotion_coupon_getInfo_responce","getinfo_result");
 		
@@ -385,7 +384,7 @@ public class OpenJDGoodsServiceImpl extends BaseServiceImpl<OpenJDGoods> impleme
 			map.put("method", method);
 			map.put("v", v);
 			map.put("app_key", app_key);
-			map.put("access_token", access_token);
+			map.put("access_token", StringUtil.access_token);
 			map.put("timestamp",timestamp+"");
 			map.put("couponUrl", couponUrl);
 			map.put("materialIds", skuIds);
@@ -395,7 +394,7 @@ public class OpenJDGoodsServiceImpl extends BaseServiceImpl<OpenJDGoods> impleme
 			String sign = MD5Util.getSign(map,app_secret);
 			
 			String param = "v="+v+"&method="+method+"&app_key="+app_key+"&access_token="
-					+access_token+"&360buy_param_json={\"materialIds\":\""+skuIds+"\",\"couponUrl\":\""+URLEncoder.encode(couponUrl)+"\",\"subUnionId\":\""+subUnionId+"\",\"positionId\":\""+positionId+"\",\"pid\":\""+pid+"\"}&timestamp="+timestamp+"&sign="+sign;
+					+StringUtil.access_token+"&360buy_param_json={\"materialIds\":\""+skuIds+"\",\"couponUrl\":\""+URLEncoder.encode(couponUrl)+"\",\"subUnionId\":\""+subUnionId+"\",\"positionId\":\""+positionId+"\",\"pid\":\""+pid+"\"}&timestamp="+timestamp+"&sign="+sign;
 			
 			goodsList = UrlUtil.jdsendPostForList(url, param,"jingdong_service_promotion_coupon_getCodeBySubUnionId_responce","getcodebysubunionid_result");
 			if(goodsList.size()>0 && goodsList != null ){

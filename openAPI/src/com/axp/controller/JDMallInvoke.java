@@ -222,7 +222,6 @@ public class JDMallInvoke extends BaseController {
     @RequestMapping("/synCouponGoods")
     @ResponseBody
     public Map<String,Object> synCouponGoods(HttpServletRequest request, HttpServletResponse response){
-    	
     	return openJDQueryCoponGoodsService.synCouponGoods();
     	
     }

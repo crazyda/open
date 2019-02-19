@@ -20,7 +20,7 @@ public class StringUtil {
 	public static  String v = "2.0";//京东版本
 	public static String app_key = "5D0A058C5A4D0FD677A5010B01B34554";
 	public static String app_secret = "4b15ca55a6f04b62928f3075d8f7336e";
-	public static String access_token = "8eee2fd5-4a91-4b04-ba04-0068f5d3f72d";
+	public static String access_token = "94b833dc076b43a5a045ddffdb147ec3iodm";
 	public static String http = "http://img14.360buyimg.com/n1/"; //图片前缀
 	public static String unionId = "1000777023";//站长iDS
 	

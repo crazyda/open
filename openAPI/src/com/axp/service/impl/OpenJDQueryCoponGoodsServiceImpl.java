@@ -59,6 +59,7 @@ import com.axp.util.MD5Util;
 import com.axp.util.Parameter;
 import com.axp.util.ParameterUtil;
 import com.axp.util.QueryModel;
+import com.axp.util.StringUtil;
 import com.axp.util.UrlUtil;
 
 @Service
@@ -68,7 +69,7 @@ public class OpenJDQueryCoponGoodsServiceImpl extends BaseServiceImpl<OpenJDQuer
 	public static  String v = "2.0";//京东版本
 	public static String app_key = "5D0A058C5A4D0FD677A5010B01B34554";
 	public static String app_secret = "4b15ca55a6f04b62928f3075d8f7336e";
-	public static String access_token = "8eee2fd5-4a91-4b04-ba04-0068f5d3f72d";
+	
 	public static String http = "http://img14.360buyimg.com/n1/";
 	
 	@Resource
@@ -112,14 +113,14 @@ public class OpenJDQueryCoponGoodsServiceImpl extends BaseServiceImpl<OpenJDQuer
 			map.put("method", method);
 			map.put("v", v);
 			map.put("app_key", app_key);
-			map.put("access_token", access_token);
+			map.put("access_token", StringUtil.access_token);
 			map.put("pageSize", String.valueOf(pageSize));
 			map.put("timestamp",timestamp+"");
 			map.put("from",i+"");
 			sign = MD5Util.getSign(map,app_secret);
 		
 			param = "v="+v+"&method=jingdong.UnionThemeGoodsService.queryCouponGoods&app_key="+app_key+"&access_token="
-					+access_token+"&360buy_param_json={\"from\":\""+i+"\",\"pageSize\":\""+String.valueOf(pageSize)+"\"}&timestamp="+timestamp+"&sign="+sign;
+					+StringUtil.access_token+"&360buy_param_json={\"from\":\""+i+"\",\"pageSize\":\""+String.valueOf(pageSize)+"\"}&timestamp="+timestamp+"&sign="+sign;
 			goodsList.clear();
 			goodsList = UrlUtil.jdsendPostForList(url, param,"jingdong_UnionThemeGoodsService_queryCouponGoods_responce","queryCouponGoods_result");
 			
@@ -131,13 +132,13 @@ public class OpenJDQueryCoponGoodsServiceImpl extends BaseServiceImpl<OpenJDQuer
 			map.put("method", "jingdong.UnionThemeGoodsService.queryExplosiveGoods");
 			map.put("v", v);
 			map.put("app_key", app_key);
-			map.put("access_token", access_token);
+			map.put("access_token", StringUtil.access_token);
 			map.put("pageSize", String.valueOf(pageSize));
 			map.put("timestamp",timestamp+"");
 			map.put("from",i+"");
 			sign = MD5Util.getSign(map,app_secret);
 			param = "v="+v+"&method=jingdong.UnionThemeGoodsService.queryExplosiveGoods&app_key="+app_key+"&access_token="
-					+access_token+"&360buy_param_json={\"from\":\""+i+"\",\"pageSize\":\""+String.valueOf(pageSize)+"\"}&timestamp="+timestamp+"&sign="+sign;
+					+StringUtil.access_token+"&360buy_param_json={\"from\":\""+i+"\",\"pageSize\":\""+String.valueOf(pageSize)+"\"}&timestamp="+timestamp+"&sign="+sign;
 			goodsList.clear();
 			goodsList = UrlUtil.jdsendPostForList(url, param,"jingdong_UnionThemeGoodsService_queryExplosiveGoods_responce","queryExplosiveGoods_result");
 			
@@ -491,13 +492,13 @@ public class OpenJDQueryCoponGoodsServiceImpl extends BaseServiceImpl<OpenJDQuer
 			map.put("method", method);
 			map.put("v", v);
 			map.put("app_key", app_key);
-			map.put("access_token", access_token);
+			map.put("access_token", StringUtil.access_token);
 			map.put("timestamp",timestamp+"");
 			
 			String sign = MD5Util.getSign(map,app_secret);
 			
 			String param = "v="+v+"&method="+method+"&app_key="+app_key+"&access_token="
-					+access_token+"&360buy_param_json={\"skuIdList\":\""+skuIds+"\",\"pageIndex\":\""+pageIndex+"\",\"pageSize\":\""+pageSize+"\",\"goodsKeyword\":\""+URLEncoder.encode(goodsKeyword, "UTF-8")+"\",\"priceFrom\":\""+priceFrom+"\",\"priceTo\":\""+priceTo+"\",\"cid3\":\""+cid3+"\"}&timestamp="+timestamp+"&sign="+sign;
+					+StringUtil.access_token+"&360buy_param_json={\"skuIdList\":\""+skuIds+"\",\"pageIndex\":\""+pageIndex+"\",\"pageSize\":\""+pageSize+"\",\"goodsKeyword\":\""+URLEncoder.encode(goodsKeyword, "UTF-8")+"\",\"priceFrom\":\""+priceFrom+"\",\"priceTo\":\""+priceTo+"\",\"cid3\":\""+cid3+"\"}&timestamp="+timestamp+"&sign="+sign;
 			
 			List<Map<String,Object>> goodsList = UrlUtil.jdsendPostForList(url, param,"jingdong_union_search_queryCouponGoods_responce","query_coupon_goods_result");
 			if(goodsList != null && goodsList.size()>0){
@@ -571,18 +572,39 @@ public class OpenJDQueryCoponGoodsServiceImpl extends BaseServiceImpl<OpenJDQuer
 		String method = "jingdong.union.search.queryCouponGoods" ;
 		
 		Map<String,Object> statusMap = new HashMap<String,Object>();
-		Map<String,Object> dataMap = new HashMap<String,Object>();
 		Map<String,String> map = new HashMap<String,String>();
 		
 		QueryModel query = new QueryModel();
 		query.clearQuery();
 		query.combPreEquals("grade",0);//一级分类列表 用于自定义分类
 		List<OpenJDClassify> gradeList = dateBaseDAO.findLists(OpenJDClassify.class, query);
-		//这里取到所有的catid list 
-		gradeList.get(0).getCatId();
-		query.clearQuery();
-		query.combPreEquals("grade", 2);//三级分类 用于请求京东
-		List<OpenJDClassify> classList = dateBaseDAO.findLists(OpenJDClassify.class, query);
+//		
+//		query.clearQuery();
+//		query.combPreEquals("grade", 1);
+//		query.combCondition("classify is not null");
+//		List<OpenJDClassify> classList_1 = dateBaseDAO.findLists(OpenJDClassify.class, query);
+		List<OpenJDClassify> classList_2 = new ArrayList<OpenJDClassify>();
+		for(OpenJDClassify c:gradeList){
+			query.clearQuery();
+			query.combPreEquals("parentId",c.getCatId());
+			query.combPreEquals("grade",1);
+			List<OpenJDClassify> classList = dateBaseDAO.findPageList(OpenJDClassify.class, query,0,5);
+			classList_2.addAll(classList);
+			
+		}
+		
+		List<OpenJDClassify> classList = new ArrayList<OpenJDClassify>();
+		List<Integer> class_2 = new  ArrayList<Integer>();
+		for(OpenJDClassify c:classList_2){
+			class_2.add(c.getCatId());
+			query.clearQuery();
+			query.combPreEquals("grade",2);
+			query.combPreEquals("parentId",c.getCatId());
+			List<OpenJDClassify> class_3 = dateBaseDAO.findPageList(OpenJDClassify.class, query,0,6);
+			classList.addAll(class_3);
+		}
+//		List<OpenJDClassify> classList = dateBaseDAO.findLists(OpenJDClassify.class, query);
+		
 		List<OpenJDCoponGoods2> OpenJDCoponGoods2 = new ArrayList<OpenJDCoponGoods2>();
 		List<OpenJDCoponGoods> OpenJDCoponGoods = new ArrayList<OpenJDCoponGoods>();
 		
@@ -596,7 +618,7 @@ public class OpenJDQueryCoponGoodsServiceImpl extends BaseServiceImpl<OpenJDQuer
 						map.put("method", method);
 						map.put("v", v);
 						map.put("app_key", app_key);
-						map.put("access_token", access_token);
+						map.put("access_token", StringUtil.access_token);
 						map.put("timestamp",timestamp+"");
 						map.put("skuIdList", "");
 						map.put("pageIndex", i+"");
@@ -607,7 +629,7 @@ public class OpenJDQueryCoponGoodsServiceImpl extends BaseServiceImpl<OpenJDQuer
 						map.put("cid3", catId);
 						String sign = MD5Util.getSign(map,app_secret);
 						String param1 = "v="+v+"&method="+method+"&app_key="+app_key+"&access_token="
-								+access_token+"&360buy_param_json={\"skuIdList\":\""+""+"\",\"pageIndex\":\""+i+"\",\"pageSize\":\""+"30"+"\",\"goodsKeyword\":\""+"\",";
+								+StringUtil.access_token+"&360buy_param_json={\"skuIdList\":\""+""+"\",\"pageIndex\":\""+i+"\",\"pageSize\":\""+"30"+"\",\"goodsKeyword\":\""+"\",";
 						String param2 = "\"priceFrom\":\""+""+"\",\"priceTo\":\""+""+"\",";
 						String param3 = "\"cid3\":\""+catId+"\"}&timestamp="+timestamp+"&sign="+sign;
 						
@@ -911,12 +933,12 @@ public class OpenJDQueryCoponGoodsServiceImpl extends BaseServiceImpl<OpenJDQuer
 		map.put("method", method);
 		map.put("v", v);
 		map.put("app_key", app_key);
-		map.put("access_token", access_token);
+		map.put("access_token", StringUtil.access_token);
 		map.put("timestamp",timestamp+"");
 		map.put("skuIds", skuIds);
 		String sign = MD5Util.getSign(map,app_secret);
 		String param = "v="+v+"&method="+method+"&app_key="+app_key+"&access_token="
-				+access_token+"&360buy_param_json={\"skuIds\":\""+skuIds+"\"}&timestamp="+timestamp+"&sign="+sign;
+				+StringUtil.access_token+"&360buy_param_json={\"skuIds\":\""+skuIds+"\"}&timestamp="+timestamp+"&sign="+sign;
 		
 		List<Map<String,Object>> goodsList = UrlUtil.jdsendPostForList(url, param,"jingdong_service_promotion_goodsInfo_responce","getpromotioninfo_result");
 		
@@ -962,13 +984,13 @@ public class OpenJDQueryCoponGoodsServiceImpl extends BaseServiceImpl<OpenJDQuer
 			map.put("method", method);
 			map.put("v", v);
 			map.put("app_key", app_key);
-			map.put("access_token", access_token);
+			map.put("access_token", StringUtil.access_token);
 			map.put("pageSize", pageSize);
 			map.put("timestamp",timestamp+"");
 			map.put("from",from);
 			String sign = MD5Util.getSign(map,app_secret);
 			String param = "v="+v+"&method="+method+"&app_key="+app_key+"&access_token="
-					+access_token+"&360buy_param_json={\"from\":\""+from+"\",\"pageSize\":\""+pageSize+"\"}&timestamp="+timestamp+"&sign="+sign;
+					+StringUtil.access_token+"&360buy_param_json={\"from\":\""+from+"\",\"pageSize\":\""+pageSize+"\"}&timestamp="+timestamp+"&sign="+sign;
 			goodsList.clear();
 			goodsList = UrlUtil.jdsendPostForList(url, param,"jingdong_UnionThemeGoodsService_queryExplosiveGoods_responce","queryExplosiveGoods_result");
 			if(goodsList.size()>0 && goodsList != null){
@@ -1013,14 +1035,14 @@ public class OpenJDQueryCoponGoodsServiceImpl extends BaseServiceImpl<OpenJDQuer
 			map.put("method", method);
 			map.put("v", v);
 			map.put("app_key", app_key);
-			map.put("access_token", access_token);
+			map.put("access_token", StringUtil.access_token);
 			map.put("pageSize", pageSize);
 			map.put("timestamp",timestamp+"");
 			map.put("from",from);
 			String sign = MD5Util.getSign(map,app_secret);
 		
 			String param = "v="+v+"&method="+method+"&app_key="+app_key+"&access_token="
-					+access_token+"&360buy_param_json={\"from\":\""+from+"\",\"pageSize\":\""+pageSize+"\"}&timestamp="+timestamp+"&sign="+sign;
+					+StringUtil.access_token+"&360buy_param_json={\"from\":\""+from+"\",\"pageSize\":\""+pageSize+"\"}&timestamp="+timestamp+"&sign="+sign;
 			
 			goodsList = UrlUtil.jdsendPostForList(url, param,"jingdong_UnionThemeGoodsService_queryCouponGoods_responce","queryCouponGoods_result");
 			if(goodsList.size()>0 && goodsList != null){
@@ -1088,9 +1110,9 @@ public class OpenJDQueryCoponGoodsServiceImpl extends BaseServiceImpl<OpenJDQuer
 				int count = dateBaseDAO.findCount(OpenJDCoponGoods2.class, model);
 				int totalPage = (count % Integer.valueOf(pageSize)) > 0 ? ((count / Integer.valueOf(pageSize)) + 1)
 						: (count / Integer.valueOf(pageSize));
-			//	int start = (Integer.valueOf(page) - 1) * Integer.valueOf(pageSize);
+				int start = (Integer.valueOf(page) - 1) * Integer.valueOf(pageSize);
 				
-			    int	start = 1+(int)(Math.random()*50) ;
+//			    int	start = 1+(int)(Math.random()*50) ;
 				List<OpenJDCoponGoods2> goodsList = dateBaseDAO.findPageList(OpenJDCoponGoods2.class, model, start, Integer.valueOf(pageSize));
 				if(goodsList != null && goodsList.size()>0){
 					dataMap.put("count",count);

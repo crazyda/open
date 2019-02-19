@@ -169,10 +169,9 @@
         <!-- 管理trigger -->
         <property name="triggers">
             <list>
-                <ref bean="updateGoodsJobCronTrigger" /> 
+                 <!-- <ref bean="updateGoodsJobCronTrigger" /> 
                  <ref bean="IncrementGoodsJobCronTrigger"/>  
-                
-             	 <ref bean="JDGoodsJobCronTrigger"/>   
+             	 <ref bean="JDGoodsJobCronTrigger"/>    -->
             </list>
         </property>
         <property name="jobFactory">

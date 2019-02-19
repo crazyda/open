@@ -353,7 +353,7 @@ public class MallInvoke extends BaseController {
     @RequestMapping("/locaOrder")
     @ResponseBody
     public Map<String,Object> locaOrder(HttpServletRequest request, HttpServletResponse response){
-    	return openGoodsService.locaOrder(100, 1, "1541572020");
+    	return openGoodsService.locaOrder(100, 1, "1548660700");
     	
     }
     

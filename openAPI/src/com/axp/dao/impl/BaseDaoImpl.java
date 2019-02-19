@@ -245,15 +245,15 @@ public class BaseDaoImpl<T> implements com.axp.dao.IBaseDao<T> {
 	public void saveList(List<T> list) {
 		Session session = sessionFactory.getCurrentSession();
 		try {
+			  
 			 for (int i = 0; i < list.size(); i++) {
-				 T pzflList = (T) list.get(i);
-				 
 			    session.save(list.get(i));
 			    if(i%1000 == 0){   
 			        session.flush();  
 			        session.clear();  
 			    }
 			 }
+			
 		} catch (HibernateException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
