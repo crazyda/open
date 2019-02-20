@@ -31,7 +31,7 @@ public abstract class AbstractUserFriendsInfoConcern implements java.io.Serializ
 		this.isGiveUp = isGiveUp;
 	}
 
-	public boolean isGiveUp() {
+	public boolean getIsGiveUp() {
 		return isGiveUp;
 	}
 
@@ -57,7 +57,7 @@ public abstract class AbstractUserFriendsInfoConcern implements java.io.Serializ
 	public void setUserFriendsInfo(UserFriendsInfo userFriendsInfo) {
 		this.userFriendsInfo = userFriendsInfo;
 	}
-	public boolean isIsfocus() {
+	public boolean getIsfocus() {
 		return isfocus;
 	}
 	public void setIsfocus(boolean isfocus) {
